@@ -284,5 +284,113 @@
       the project promotes the ethical reuse of public data to support resilience-building and informed policymaking.
     </p>
   </div>
+
+  <!--Technical Analysis-->
+  <div class="container collapse analysis-card" id="target4" data-bs-parent="#analyses">
+    <div class="align-items-stretch mb-5 mb-lg-0">
+      <div class="analysis-box">
+        <div class="analysis-box-title">
+          <img src="assets/img/tech.png" alt="Technical Analysis Icon" style="width: 30px; height: 30px; margin-right: 10px;">
+          <h2 class="analysis-title">Technical Analysis</h2>
+        </div>
+        <p class="analysis-text">
+          This technical analysis provides a comprehensive overview of the source datasets used in our project on hydrological disasters and climate vulnerability in Brazil. All datasets were evaluated in light of the <b>Brazilian Open Data Policy</b> and metadata expectations published on <a href="https://dados.gov.br">dados.gov.br</a>. Additionally, we applied the <b>FAIR principles</b> (Findable, Accessible, Interoperable, Reusable) to assess their potential for long-term reuse and integration.
+        </p>
+  
+        <h3 class="analysis-second-title">Metadata Assessment</h3>
+        <p class="analysis-text">
+          We classified metadata quality using the AGID-inspired model based on syntactic and semantic correctness, completeness, and consistency of documentation.
+        </p>
+  
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>ID</th>
+                <th>Source</th>
+                <th>Format</th>
+                <th>Metadata</th>
+                <th>License</th>
+                <th>URI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">D1</th>
+                <td>S2ID (MDR)</td>
+                <td>.csv</td>
+                <td>Level 2: Basic metadata and COBRADE classifications included; no persistent URI. Data structure requires cleaning.</td>
+                <td>Open access, no explicit license</td>
+                <td><a href="https://s2id.mi.gov.br">s2id.mi.gov.br</a></td>
+              </tr>
+              <tr>
+                <th scope="row">D2</th>
+                <td>IBGE</td>
+                <td>.csv, .shp</td>
+                <td>Level 4: Fully documented, standardized geocodes, shapefiles and API endpoints provided.</td>
+                <td>CC BY 4.0</td>
+                <td><a href="https://www.ibge.gov.br/">ibge.gov.br</a></td>
+              </tr>
+              <tr>
+                <th scope="row">D3</th>
+                <td>MapBiomas</td>
+                <td>.csv, .xlsx</td>
+                <td>Level 4: Rich metadata, class hierarchies and long-term collections (Collection 9). Clear documentation and schema.</td>
+                <td>CC BY-SA 4.0</td>
+                <td><a href="https://mapbiomas.org">mapbiomas.org</a></td>
+              </tr>
+              <tr>
+                <th scope="row">D4</th>
+                <td>INMET</td>
+                <td>.csv</td>
+                <td>Level 1: Minimal metadata; station names in filenames; no unique identifiers or descriptors.</td>
+                <td>Unclear</td>
+                <td><a href="https://bdmep.inmet.gov.br">bdmep.inmet.gov.br</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <h3 class="analysis-second-title">FAIR Principles Evaluation</h3>
+        <p class="analysis-text">
+          We also evaluated each dataset according to the <b>FAIR data principles</b> to assess their reuse potential:
+        </p>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>FAIR Principle</th>
+                <th>Description</th>
+                <th>Assessment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Findable</th>
+                <td>Data should have globally unique, persistent identifiers and searchable metadata.</td>
+                <td>IBGE and MapBiomas datasets are fully findable via <a href="https://dados.gov.br">dados.gov.br</a>. INMET and S2ID lack persistent identifiers.</td>
+              </tr>
+              <tr>
+                <th scope="row">Accessible</th>
+                <td>Data and metadata should be retrievable using open protocols.</td>
+                <td>All datasets are downloadable via open protocols. IBGE and MapBiomas are most robust. INMET provides access via a portal but with minimal documentation.</td>
+              </tr>
+              <tr>
+                <th scope="row">Interoperable</th>
+                <td>Data should use formal standards and shared vocabularies.</td>
+                <td>MapBiomas uses standard land classification codes. IBGE relies on official geographic codes. S2ID uses COBRADE, while INMET lacks standard structure.</td>
+              </tr>
+              <tr>
+                <th scope="row">Reusable</th>
+                <td>Data should include clear licenses, provenance, and rich documentation.</td>
+                <td>IBGE and MapBiomas provide complete licensing and documentation. S2ID is open but lacks formal reuse policy. INMET does not specify license terms.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+      </div>
+    </div>
+  </div>
 </body>
 </html>
