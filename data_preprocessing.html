@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Preprocessing</title>
+</head>
+<body>
+
 <h2>Data Preprocessing</h2>
 
 <p>In order to prepare the datasets for analysis and integration, we carried out a series of preprocessing steps involving cleaning, filtering, transformation, and standardization across the five primary sources used: <strong>S2ID (disaster data)</strong>, <strong>INMET (meteorological data)</strong>, <strong>MapBiomas (land use/land cover)</strong>, <strong>IBGE (demographics)</strong>, and <strong>geospatial shapefiles for municipalities and states</strong>.</p>
@@ -40,3 +48,17 @@
   <li>Datasets were joined primarily using <strong>municipality name + state</strong>. To avoid inconsistencies due to duplicated names across states, names were normalized and matched cautiously.</li>
   <li>Final datasets contain one row per municipality with integrated attributes: rainfall volume, area at risk, population affected, urban expansion, etc.</li>
 </ul>
+
+<div class="container mt-5">
+    <h3 class="analysis-second-title">KNIME Workflow Overview</h3>
+    <p class="analysis-text">
+      The following image illustrates the KNIME workflow used for data cleaning, normalization, and integration processes. This visual representation helps clarify how datasets were harmonized, enriched, and prepared for analytical processing.
+    </p>
+    <div class="text-center">
+      <img src="assets/img/knime-workflow.png" alt="KNIME Workflow" style="max-width: 100%; border: 1px solid #ccc; padding: 8px;">
+      <p class="mt-2"><em>Figure: Visual workflow developed using KNIME for preprocessing of disaster, climate, and land use datasets.</em></p>
+    </div>
+  </div>
+
+</body>
+</html>
