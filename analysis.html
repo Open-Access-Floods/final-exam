@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Quality Analysis</title>
+</head>
+<body>
+  <!--Quality Analysis-->
+  <h2>Data Quality Analysis</h2>
+
+  <p>
+    In accordance with Brazil’s Open Data Policy (Decree No. 8.777/2016) and the reuse principles described in the national open data platform 
+    <a href="https://dados.gov.br/" target="_blank">dados.gov.br</a>, we conducted a comprehensive quality assessment of all datasets used in this study. 
+    This evaluation ensures that our analysis of urbanization, deforestation, and flood-related disasters in Brazil is grounded in reliable and ethically reusable public data.
+  </p>
+
+  <p>The quality assessment was conducted using four key dimensions: Accuracy, Coherence, Completeness, and Timeliness.</p>
+
+  <h3>1. Accuracy (Syntactic and Semantic)</h3>
+  <ul>
+    <li><strong>S2ID (D1):</strong> Data is self-reported by municipalities, which introduces variability in accuracy due to local reporting capabilities and technical standards.</li>
+    <li><strong>INMET (D2):</strong> Rainfall data is collected from calibrated meteorological stations, ensuring a high degree of measurement reliability.</li>
+    <li><strong>IBGE (D3):</strong> Official demographic statistics from the 2018 census; syntactically and semantically consistent.</li>
+    <li><strong>MapBiomas Urban Expansion (D4):</strong> Derived from satellite imagery with validated classification processes. Urban land cover classes were extracted consistently.</li>
+    <li><strong>MapBiomas Deforestation (D5):</strong> Follows the same rigorous image classification process as D4, with a strong accuracy track record across Brazilian biomes.</li>
+  </ul>
+
+  <h3>2. Coherence</h3>
+  <ul>
+    <li>Municipality names and state identifiers were standardized to ensure interoperability between datasets.</li>
+    <li>Rainfall (INMET) and disaster records (S2ID) were temporally and spatially aligned and showed expected patterns in high-risk regions.</li>
+    <li>Urban expansion and forest loss trends (MapBiomas) complemented each other and reflected known environmental transitions.</li>
+  </ul>
+
+  <h3>3. Completeness</h3>
+  <ul>
+    <li><strong>S2ID:</strong> Underreporting is a known issue in certain municipalities. The dataset required cleaning to handle encoding issues and numeric inconsistencies.</li>
+    <li><strong>INMET:</strong> Complete for 2024, though metadata extraction for each weather station required manual merging.</li>
+    <li><strong>IBGE:</strong> Fully complete for 2018. No updated census values are available at the municipal level for more recent years.</li>
+    <li><strong>MapBiomas (D4 & D5):</strong> Complete and consistent at the national level, covering 1985–2022 with annual updates and no missing years.</li>
+  </ul>
+
+  <h3>4. Timeliness</h3>
+  <ul>
+    <li><strong>S2ID:</strong> Includes records up to 2024. Reporting delays may limit visibility of recent disaster impacts.</li>
+    <li><strong>INMET:</strong> Fully up-to-date with daily records through 2024.</li>
+    <li><strong>IBGE:</strong> Timeliness is limited by the date of the last census (2018), affecting population-based indicators.</li>
+    <li><strong>MapBiomas:</strong> Last available version is 2022 (Collection 9), with annual updates generally released mid-year.</li>
+  </ul>
+
+  <h3>Summary Table – Data Quality Dimensions</h3>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Dataset</th>
+        <th>Accuracy</th>
+        <th>Coherence</th>
+        <th>Completeness</th>
+        <th>Timeliness</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>D1</td>
+        <td>S2ID – Disaster Records</td>
+        <td>Medium</td>
+        <td>Medium</td>
+        <td>Medium</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>D2</td>
+        <td>INMET – Rainfall Data</td>
+        <td>High</td>
+        <td>High</td>
+        <td>High</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>D3</td>
+        <td>IBGE – Population Data (2018)</td>
+        <td>High</td>
+        <td>High</td>
+        <td>High</td>
+        <td>Low</td>
+      </tr>
+      <tr>
+        <td>D4</td>
+        <td>MapBiomas – Urban Expansion</td>
+        <td>High</td>
+        <td>High</td>
+        <td>High</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>D5</td>
+        <td>MapBiomas – Deforestation</td>
+        <td>High</td>
+        <td>High</td>
+        <td>High</td>
+        <td>Medium</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    All datasets were obtained through official Brazilian open data platforms and are used in accordance with the country's open data reuse policy. 
+    Any pre-processing performed preserved the datasets' original structure, and all transformations are documented to support reproducibility and transparency.
+  </p>
+
+  <!--Legal Analysis-->
+  <div class="analysis-box" id="legal-analysis">
+    <h2>Legal Analysis</h2>
+  
+    <p>
+      This legal analysis evaluates the permissibility and sustainability of using and publishing the datasets incorporated into this project. 
+      The assessment is grounded in Brazilian open data regulation, especially the 
+      <em>Política de Dados Abertos</em> (Decree No. 8.777/2016), the 
+      <em>Lei de Acesso à Informação (LAI)</em>, and reuse principles from the national platform 
+      <a href="https://dados.gov.br/" target="_blank">dados.gov.br</a>.
+    </p>
+  
+    <h3>1. Privacy Issues</h3>
+    <p>
+      All datasets used are classified as <strong>non-personal data</strong> under the 
+      <em>Lei Geral de Proteção de Dados (LGPD – Law No. 13.709/2018)</em>. None of the datasets (<a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a>, <a href="https://portal.inmet.gov.br/" target="_blank">INMET</a>, <a href="https://www.ibge.gov.br/" target="_blank">IBGE</a>, <a href="https://mapbiomas.org/" target="_blank">MapBiomas</a>) contain names, document numbers, 
+      biometric data, or any attribute that could identify individuals. S2ID includes aggregated figures on population affected by disasters, 
+      but these are fully anonymized and reported at the municipal level, presenting no risk of deanonymization.
+    </p>
+  
+    <h3>2. Intellectual Property Rights</h3>
+    <p>
+      All datasets originate from official Brazilian public agencies and are released under public or open terms:
+      <ul>
+        <li><strong><a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a></strong> – Ministério da Integração e do Desenvolvimento Regional</li>
+        <li><strong><a href="https://portal.inmet.gov.br/" target="_blank">INMET</a></strong> – Instituto Nacional de Meteorologia</li>
+        <li><strong><a href="https://www.ibge.gov.br/" target="_blank">IBGE</a></strong> – Instituto Brasileiro de Geografia e Estatística</li>
+        <li><strong><a href="https://mapbiomas.org/" target="_blank">MapBiomas</a></strong> – Scientific and civic coalition with open data policies</li>
+      </ul>
+      These sources do not impose restrictions on reuse, as long as proper attribution is ensured.
+    </p>
+  
+    <h3>3. Licenses</h3>
+    <p>
+      Datasets are licensed as follows:
+      <ul>
+        <li><strong>IBGE</strong>: CC BY 4.0</li>
+        <li><strong>MapBiomas</strong>: CC BY-SA 4.0</li>
+        <li><strong>S2ID and INMET</strong>: Public domain or institutional open terms</li>
+      </ul>
+      The final mashup datasets produced in this project are published under the <strong>CC BY 4.0</strong> license to ensure compatibility and openness.
+    </p>
+  
+    <h3>4. Access Limitations</h3>
+    <p>
+      All datasets are openly available without registration or access restrictions. No sensitive data is included. 
+      There are no diplomatic, military, or classified elements requiring special handling, in accordance with Art. 7 of the <em>Lei de Acesso à Informação</em>.
+    </p>
+  
+    <h3>5. Economic Conditions</h3>
+    <p>
+      All data was accessed free of charge from public repositories. The reuse complies with the principles of non-commercial restriction and 
+      respects the original platforms’ terms of service. No resale or licensing fees are involved.
+    </p>
+  
+    <h3>6. Temporal Aspects</h3>
+    <p>
+      Datasets vary in update frequency:
+      <ul>
+        <li><strong>INMET</strong>: Updated daily (2024 complete)</li>
+        <li><strong>S2ID</strong>: Updated by local governments, may have delays</li>
+        <li><strong>IBGE</strong>: Latest complete data from 2018 census</li>
+        <li><strong>MapBiomas</strong>: Updated annually, most recent version is from 2022</li>
+      </ul>
+      Documentation includes date references to avoid misinterpretation and ensure transparent temporal alignment.
+    </p>
+  
+    <h3>Final Note on Publication</h3>
+    <p>
+      This project adopts <strong>best practices in open data reuse</strong> as recommended by 
+      <a href="https://dados.gov.br/dados/conteudo/saiba-como-publicar-um-reuso" target="_blank">dados.gov.br</a>. 
+      This includes:
+      <ul>
+        <li>Attributing all original sources</li>
+        <li>Documenting transformations and derived variables</li>
+        <li>Maintaining transparency in all methodological choices</li>
+      </ul>
+      Furthermore, Brazil’s Open Data Policy aligns with international standards such as:
+      <ul>
+        <li>The <strong>International Open Data Charter</strong>, promoting open-by-default public data</li>
+        <li>The <strong>Open Government Partnership (OGP)</strong>, of which Brazil is a founding member</li>
+        <li>The <strong>UNESCO Open Science Recommendation</strong> and <strong>UN SDGs</strong>, emphasizing open data in disaster resilience</li>
+        <li>The <strong>Digital Public Goods Alliance</strong>, which recognizes open geospatial and environmental data as infrastructure</li>
+      </ul>
+      Publishing these integrated datasets under the <strong>CC BY 4.0 license</strong> ensures alignment with national and global open access principles.
+    </p>
+  </div>
+
+  <!--Ethical Analysis-->
+  <div id="ethical-analysis">
+    <h2>Ethical Analysis</h2>
+  
+    <h3>Data Ethics Approach</h3>
+    <p>
+      The ethical analysis of this project follows the principles of the 
+      <a href="https://dataethics.eu/data-ethics-principles/" target="_blank">Data Ethics EU Guidelines</a> 
+      and the 
+      <a href="https://theodi.org/article/the-data-ethics-canvas-2021" target="_blank">Open Data Institute’s Ethics Canvas</a>. 
+      Given the project’s focus on climate-related disasters (e.g., floods) and their impact on human populations and ecosystems, we ensured an ethical handling of public data from acquisition to interpretation.
+    </p>
+  
+    <p>
+      Our datasets include information aggregated at both the <strong>municipality</strong> and <strong>state (UF)</strong> levels, 
+      which required specific attention to <strong>regional equity</strong>, <strong>data granularity</strong>, and 
+      <strong>avoiding misinterpretation of territorial vulnerabilities</strong>.
+    </p>
+  
+    <h3>Data Ethics Principles</h3>
+    <ul>
+      <li><strong>Human-Centric Design:</strong> 
+        The analysis aims to understand how urbanization, forest loss, and climate dynamics contribute to disaster exposure—particularly among vulnerable communities. 
+        The use of demographic indicators and disaster impact data seeks to inform equitable urban and environmental policies centered on human resilience.
+      </li>
+  
+      <li><strong>Fairness and Equity:</strong> 
+        Aggregated indicators were used to avoid identifying individuals or small groups. In comparing municipalities and states, 
+        we were careful not to stigmatize certain regions with higher reported disasters or exposure. Instead, we emphasized structural and historical factors 
+        (e.g., infrastructure, land use) to explain disparities.
+      </li>
+  
+      <li><strong>Transparency:</strong> 
+        The data sources—S2ID, INMET, MapBiomas, and IBGE—are publicly accessible and cited throughout the project. 
+        All transformations, filtering methods, and indicators (e.g., urban growth, deforestation rate, precipitation volume) are documented in a reproducible workflow.
+      </li>
+  
+      <li><strong>Accountability:</strong> 
+        The project adheres to the 
+        <a href="https://dados.gov.br/dados/conteudo/politica-de-dados-abertos" target="_blank">Brazilian Open Data Policy</a>, 
+        and metadata were respected for each reused dataset. Data reuse policies were checked through the 
+        <a href="https://dados.gov.br/dados/conteudo/saiba-como-publicar-um-reuso" target="_blank">Reuso de Dados</a> guidelines. 
+        The team also ensured internal responsibility for every data-cleaning or aggregation operation.
+      </li>
+  
+      <li><strong>Privacy and Respect for Affected Populations:</strong> 
+        No microdata or personally identifiable information was used. When handling sensitive metrics 
+        (e.g., number of people affected or displaced), we ensured these were aggregated at the municipal or state level. 
+        Regional summaries are framed to inform risk reduction—not to judge the effectiveness of local responses.
+      </li>
+    </ul>
+  
+    <h3>Ethical Concerns and Mitigation</h3>
+    <ul>
+      <li><strong>Avoiding Sensationalism:</strong> 
+        While 2024 saw historic flooding in southern Brazil, the project refrains from spotlighting dramatic figures without proper context. 
+        Instead, it contextualizes flood patterns within national trends and regional vulnerabilities.
+      </li>
+  
+      <li><strong>Geographical Sensitivity:</strong> 
+        Because data are available at both <strong>municipal and state level</strong>, 
+        we took care to ensure that analyses do not reinforce existing inequalities between wealthier and poorer regions. 
+        Disparities in data reporting across states were acknowledged and mitigated with proportional indicators.
+      </li>
+  
+      <li><strong>Responsibility in Interpretation:</strong> 
+        Visualizations and analyses are explicitly marked as non-causal. 
+        Correlation between urbanization and flood frequency, for example, is interpreted as a signal—not proof—of systemic risk.
+      </li>
+  
+      <li><strong>Public Engagement and Literacy:</strong> 
+        The project includes simplified graphs and charts to communicate findings to broader audiences, 
+        particularly civil society, educators, and local administrators. Technical notebooks and a GitHub repository are 
+        provided for specialists who wish to audit or extend the methodology.
+      </li>
+    </ul>
+  
+    <h3>Final Note</h3>
+    <p>
+      The ethical safeguards adopted in this project reflect both 
+      <strong>Brazilian public data governance standards</strong> and 
+      <strong>international ethical frameworks</strong>. 
+      By treating both <strong>individual and regional vulnerabilities</strong> with respect and care, 
+      the project promotes the ethical reuse of public data to support resilience-building and informed policymaking.
+    </p>
+  </div>
+</body>
+</html>
