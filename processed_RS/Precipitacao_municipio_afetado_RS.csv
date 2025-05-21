@@ -1,6 +1,6 @@
-CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Desabrigados,Desalojados,Desaparecidos,Registro,Evento,Status,Outros Afetados
+Code,PrecipitaÃ§Ã£o 2024 (mm),MunicÃ­pio,UF,PopulaÃ§Ã£o,Mortos,Feridos,Enfermos,Desabrigados,Desalojados,Desaparecidos,Registro,Evento,Status,Outros Afetados
 4300406,1734.8,ALEGRETE,RS,77673,0,0,0,214,296,0,04/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,690
-4300406,1734.8,ALEGRETE,RS,77673,0,0,0,0,6,0,18/04/2024,Inundações,Registro,0
+4300406,1734.8,ALEGRETE,RS,77673,0,0,0,0,6,0,18/04/2024,InundaÃ§Ãµes,Registro,0
 4301602,1878,BAGE,RS,116792,0,0,0,0,0,0,14/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,116792
 4302105,2358.2,BENTO GONCALVES,RS,107341,0,0,0,0,0,0,24/06/2024,Tempestade Local/Convectiva - Granizo,Registro,65
 4302105,2358.2,BENTO GONCALVES,RS,107341,0,0,0,0,0,0,24/06/2024,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0
@@ -47,7 +47,7 @@ CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Des
 4310009,2259.4,IBIRUBA,RS,19312,0,0,0,0,100,0,08/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0
 4310009,2259.4,IBIRUBA,RS,19312,0,0,0,0,100,0,02/05/2024,Alagamentos,Registro,0
 4311007,2077.8,JAGUARAO,RS,27942,0,0,0,0,0,0,23/09/2024,Tempestade Local/Convectiva - Granizo,Reconhecido,12000
-4311007,2077.8,JAGUARAO,RS,27942,0,0,0,0,0,0,21/06/2024,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0
+4311007,2077.8,JAGUARAO,RS,27942,0,0,0,0,0,0,21/06/2024,Tempestade Local/Convectiva - Chuvas Intensas,NÃ£o reconhecido,0
 4311007,2077.8,JAGUARAO,RS,27942,0,0,0,0,0,0,06/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,27942
 4311007,2077.8,JAGUARAO,RS,27942,0,0,0,0,0,0,30/03/2024,Tempestade Local/Convectiva - Chuvas Intensas,Registro,64
 4311304,1864.2,LAGOA VERMELHA,RS,27529,0,0,0,7,5,0,14/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0
@@ -60,7 +60,7 @@ CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Des
 4314100,2397.6,PASSO FUNDO,RS,184869,0,0,0,0,0,0,11/10/2024,Tempestade Local/Convectiva - Granizo,Registro,2280
 4314100,2397.6,PASSO FUNDO,RS,184869,0,0,0,0,468,0,05/06/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0
 4119806,1903,PLANALTO,RS,10524,0,0,0,0,0,0,04/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,10524
-4314902,4087.6,PORTO ALEGRE,RS,1409939,0,0,0,0,0,0,25/12/2024,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0
+4314902,4087.6,PORTO ALEGRE,RS,1409939,0,0,0,0,0,0,25/12/2024,Tempestade Local/Convectiva - Chuvas Intensas,NÃ£o reconhecido,0
 4314902,4087.6,PORTO ALEGRE,RS,1409939,0,50,50,83,10000,0,06/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0
 4314902,4087.6,PORTO ALEGRE,RS,1409939,0,0,0,0,10000,0,19/01/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1399000
 4315305,1764.4,QUARAI,RS,23021,0,0,0,57,0,0,02/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,7000
@@ -68,7 +68,7 @@ CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Des
 4315602,1871.6,RIO GRANDE,RS,197253,0,0,0,43,150,0,27/09/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,10000
 4315602,1871.6,RIO GRANDE,RS,197253,0,0,0,0,0,0,09/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0
 4315602,1871.6,RIO GRANDE,RS,197253,0,0,0,0,10,0,28/03/2024,Tempestade Local/Convectiva - Vendaval,Reconhecido,197243
-4315701,2121.8,RIO PARDO,RS,37602,0,0,0,414,3088,0,02/05/2024,Inundações,Reconhecido,0
+4315701,2121.8,RIO PARDO,RS,37602,0,0,0,414,3088,0,02/05/2024,InundaÃ§Ãµes,Reconhecido,0
 4315701,2121.8,RIO PARDO,RS,37602,0,0,0,0,0,0,25/03/2024,Tempestade Local/Convectiva - Vendaval,Registro,0
 4316907,2204.2,SANTA MARIA,RS,261027,5,2,0,120,2000,0,02/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,269000
 4316907,2204.2,SANTA MARIA,RS,261027,0,2,0,0,0,0,21/03/2024,Tempestade Local/Convectiva - Chuvas Intensas,Registro,271728
@@ -79,8 +79,8 @@ CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Des
 4317301,1443.6,SANTA VITORIA DO PALMAR,RS,31002,0,0,0,0,0,0,27/03/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,31002
 4317400,2217.4,SANTIAGO,RS,49082,0,0,0,6,12,0,04/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,49280
 4317806,2320,SANTO AUGUSTO,RS,13970,0,0,0,0,0,0,03/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,13970
-4318002,1459,SAO BORJA,RS,61662,0,0,0,200,500,0,07/05/2024,Inundações,Reconhecido,1000
-4318309,1981.2,SAO GABRIEL,RS,60508,0,0,0,50,1850,0,30/04/2024,Inundações,Reconhecido,10000
+4318002,1459,SAO BORJA,RS,61662,0,0,0,200,500,0,07/05/2024,InundaÃ§Ãµes,Reconhecido,1000
+4318309,1981.2,SAO GABRIEL,RS,60508,0,0,0,50,1850,0,30/04/2024,InundaÃ§Ãµes,Reconhecido,10000
 4318622,669.6,SAO JOSE DOS AUSENTES,RS,3290,0,0,0,0,0,0,06/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,700
 4318903,1878.4,SAO LUIZ GONZAGA,RS,34558,0,1,0,0,400,0,16/06/2024,Tempestade Local/Convectiva - Vendaval,Reconhecido,15000
 4318903,1878.4,SAO LUIZ GONZAGA,RS,34558,0,0,0,0,0,0,30/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,34558
@@ -89,7 +89,7 @@ CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Des
 4319802,1736.8,SAO VICENTE DO SUL,RS,8440,0,0,0,0,0,0,25/04/2024,Tempestade Local/Convectiva - Chuvas Intensas,Registro,10
 4319802,1736.8,SAO VICENTE DO SUL,RS,8440,0,0,0,0,0,0,28/03/2024,Tempestade Local/Convectiva - Vendaval,Registro,0
 4319802,1736.8,SAO VICENTE DO SUL,RS,8440,0,0,0,0,0,0,18/01/2024,Tempestade Local/Convectiva - Vendaval,Reconhecido,8440
-4320404,2702.4,SERAFINA CORREA,RS,14243,2,3,0,0,76,0,11/06/2024,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,17993
+4320404,2702.4,SERAFINA CORREA,RS,14243,2,3,0,0,76,0,11/06/2024,Tempestade Local/Convectiva - Chuvas Intensas,NÃ£o reconhecido,17993
 4320404,2702.4,SERAFINA CORREA,RS,14243,2,3,0,106,466,1,02/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,16383
 4320800,2256.4,SOLEDADE,RS,30065,0,0,0,0,0,0,26/09/2024,Tempestade Local/Convectiva - Vendaval,Registro,84
 4320800,2256.4,SOLEDADE,RS,30065,0,0,0,15,25,0,03/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,30025
@@ -97,10 +97,10 @@ CD_MUN,Precipitação 2024 (mm),Município,UF,População,Mortos,Feridos,Enfermos,Des
 4321352,121.6,TAVARES,RS,5351,0,0,0,0,6,0,03/10/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,556
 4321352,121.6,TAVARES,RS,5351,0,0,0,0,0,0,09/05/2024,Alagamentos,Reconhecido,1800
 4321451,1981.8,TEUTONIA,RS,27265,0,0,0,21,250,3,01/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0
-4321451,1981.8,TEUTONIA,RS,27265,0,0,0,0,3,0,17/01/2024,Tempestade Local/Convectiva - Vendaval,Não reconhecido,84
+4321451,1981.8,TEUTONIA,RS,27265,0,0,0,0,3,0,17/01/2024,Tempestade Local/Convectiva - Vendaval,NÃ£o reconhecido,84
 4321600,1179,TRAMANDAI,RS,41655,0,0,0,0,0,0,14/10/2024,Tempestade Local/Convectiva - Vendaval,Registro,6
 4322202,2239,TUPANCIRETA,RS,22286,0,0,0,1,46,0,04/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,19958
-4322400,1588,URUGUAIANA,RS,125507,0,0,0,297,1836,0,07/05/2024,Inundações,Reconhecido,1200
+4322400,1588,URUGUAIANA,RS,125507,0,0,0,297,1836,0,07/05/2024,InundaÃ§Ãµes,Reconhecido,1200
 4322400,1588,URUGUAIANA,RS,125507,0,0,0,0,0,0,16/03/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,3360
 4322509,2175,VACARIA,RS,61345,0,0,0,0,0,0,13/09/2024,Tempestade Local/Convectiva - Granizo,Registro,0
 4322509,2175,VACARIA,RS,61345,0,0,0,0,0,0,07/05/2024,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,64817
