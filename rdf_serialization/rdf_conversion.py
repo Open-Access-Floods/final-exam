@@ -127,7 +127,6 @@ for data in datasets_list:
     if data.get("creator_uri"):
         creator_uri = URIRef(data["creator_uri"])
         g.add((dataset_uri, DCT.creator, creator_uri))
-        # Add FOAF Person/Organization for creator
         g.add((creator_uri, RDF.type, FOAF_NS.Agent))
         if data.get("creator_name"):
             g.add((creator_uri, FOAF_NS.name, Literal(data["creator_name"])))
@@ -184,7 +183,7 @@ for data in datasets_list:
             else:
                 g.add((dataset_uri, DCAT.keyword, Literal(keyword)))
 
-    # Subject (using SKOS Concept)
+    # Subject
     if data.get("subject"):
         subject_uri = URIRef(data["subject"]["uri"])
         g.add((dataset_uri, DCT.subject, subject_uri))
