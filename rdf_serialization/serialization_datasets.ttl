@@ -1,0 +1,79 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.58053/MapBiomas/2W2Z5M> a dcat:Dataset ;
+    dct:creator <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:description "Area data (ha) of land cover class for states and municipalities from 1985 to 2023, based on MapBiomas Brazil Collection 9"@pt ;
+    dct:issued "2023-12-31"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-01-21"^^xsd:date ;
+    dct:publisher <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:subject <https://dados.gov.br/dados/temas/urbanismo> ;
+    dct:title "Coverage and transitions statistics by states and municipalities - MapBiomas Brasil Collection 9"@pt ;
+    dcat:keyword "Brazilian municipalities"@pt,
+        "Brazilian states"@pt,
+        "Land Cover"@pt,
+        "Statistics"@pt,
+        "Transitions"@pt .
+
+<https://doi.org/10.58053/MapBiomas/7STHCP> a dcat:Dataset ;
+    dct:creator <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:description "Area data (ha) of deforestation and secondary vegetation by land cover class for municipality and state segments from 1985 to 2023"@pt ;
+    dct:issued "2023-12-31"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-01-21"^^xsd:date ;
+    dct:publisher <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:subject <https://dados.gov.br/dados/temas/meio-ambiente> ;
+    dct:title "Deforestation and secondary vegetation statistics by municipalities and states - MapBiomas Brasil Collection 9"@pt ;
+    dcat:keyword "Brazilian municipalities"@pt,
+        "Brazilian states"@pt,
+        "Deforestation"@pt,
+        "Secondary Vegetation"@pt,
+        "Statistics"@pt .
+
+<https://portaldatransparencia.gov.br/graficos/incorporar/acao-especifica/evolucao-historica/linhas?codigoAcao=22BO> a dcat:Dataset ;
+    dct:creator <https://www.gov.br/midr> ;
+    dct:description "Dados consolidados de execução orçamentária da Ação 22BO entre os anos de 2014 e 2025, extraídos do Portal da Transparência. Inclui valores empenhados, liquidados e pagos."@pt ;
+    dct:issued "2014-01-01"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal> ;
+    dct:modified "2025-01-01"^^xsd:date ;
+    dct:publisher <https://www.gov.br/cgu> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:subject <https://dados.gov.br/dados/temas/defesa-nacional> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2025-12-31"^^xsd:date ;
+            dct:startDate "2014-01-01"^^xsd:date ] ;
+    dct:title "Evolução histórica dos gastos – Ação 22BO (Ações de Proteção e Defesa Civil)"@pt ;
+    dcat:keyword "ações emergenciais"@pt,
+        "defesa civil"@pt,
+        "desastres naturais"@pt,
+        "gastos públicos"@pt,
+        "orçamento"@pt,
+        "transparência pública"@pt .
+
+<https://dados.gov.br/dados/temas/defesa-nacional> a skos:Concept ;
+    skos:prefLabel "Defesa Civil"@pt .
+
+<https://dados.gov.br/dados/temas/meio-ambiente> a skos:Concept ;
+    skos:prefLabel "Environmental Science"@en .
+
+<https://dados.gov.br/dados/temas/urbanismo> a skos:Concept ;
+    skos:prefLabel "Urban Planning"@en .
+
+<https://www.gov.br/cgu> a foaf:Agent ;
+    foaf:name "Controladoria-Geral da União" .
+
+<https://www.gov.br/midr> a foaf:Agent ;
+    foaf:name "Ministério da Integração e do Desenvolvimento Regional" .
+
+<https://data.mapbiomas.org/dataverse/brazil> a foaf:Agent ;
+    foaf:name "MapBiomas" .
+
