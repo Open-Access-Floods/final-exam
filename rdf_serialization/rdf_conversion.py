@@ -34,8 +34,8 @@ datasets_list = [
             "ações emergenciais", "desastres naturais", "transparência pública"
         ],
         "subject": { 
-            "uri": "https://dados.gov.br/dados/temas/defesa-nacional",
-            "label": "Defesa Civil"
+            "uri": " http://publications.europa.eu/resource/authority/subject-matter/PCIV",
+            "label": "Civil Protection"
         }
     },
     # D5_Deforestation dataset, but english content, mapped to pt language)
@@ -55,7 +55,7 @@ datasets_list = [
         "license_uri": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["Deforestation", "Secondary Vegetation", "Statistics", "Brazilian states", "Brazilian municipalities"],
         "subject": { 
-            "uri": "https://dados.gov.br/dados/temas/meio-ambiente",
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
             "label": "Environmental Science"
         }
     },
@@ -76,8 +76,8 @@ datasets_list = [
         "license_uri": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["Land Cover", "Transitions", "Statistics", "Brazilian states", "Brazilian municipalities"],
         "subject": {
-            "uri": "https://dados.gov.br/dados/temas/urbanismo",
-            "label": "Urban Planning"
+            "uri": " http://publications.europa.eu/resource/authority/data-theme/SOCI",
+            "label": "Population and Society"
         }
     }
 ]
