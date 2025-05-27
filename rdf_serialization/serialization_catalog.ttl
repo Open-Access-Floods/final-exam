@@ -1,0 +1,48 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix brasil: <https://github.com/Open-Access-Floods/final-exam/tree/main/processed_RS#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcat3: <http://www.w3.org/ns/dcat3#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+brasil: a dcat:Catalog ;
+    dct:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+    dct:description "Catalog containing the datasets for the Brazil in Data: Disasters, Environment, and Society project"@en ;
+    dct:issued "2025-01-01"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-27"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/final-exam/> ;
+    dct:title "Brazil in Data: Disasters, Environment, and Society"@en ;
+    adms:identifier "BRASIL_Catalog"^^xsd:string ;
+    dcat:language <http://lexvo.org/id/iso639-1/en> ;
+    dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ;
+    dcat3:dataset "D1_Disasters_and_Impact_Data",
+        "D2_Rainfall",
+        "D3_Population_Risk",
+        "D4_Urban_Expansion",
+        "D5_Deforestation",
+        "D6_Civil_Defense",
+        "MD1_Affected_Population" ;
+    prov:wasAttributedTo <https://github.com/Open-Access-Floods/final-exam/> .
+
+<http://publications.europa.eu/resource/authority/data-theme> a skos:ConceptScheme ;
+    dct:description "Data theme is a controlled vocabulary that lists concepts associated with themes used for dataset classification. Its main scope is to support activities associated with the Data Catalog Vocabulary application profile (DCAT-AP).  The concepts have been defined by the working group in charge of the revision of the DCAT-AP. Data theme is maintained by the Publications Office of the European Union and disseminated on the EU Vocabularies website."@en ;
+    dct:title " Publications Office of the European Union Data Themes"@en .
+
+<https://creativecommons.org/licenses/by/4.0/> a cc:License ;
+    rdfs:label "Creative Commons Attribution 4.0 International"@en ;
+    cc:legalcode <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice .
+
+<https://github.com/Open-Access-Floods/final-exam/> a foaf:Organization ;
+    foaf:name "Open Access Project"@en .
+
