@@ -322,17 +322,26 @@ for data in datasets_list:
     if data.get("spatial_coverage_uri"):
         g.add((dataset_uri, DCT.spatial, URIRef(data["spatial_coverage_uri"])))
 
-    # Distribution
+    # --- Distribution ---
     if "distribution" in data:
-        distribution_uri = URIRef(f"{dataset_uri}/distribution")
-        g.add((dataset_uri, DCAT.distribution, distribution_uri))
-        g.add((distribution_uri, RDF.type, DCAT.Distribution))
-        g.add((distribution_uri, DCAT.mediaType, Literal(data["distribution"])))
-        g.add((distribution_uri, DCAT.accessURL, URIRef(data["distribution"]["access_url"])))
-        g.add((distribution_uri, DCAT["format"], Literal(data["distribution"]["format"])))
-        g.add((distribution_uri, DCAT.byteSize, Literal(data["distribution"]["byte_size"], datatype=XSD_NS.integer)))
-        # Add a link to the dataset URI
-        g.add((distribution_uri, DCAT.downloadURL, dataset_uri))
+        dist_data = data["distribution"]
+        distribution_bnode = BNode() # Use a BNode for the specific distribution instance
+        g.add((dataset_uri, DCAT.distribution, distribution_bnode))
+        g.add((distribution_bnode, RDF.type, DCAT.Distribution))
+
+        if dist_data.get("access_url"):
+            g.add((distribution_bnode, DCAT.accessURL, URIRef(dist_data["access_url"])))
+        if dist_data.get("media_type"):
+            g.add((distribution_bnode, DCAT.mediaType, Literal(dist_data["media_type"])))
+        if dist_data.get("format"):
+            # Use DCT.format for file format description
+            g.add((distribution_bnode, DCT["format"], Literal(dist_data["format"])))
+        if dist_data.get("byte_size"):
+            # Use DCAT.byteSize for the size of the distribution in bytes
+            g.add((distribution_bnode, DCAT.byteSize, Literal(dist_data["byte_size"], datatype=XSD_NS.integer)))
+        if dist_data.get("access_rights_uri"):
+            # Use DCT.accessRights for the access rights of the distribution
+            g.add((distribution_bnode, DCT.accessRights, URIRef(dist_data["access_rights_uri"])))
 
     # License
     if data.get("license_uri"):
