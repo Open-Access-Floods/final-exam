@@ -1,44 +1,118 @@
+@prefix brasil: <https://github.com/Open-Access-Floods/final-exam/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://doi.org/10.58053/MapBiomas/2W2Z5M> a dcat:Dataset ;
-    dct:creator <https://data.mapbiomas.org/dataverse/brazil> ;
-    dct:description "Area data (ha) of land cover class for states and municipalities from 1985 to 2023, based on MapBiomas Brazil Collection 9"@pt ;
-    dct:issued "2023-12-31"^^xsd:date ;
-    dct:language <http://lexvo.org/id/iso639-1/pt> ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:modified "2025-01-21"^^xsd:date ;
-    dct:publisher <https://data.mapbiomas.org/dataverse/brazil> ;
-    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
-    dct:subject <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    dct:title "Coverage and transitions statistics by states and municipalities - MapBiomas Brasil Collection 9"@pt ;
-    dcat:keyword "Brazilian municipalities"@pt,
-        "Brazilian states"@pt,
-        "Land Cover"@pt,
-        "Statistics"@pt,
-        "Transitions"@pt .
+brasil:catalog dcat:dataset brasil:D1_Disasters_and_Impact_Data,
+        brasil:D2_Rainfall,
+        brasil:D3_Population_Risk,
+        brasil:D4_Urban_Expansion,
+        brasil:D5_Deforestation,
+        brasil:D6_Civil_Defense,
+        brasil:MD1_Affected_Population .
 
-<https://doi.org/10.58053/MapBiomas/7STHCP> a dcat:Dataset ;
-    dct:creator <https://data.mapbiomas.org/dataverse/brazil> ;
-    dct:description "Area data (ha) of deforestation and secondary vegetation by land cover class for municipality and state segments from 1985 to 2023"@pt ;
-    dct:issued "2023-12-31"^^xsd:date ;
+<http://publications.europa.eu/resource/authority/subject-matter/PCIV> a skos:Concept ;
+    skos:prefLabel "Civil Protection"@pt .
+
+<https://bdmep.inmet.gov.br/> a foaf:Agent ;
+    foaf:name "Instituto Nacional de Meteorologia (INMET)" .
+
+<https://github.com/Open-Access-Floods/final-exam/#project_team> a foaf:Agent ;
+    foaf:name "Open Access Floods Project Team" .
+
+<https://github.com/Open-Access-Floods/final-exam/D1_Disasters_and_Impact_Data/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://s2id.mi.gov.br/paginas/relatorios/D1_Disasters_and_Impact_Data.html> ;
+    dcat:byteSize 15000 ;
+    dcat:downloadURL brasil:D1_Disasters_and_Impact_Data ;
+    dcat:format "HTML" ;
+    dcat:mediaType "{'access_url': 'https://s2id.mi.gov.br/paginas/relatorios/D1_Disasters_and_Impact_Data.html', 'media_type': 'text/html', 'format': 'HTML', 'byte_size': 15000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://github.com/Open-Access-Floods/final-exam/D2_Rainfall/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://portal.inmet.gov.br/dadoshistoricos/D2_Rainfall.csv> ;
+    dcat:byteSize 250000 ;
+    dcat:downloadURL brasil:D2_Rainfall ;
+    dcat:format "CSV" ;
+    dcat:mediaType "{'access_url': 'https://portal.inmet.gov.br/dadoshistoricos/D2_Rainfall.csv', 'media_type': 'text/csv', 'format': 'CSV', 'byte_size': 250000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://github.com/Open-Access-Floods/final-exam/D3_Population_Risk/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/21538-populacao-em-areas-de-risco-no-brasil.html> ;
+    dcat:byteSize 30000 ;
+    dcat:downloadURL brasil:D3_Population_Risk ;
+    dcat:format "HTML" ;
+    dcat:mediaType "{'access_url': 'https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/21538-populacao-em-areas-de-risco-no-brasil.html', 'media_type': 'text/html', 'format': 'HTML', 'byte_size': 30000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://github.com/Open-Access-Floods/final-exam/D4_Urban_Expansion/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://doi.org/10.58053/MapBiomas/2W2Z5M> ;
+    dcat:byteSize 50000 ;
+    dcat:downloadURL brasil:D4_Urban_Expansion ;
+    dcat:format "HTML" ;
+    dcat:mediaType "{'access_url': 'https://doi.org/10.58053/MapBiomas/2W2Z5M', 'media_type': 'text/html', 'format': 'HTML', 'byte_size': 50000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://github.com/Open-Access-Floods/final-exam/D5_Deforestation/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://doi.org/10.58053/MapBiomas/7STHCP> ;
+    dcat:byteSize 70000 ;
+    dcat:downloadURL brasil:D5_Deforestation ;
+    dcat:format "HTML" ;
+    dcat:mediaType "{'access_url': 'https://doi.org/10.58053/MapBiomas/7STHCP', 'media_type': 'text/html', 'format': 'HTML', 'byte_size': 70000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://github.com/Open-Access-Floods/final-exam/D6_Civil_Defense/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://portaldatransparencia.gov.br/graficos/incorporar/acao-especifica/evolucao-historica/linhas?codigoAcao=22BO> ;
+    dcat:byteSize 40000 ;
+    dcat:downloadURL brasil:D6_Civil_Defense ;
+    dcat:format "HTML" ;
+    dcat:mediaType "{'access_url': 'https://portaldatransparencia.gov.br/graficos/incorporar/acao-especifica/evolucao-historica/linhas?codigoAcao=22BO', 'media_type': 'text/html', 'format': 'HTML', 'byte_size': 40000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://github.com/Open-Access-Floods/final-exam/MD1_Affected_Population/distribution> a dcat:Distribution ;
+    dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD1_Affected_Population.csv> ;
+    dcat:byteSize 8000 ;
+    dcat:downloadURL brasil:MD1_Affected_Population ;
+    dcat:format "CSV" ;
+    dcat:mediaType "{'access_url': 'https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD1_Affected_Population.csv', 'media_type': 'text/csv', 'format': 'CSV', 'byte_size': 8000, 'access_rights_uri': 'http://publications.europa.eu/resource/authority/access-right/PUBLIC'}" .
+
+<https://portal.inmet.gov.br/> a foaf:Agent ;
+    foaf:name "Intituto Nacional de Meteorologia (INMET)" .
+
+<https://www.gov.br/cemaden/pt-br> a foaf:Agent ;
+    foaf:name "Centro Nacional de Monitoramento e Alertas de Desastres Naturais (CEMADEN)" .
+
+<https://www.gov.br/cgu> a foaf:Agent ;
+    foaf:name "Controladoria-Geral da União" .
+
+<https://www.gov.br/midr> a foaf:Agent ;
+    foaf:name "Ministério da Integração e do Desenvolvimento Regional" .
+
+<https://www.ibge.gov.br/> a foaf:Agent ;
+    foaf:name "Instituto Brasileiro de Geografia e Estatística (IBGE)" .
+
+brasil:D1_Disasters_and_Impact_Data a dcat:Dataset ;
+    dct:creator <https://s2id.mi.gov.br/> ;
+    dct:description "Os Relatórios apresentam diversos dados relacionados aos registros de danos e prejuízos, reconhecimento federal de situação de emergência, ações de resposta e obras de reconstrução realizadas pela SEDEC, de forma a apoiar o trabalho dos gestores públicos e informar a sociedade em geral."@pt ;
+    dct:issued "2014-01-31"^^xsd:date ;
     dct:language <http://lexvo.org/id/iso639-1/pt> ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:modified "2025-01-21"^^xsd:date ;
-    dct:publisher <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:license <https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal> ;
+    dct:modified "2025-05-27"^^xsd:date ;
+    dct:publisher <https://s2id.mi.gov.br/> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
     dct:subject <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
-    dct:title "Deforestation and secondary vegetation statistics by municipalities and states - MapBiomas Brasil Collection 9"@pt ;
-    dcat:keyword "Brazilian municipalities"@pt,
-        "Brazilian states"@pt,
-        "Deforestation"@pt,
-        "Secondary Vegetation"@pt,
-        "Statistics"@pt .
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2024-12-31"^^xsd:date ;
+            dct:startDate "2024-01-01"^^xsd:date ] ;
+    dct:title "['12300 - Alagamentos', '11321 - Deslizamentos', '12200 - Enxurradas', '12100 - Inundações', '13214 - Tempestade Local/Convectiva - Chuvas Intensas', '13213 - Tempestade Local/Convectiva - Granizo', '13212 - Tempestade Local/Convectiva - Tempestade de Raios', '13211 - Tempestade Local/Convectiva - Tornados', '13215 - Tempestade Local/Convectiva - Vendaval']"@pt ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/D1_Disasters_and_Impact_Data/distribution> ;
+    dcat:keyword "Alagamentos"@pt,
+        "Chuvas Intensas"@pt,
+        "Deslizamentos"@pt,
+        "Enxurradas"@pt,
+        "Granizo"@pt,
+        "Inundações"@pt,
+        "Tempestade"@pt,
+        "Tempestade de Raios"@pt,
+        "Tornados"@pt,
+        "Vendaval"@pt .
 
-<https://portal.inmet.gov.br/dadoshistoricos> a dcat:Dataset ;
+brasil:D2_Rainfall a dcat:Dataset ;
     dct:creator <https://portal.inmet.gov.br/> ;
     dct:description "Dados anuais de precipitação (mm) para estações meteorológicas do Brasil, abrangendo o período de 2002 a 2023."@pt ;
     dct:issued "2002-12-31"^^xsd:date ;
@@ -52,20 +126,76 @@
             dct:endDate "2024-12-31"^^xsd:date ;
             dct:startDate "2024-01-01"^^xsd:date ] ;
     dct:title "Dados Historicos Anuais de Precipitação"@pt ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/D2_Rainfall/distribution> ;
     dcat:keyword "Alagamentos"@pt,
-        "Bazilian Municipalities"@pt,
+        "Brazilian Municipalities"@pt,
+        "Chuvas Intensas"@pt,
         "Deslizamentos"@pt,
         "Enxurradas"@pt,
         "Granizo"@pt,
         "Inundações"@pt,
         "Precipitation"@pt,
         "Rainfall"@pt,
+        "Tempestade"@pt,
         "Tempestade de Raios"@pt,
-        "TempestadeChuvas Intensas"@pt,
         "Tornados"@pt,
         "Vendaval"@pt .
 
-<https://portaldatransparencia.gov.br/graficos/incorporar/acao-especifica/evolucao-historica/linhas?codigoAcao=22BO> a dcat:Dataset ;
+brasil:D3_Population_Risk a dcat:Dataset ;
+    dct:creator <https://www.gov.br/cemaden/pt-br> ;
+    dct:description "Os dados divulgados na publicação são do ano de 2010, data do último Censo Demográfico realizado pelo IBGE, mas a metodologia foi desenvolvida para ser replicada a partir dos dados do Censo Demográfico de 2020, garantindo o baixo custo de execução e otimização de recursos públicos. Além disso, será possível acompanhar a evolução temporal das características da população exposta ao risco de desastres. Base Territorial Estatística de Áreas de Risco - BATER"@pt ;
+    dct:issued "2010-12-31"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal> ;
+    dct:modified "2018-01-21"^^xsd:date ;
+    dct:publisher <https://www.ibge.gov.br/> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:subject <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:title "População em áreas de risco no Brasil"@pt ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/D3_Population_Risk/distribution> ;
+    dcat:keyword "Brasil"@pt,
+        "Censo Demográfico"@pt,
+        "Desastres Naturais"@pt,
+        "População"@pt,
+        "Áreas de Risco"@pt .
+
+brasil:D4_Urban_Expansion a dcat:Dataset ;
+    dct:creator <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:description "Area data (ha) of land cover class for states and municipalities from 1985 to 2023, based on MapBiomas Brazil Collection 9"@pt ;
+    dct:issued "2023-12-31"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-01-21"^^xsd:date ;
+    dct:publisher <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:subject <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:title "Coverage and transitions statistics by states and municipalities - MapBiomas Brasil Collection 9"@pt ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/D4_Urban_Expansion/distribution> ;
+    dcat:keyword "Brazilian municipalities"@pt,
+        "Brazilian states"@pt,
+        "Land Cover"@pt,
+        "Statistics"@pt,
+        "Transitions"@pt .
+
+brasil:D5_Deforestation a dcat:Dataset ;
+    dct:creator <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:description "Area data (ha) of deforestation and secondary vegetation by land cover class for municipality and state segments from 1985 to 2023"@pt ;
+    dct:issued "2023-12-31"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-01-21"^^xsd:date ;
+    dct:publisher <https://data.mapbiomas.org/dataverse/brazil> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:subject <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Deforestation and secondary vegetation statistics by municipalities and states - MapBiomas Brasil Collection 9"@pt ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/D5_Deforestation/distribution> ;
+    dcat:keyword "Brazilian municipalities"@pt,
+        "Brazilian states"@pt,
+        "Deforestation"@pt,
+        "Secondary Vegetation"@pt,
+        "Statistics"@pt .
+
+brasil:D6_Civil_Defense a dcat:Dataset ;
     dct:creator <https://www.gov.br/midr> ;
     dct:description "Dados consolidados de execução orçamentária da Ação 22BO entre os anos de 2014 e 2025, extraídos do Portal da Transparência. Inclui valores empenhados, liquidados e pagos."@pt ;
     dct:issued "2014-01-01"^^xsd:date ;
@@ -79,6 +209,7 @@
             dct:endDate "2025-12-31"^^xsd:date ;
             dct:startDate "2014-01-01"^^xsd:date ] ;
     dct:title "Evolução histórica dos gastos – Ação 22BO (Ações de Proteção e Defesa Civil)"@pt ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/D6_Civil_Defense/distribution> ;
     dcat:keyword "ações emergenciais"@pt,
         "defesa civil"@pt,
         "desastres naturais"@pt,
@@ -86,77 +217,35 @@
         "orçamento"@pt,
         "transparência pública"@pt .
 
-<http://publications.europa.eu/resource/authority/subject-matter/PCIV> a skos:Concept ;
-    skos:prefLabel "Civil Protection"@pt .
-
-<https://bdmep.inmet.gov.br/> a foaf:Agent ;
-    foaf:name "Instituto Nacional de Meteorologia (INMET)" .
-
-<https://portal.inmet.gov.br/> a foaf:Agent ;
-    foaf:name "Intituto Nacional de Meteorologia (INMET)" .
-
-<https://s2id.mi.gov.br/> a foaf:Agent ;
-    foaf:name "Relatório Gerencial: Danos informados. Sistema Integrado de Informações de Desastres (S2ID)" .
-
-<https://s2id.mi.gov.br/paginas/relatorios/> a dcat:Dataset,
-        foaf:Agent ;
-    dct:creator <https://s2id.mi.gov.br/> ;
-    dct:description "Os Relatórios apresentam diversos dados relacionados aos registros de danos e prejuízos, reconhecimento federal de situação de emergência, ações de resposta e obras de reconstrução realizadas pela SEDEC, de forma a apoiar o trabalho dos gestores públicos e informar a sociedade em geral."@pt ;
-    dct:issued "2014-01-31"^^xsd:date ;
-    dct:language <http://lexvo.org/id/iso639-1/pt> ;
-    dct:license <https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal> ;
+brasil:MD1_Affected_Population a dcat:Dataset ;
+    dct:description "This dataset provides information on the number of people affected by various types of disasters in Brazil, including floods, landslides, and storms. The data is aggregated by disaster type and year. (EXAMPLE)"@en ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:modified "2025-05-27"^^xsd:date ;
-    dct:publisher <https://s2id.mi.gov.br/paginas/relatorios/> ;
-    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
-    dct:subject <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
-    dct:temporal [ a dct:PeriodOfTime ;
-            dct:endDate "2024-12-31"^^xsd:date ;
-            dct:startDate "2024-01-01"^^xsd:date ] ;
-    dct:title "['12300 - Alagamentos', '11321 - Deslizamentos', '12200 - Enxurradas', '12100 - Inundações', '13214 - Tempestade Local/Convectiva - Chuvas Intensas', '13213 - Tempestade Local/Convectiva - Granizo', '13212 - Tempestade Local/Convectiva - Tempestade de Raios', '13211 - Tempestade Local/Convectiva - Tornados', '13215 - Tempestade Local/Convectiva - Vendaval']"@pt ;
-    dcat:keyword "Alagamentos"@pt,
-        "Deslizamentos"@pt,
-        "Enxurradas"@pt,
-        "Granizo"@pt,
-        "Inundações"@pt,
-        "Tempestade de Raios"@pt,
-        "TempestadeChuvas Intensas"@pt,
-        "Tornados"@pt,
-        "Vendaval"@pt ;
-    foaf:name "Relatório Gerencial: Danos informados. Sistema Integrado de Informações de Desastres (S2ID)" .
-
-<https://www.gov.br/cemaden/pt-br> a foaf:Agent ;
-    foaf:name "Centro Nacional de Monitoramento e Alertas de Desastres Naturais (CEMADEN)" .
-
-<https://www.gov.br/cgu> a foaf:Agent ;
-    foaf:name "Controladoria-Geral da União" .
-
-<https://www.gov.br/midr> a foaf:Agent ;
-    foaf:name "Ministério da Integração e do Desenvolvimento Regional" .
-
-<https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/21538-populacao-em-areas-de-risco-no-brasil.html?edicao=21537&t=sobre> a dcat:Dataset,
-        foaf:Agent ;
-    dct:creator <https://www.gov.br/cemaden/pt-br> ;
-    dct:description "Os dados divulgados na publicação são do ano de 2010, data do último Censo Demográfico realizado pelo IBGE, mas a metodologia foi desenvolvida para ser replicada a partir dos dados do Censo Demográfico de 2020, garantindo o baixo custo de execução e otimização de recursos públicos. Além disso, será possível acompanhar a evolução temporal das características da população exposta ao risco de desastres. Base Territorial Estatística de Áreas de Risco - BATER"@pt ;
-    dct:issued "2010-12-31"^^xsd:date ;
-    dct:language <http://lexvo.org/id/iso639-1/pt> ;
-    dct:license <https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal> ;
-    dct:modified "2018-01-21"^^xsd:date ;
-    dct:publisher <https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/21538-populacao-em-areas-de-risco-no-brasil.html?edicao=21537&t=sobre> ;
+    dct:publisher <https://github.com/Open-Access-Floods/final-exam/#project_team> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
     dct:subject <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    dct:title "População em áreas de risco no Brasil"@pt ;
-    dcat:keyword "Brasil"@pt,
-        "Censo Demográfico"@pt,
-        "Desastres Naturais"@pt,
-        "População"@pt,
-        "Áreas de Risco"@pt ;
-    foaf:name "Instituto Brasileiro de Geografia e Estatística (IBGE) - Coordenação de Geografia" .
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2024-12-31"^^xsd:date ;
+            dct:startDate "2000-01-01"^^xsd:date ] ;
+    dct:title "Affected Population by Disaster Type in Brazil"@en ;
+    dcat:distribution <https://github.com/Open-Access-Floods/final-exam/MD1_Affected_Population/distribution> ;
+    dcat:keyword "Affected population"@en,
+        "Brazil"@en,
+        "Disaster type"@en,
+        "Floods"@en,
+        "Landslides"@en,
+        "Storms"@en .
 
-<http://publications.europa.eu/resource/authority/data-theme/SOCI> a skos:Concept ;
-    skos:prefLabel "Population and Society"@en .
+<https://s2id.mi.gov.br/> a foaf:Agent ;
+    foaf:name "Sistema Integrado de Informações de Desastres (S2ID)" .
 
 <http://publications.europa.eu/resource/authority/data-theme/ENVI> a skos:Concept ;
     skos:prefLabel "Environment"@en .
+
+<http://publications.europa.eu/resource/authority/data-theme/SOCI> a skos:Concept ;
+    skos:prefLabel "Population and Society"@en .
 
 <https://data.mapbiomas.org/dataverse/brazil> a foaf:Agent ;
     foaf:name "MapBiomas" .
