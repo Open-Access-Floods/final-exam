@@ -1,5 +1,5 @@
 from rdflib import Graph, Literal, Namespace, URIRef, BNode
-from rdflib.namespace import RDF, XSD, DCTERMS as DCT
+from rdflib.namespace import RDF, DCTERMS as DCT
 import os
 
 # Definir namespaces
@@ -39,7 +39,7 @@ datasets_list = [
         },
         "license_uri": "https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal",
         "keywords": ["Alagamentos", "Deslizamentos", "Enxurradas", "Inundações", "Tempestade", "Chuvas Intensas", "Granizo","Tempestade de Raios", "Tornados", "Vendaval"],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
             "label": "Environment"
         }
@@ -71,7 +71,7 @@ datasets_list = [
         },
         "license_uri": "https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal",
         "keywords": ["Alagamentos", "Deslizamentos", "Enxurradas", "Inundações", "Tempestade", "Chuvas Intensas", "Granizo","Tempestade de Raios", "Tornados", "Vendaval", "Brazilian Municipalities", "Rainfall", "Precipitation"],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
             "label": "Environment"
         }
@@ -99,7 +99,7 @@ datasets_list = [
         },
         "license_uri": "https://dados.gov.br/politica-de-dados-abertos-da-administracao-publica-federal",
         "keywords": ["Censo Demográfico", "População", "Áreas de Risco", "Desastres Naturais", "Brasil" ],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
             "label": "Population and Society"
         }
@@ -127,7 +127,7 @@ datasets_list = [
         },
         "license_uri": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["Land Cover", "Transitions", "Statistics", "Brazilian states", "Brazilian municipalities"],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
             "label": "Population and Society"
         }
@@ -155,7 +155,7 @@ datasets_list = [
         },
         "license_uri": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["Deforestation", "Secondary Vegetation", "Statistics", "Brazilian states", "Brazilian municipalities"],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
             "label": "Environment"
         }
@@ -189,7 +189,7 @@ datasets_list = [
             "gastos públicos", "orçamento", "defesa civil",
             "ações emergenciais", "desastres naturais", "transparência pública"
         ],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/subject-matter/PCIV",
             "label": "Civil Protection"
         }
@@ -219,7 +219,7 @@ datasets_list = [
         "keywords": [
             "Affected population", "Disaster type", "Brazil", "Floods", "Landslides", "Storms"
         ],
-        "subject": {
+        "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/SOCI", # Changed to SOCIETY theme
             "label": "Population and Society"
         },
@@ -322,7 +322,7 @@ for data in datasets_list:
     if data.get("spatial_coverage_uri"):
         g.add((dataset_uri, DCT.spatial, URIRef(data["spatial_coverage_uri"])))
 
-    # --- Distribution ---
+    # Distribution
     if "distribution" in data:
         dist_data = data["distribution"]
         distribution_bnode = BNode() # Use a BNode for the specific distribution instance
@@ -357,14 +357,14 @@ for data in datasets_list:
                 g.add((dataset_uri, DCAT.keyword, Literal(keyword)))
 
     # Subject
-    if data.get("subject"):
-        subject_uri = URIRef(data["subject"]["uri"])
-        g.add((dataset_uri, DCT.subject, subject_uri))
+    if data.get("theme"):
+        subject_uri = URIRef(data["theme"]["uri"])
+        g.add((dataset_uri, DCT.theme, subject_uri))
         g.add((subject_uri, RDF.type, SKOS.Concept))
         if data["id"] == "D6_Civil_Defense":
-            g.add((subject_uri, SKOS.prefLabel, Literal(data["subject"]["label"], lang="pt")))
+            g.add((subject_uri, SKOS.prefLabel, Literal(data["theme"]["label"], lang="pt")))
         else:
-            g.add((subject_uri, SKOS.prefLabel, Literal(data["subject"]["label"], lang="en")))
+            g.add((subject_uri, SKOS.prefLabel, Literal(data["theme"]["label"], lang="en")))
 
 # Define the output directory name
 output_dir = "rdf_serialization"
