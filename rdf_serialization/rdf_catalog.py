@@ -23,8 +23,8 @@ catalog_g.bind("xsd", XSD_NS)
 catalog_g.bind("cc", CC)
 catalog_g.bind("foaf", FOAF) 
 catalog_g.bind("skos", SKOS)
-catalog_g.bind("brasil", BRASIL) # Bind the custom namespace for the project
-catalog_g.bind("prov", PROV) # Bind PROV for provenance information
+catalog_g.bind("brasil", BRASIL) 
+catalog_g.bind("prov", PROV) #provenace
 
 # Define Catalog URI and Add Metadata 
 catalog_uri = URIRef("https://github.com/Open-Access-Floods/final-exam/tree/main/processed_RS#") # Made URI more specific
@@ -35,7 +35,7 @@ catalog_g.add((catalog_uri, DCT.description, Literal("Catalog containing the dat
 # Add the publisher information
 publisher_uri = URIRef("https://github.com/Open-Access-Floods/final-exam/")
 catalog_g.add((catalog_uri, DCT.publisher, publisher_uri))
-catalog_g.add((publisher_uri, RDF.type, FOAF.Organization)) # Assuming it's an organization/project
+catalog_g.add((publisher_uri, RDF.type, FOAF.Organization)) 
 catalog_g.add((publisher_uri, FOAF.name, Literal("Open Access Project", lang="en"))) 
 
 # Dates should use XSD.date for date literals
@@ -59,8 +59,7 @@ catalog_g.add((theme_taxonomy_uri, DCT.description, Literal("Data theme is a con
 dcat_ap_uri = URIRef("https://www.w3.org/TR/vocab-dcat-3/")
 catalog_g.add((catalog_uri, DCT.conformsTo, dcat_ap_uri))
 
-# --- Define and Link License Information ---
-# DCT.license for the catalog itself
+# Define and Link License Information
 license_uri = URIRef("https://creativecommons.org/licenses/by/4.0/")
 catalog_g.add((catalog_uri, DCT.license, license_uri))
 
@@ -94,8 +93,7 @@ dataset_ids = [
 
 # Add each dataset ID using the custom 'dcat3:dataset' property
 for dataset_id in dataset_ids:
-    catalog_g.add((catalog_uri, DCAT3.dataset, Literal(dataset_id))) # Using DCAT3.dataset as requested
-
+    catalog_g.add((catalog_uri, DCAT3.dataset, Literal(dataset_id))) 
 
 ## Saving the RDF Graph
 output_dir = "rdf_serialization"  

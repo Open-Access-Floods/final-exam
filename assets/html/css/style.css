@@ -773,7 +773,7 @@ nav.shrink .container {height: 60px;}
 .navbar-nav a:focus {color: #fff !important; background: transparent !important}
 .nav li {margin: 15px 20px}
 .sticky-wrapper {position: absolute; top: 0; width: 100%}
-.navbar-brand img {position: relative; top: -5px; z-index: 2; max-width: 156px;}
+.navbar-brand img {position: relative; top: -11px; z-index: 2; max-width: 156px;}
 nav.shrink {background: rgba(0,0,0,1); border: none !important}
 .transparent-header.shrink {background: rgba(0,0,0,.7); border: none !important}
 nav.navbar-height{  height: 100px !important;}
@@ -877,7 +877,7 @@ nav.sidebar-nav .container { vertical-align: top; padding:60px 40px }
 .slider-typography .separator-line-medium-thick { margin: 84px 0}
 
 /* slider typography - style 6 */
-.slider-typography .slider-typography-option6 span {font-size: 90px; line-height: 90px; letter-spacing: -2px; width: 80%; display: inline-block }
+.slider-typography .slider-typography-option6 span {font-size: 80px; line-height: 80px; letter-spacing: -2px; width: 80%; display: inline-block }
 .slider-typography .slider-typography-option6 p { padding: 4px 17px}
 .slider-typography .slider-typography-option6 p sup {font-size: 8px}
 
