@@ -1,64 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Data Preprocessing</title>
+
+  <title>OpenDataFlood</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="/virus-covid-solid.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="style.css">
+  <!--BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!--BOOTSTRAP 4
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  -->
+
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+
+
 </head>
 <body>
 
-<h2>Data Preprocessing</h2>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color:rgb(30, 217, 130);"><b>OpenDataFlood</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="metadata.html">Metadata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="analysis.html">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visualization.html">Visualization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="data_preprocessing.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">License</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<p>In order to prepare the datasets for analysis and integration, we carried out a series of preprocessing steps involving cleaning, filtering, transformation, and standardization across the five primary sources used: <strong>S2ID (disaster data)</strong>, <strong>INMET (meteorological data)</strong>, <strong>MapBiomas (land use/land cover)</strong>, <strong>IBGE (demographics)</strong>, and <strong>geospatial shapefiles for municipalities and states</strong>.</p>
 
-<h3>1. S2ID – Disasters and Impact Data</h3>
-<ul>
-  <li>The original CSV presented encoding issues and irregular line formats. It was cleaned using Python to remove malformed rows and detect the correct header (fifth line).</li>
-  <li>Non-numeric values (e.g., decimal commas) were standardized.</li>
-  <li>Columns were renamed and harmonized, e.g., converting "Município" to lowercase and normalizing whitespace.</li>
-  <li>We filtered for <strong>hydrological disasters</strong> only (floods, flash floods, etc.) using COBRADE classification and date filters (only 2024).</li>
-  <li>A new column was created aggregating all affected populations: deaths, displaced, injured, homeless, etc.</li>
-</ul>
 
-<h3>2. INMET – Rainfall Data</h3>
-<ul>
-  <li>Over 500 CSVs, one per weather station, were batch-processed using KNIME with a loop structure and dynamic file reading.</li>
-  <li>Metadata (station name, coordinates, state) was extracted separately using Python and merged back with rainfall values.</li>
-  <li>All precipitation values were cleaned and standardized to use dots as decimal separators.</li>
-  <li>Dates were converted to proper <code>Local Date</code> format and monthly aggregation was performed.</li>
-  <li>Meteorological stations were geolocated and assigned to <strong>municipalities</strong> using shapefiles and spatial joins.</li>
-</ul>
+  <div class="container mt-5 text-justify">
+    <h2>Data Preprocessing</h2>
 
-<h3>3. MapBiomas – Land Use and Urban Risk</h3>
-<ul>
-  <li>Two main sources were used: Excel files from the platform and CSV from Google Earth Engine.</li>
-  <li>Only relevant sheets (second sheet) were extracted using <code>pandas</code> and cleaned.</li>
-  <li>Rows corresponding to <strong>urban areas (code 4.2)</strong> and <strong>forest areas</strong> were filtered.</li>
-  <li>Indicators were created to calculate the <strong>percentage increase</strong> in urban area between 2013 and 2023 and decrease in forest area.</li>
-  <li>For urban risk areas (GeoJSON polygons), we used spatial intersection to calculate total km² of risk areas per municipality.</li>
-</ul>
-
-<h3>4. IBGE – Population Data</h3>
-<ul>
-  <li>Although the dataset is from 2018, it was used to normalize indicators (e.g., affected people per 1000 residents).</li>
-  <li>Data was joined based on municipality names, which required normalization to avoid mismatches (removing accents, trimming whitespace).</li>
-</ul>
-
-<h3>5. Data Integration</h3>
-<ul>
-  <li>Datasets were joined primarily using <strong>municipality name + state</strong>. To avoid inconsistencies due to duplicated names across states, names were normalized and matched cautiously.</li>
-  <li>Final datasets contain one row per municipality with integrated attributes: rainfall volume, area at risk, population affected, urban expansion, etc.</li>
-</ul>
-
-<div class="container mt-5">
-    <h3 class="analysis-second-title">KNIME Workflow Overview</h3>
-    <p class="analysis-text">
-      The following image illustrates the KNIME workflow used for data cleaning, normalization, and integration processes. This visual representation helps clarify how datasets were harmonized, enriched, and prepared for analytical processing.
+    <p>
+      To ensure consistency and analytical value, all datasets underwent a standard preprocessing workflow involving cleaning, filtering, and harmonization. The five primary sources—<strong>S2ID</strong>, <strong>INMET</strong>, <strong>MapBiomas</strong>, <strong>IBGE</strong>, and geospatial <strong>shapefiles</strong>—were integrated at the municipality level.
     </p>
-    <div class="text-center">
-      <img src="assets/img/knime-workflow.png" alt="KNIME Workflow" style="max-width: 100%; border: 1px solid #ccc; padding: 8px;">
-      <p class="mt-2"><em>Figure: Visual workflow developed using KNIME for preprocessing of disaster, climate, and land use datasets.</em></p>
+
+    <p>
+      <strong>S2ID</strong> disaster records were filtered for hydrological events in 2024, cleaned for encoding issues, and aggregated into a single impact indicator. <strong>INMET</strong> precipitation data from over 500 stations was standardized and joined with location metadata. Using <strong>MapBiomas</strong>, we calculated urban and forest cover change between 2013 and 2023, as well as exposure to urban flood risk zones. <strong>IBGE</strong> demographic data helped normalize indicators. All datasets were matched by municipality and state, producing an integrated file ready for visualization and analysis.
+    </p>
+  </div>
+
+    <div class="container mt-5">
+      <h3 class="analysis-second-title">KNIME Workflow Overview</h3>
+      <p class="analysis-text">
+        The following image illustrates the KNIME workflow used for data cleaning, normalization, and integration processes. This visual representation helps clarify how datasets were harmonized, enriched, and prepared for analytical processing.
+      </p>
+      <div class="text-center">
+        <img src="knime.png" alt="KNIME Workflow" style="max-width: 100%; border: 1px solid #ccc; padding: 8px;">
+        <p class="mt-2"><em>Figure: Visual workflow developed using KNIME for preprocessing of disaster, climate, and land use datasets.</em></p>
+      </div>
     </div>
   </div>
 
+  <section class="container my-5">
+
+    <h2 class="text-center mb-4">Datasets Catalog</h2>
+
+    <!-- Dataset Filter Tabs -->
+    <div class="text-center mb-4">
+      <button class="btn btn-filter active" onclick="showTab('all')">ALL</button>
+      <button class="btn btn-filter" onclick="showTab('source')">SOURCE DATASETS</button>
+      <button class="btn btn-filter" onclick="showTab('mashup')">MASHUP DATASETS</button>
+    </div>
+
+    <!-- ALL DATASETS -->
+    <div id="all-datasets" class="dataset-tab">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Dataset 1: S2ID -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">D1 - Disaster Records (S2ID)</h5>
+              <p><strong>ID:</strong> D1</p>
+              <p><strong>Publisher:</strong> Ministry of Integration</p>
+              <p><strong>Format:</strong> CSV</p>
+              <p><strong>Metadata:</strong> Provided</p>
+              <p><strong>URI:</strong> <a href="#">https://opendataflood.org/data/d1</a></p>
+              <p><strong>License:</strong> Public Domain</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dataset 2: INMET -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">D2 - Rainfall Data (INMET)</h5>
+              <p><strong>ID:</strong> D2</p>
+              <p><strong>Publisher:</strong> INMET</p>
+              <p><strong>Format:</strong> CSV</p>
+              <p><strong>Metadata:</strong> Provided</p>
+              <p><strong>URI:</strong> <a href="#">https://opendataflood.org/data/d2</a></p>
+              <p><strong>License:</strong> Public Domain</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dataset 3: IBGE -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">D3 - Population Estimates (IBGE)</h5>
+              <p><strong>ID:</strong> D3</p>
+              <p><strong>Publisher:</strong> IBGE</p>
+              <p><strong>Format:</strong> CSV, SHP</p>
+              <p><strong>Metadata:</strong> Provided</p>
+              <p><strong>URI:</strong> <a href="#">https://opendataflood.org/data/d3</a></p>
+              <p><strong>License:</strong> CC BY 4.0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dataset 4: MapBiomas Urban -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">D4 - Urban Expansion (MapBiomas)</h5>
+              <p><strong>ID:</strong> D4</p>
+              <p><strong>Publisher:</strong> MapBiomas</p>
+              <p><strong>Format:</strong> XLSX</p>
+              <p><strong>Metadata:</strong> Provided</p>
+              <p><strong>URI:</strong> <a href="#">https://opendataflood.org/data/d4</a></p>
+              <p><strong>License:</strong> CC BY-SA 4.0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dataset 5: MapBiomas Deforestation -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">D5 - Deforestation (MapBiomas)</h5>
+              <p><strong>ID:</strong> D5</p>
+              <p><strong>Publisher:</strong> MapBiomas</p>
+              <p><strong>Format:</strong> CSV</p>
+              <p><strong>Metadata:</strong> Provided</p>
+              <p><strong>URI:</strong> <a href="#">https://opendataflood.org/data/d5</a></p>
+              <p><strong>License:</strong> CC BY-SA 4.0</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Mashup Dataset Example -->
+        <div class="col mashup-only">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">MD1 - Combined Urban Risk & Rainfall</h5>
+              <p><strong>ID:</strong> MD1</p>
+              <p><strong>Created:</strong> May 2025</p>
+              <p><strong>Format:</strong> CSV</p>
+              <p><strong>Metadata:</strong> Provided</p>
+              <p><strong>URI:</strong> <a href="#">https://opendataflood.org/data/md1</a></p>
+              <p><strong>License:</strong> CC BY 4.0</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container mt-5 text-justify">
+    <h2>Metadata and RDF Serialization</h2>
+
+    <p>To improve interoperability and semantic accessibility, all datasets used in this project were described using RDF (Resource Description Framework). We followed W3C standards such as <a href="https://www.w3.org/TR/vocab-dcat-2/" target="_blank">DCAT</a> and Dublin Core to create machine-readable metadata for each dataset and catalog.</p>
+
+    <p>Two Turtle (.ttl) files were created:</p>
+    <ul>
+      <li><strong>serialization_catalog.ttl</strong> – describes the overall dataset catalog, including title, publisher, license, and theme.</li>
+      <li><strong>serialization_datasets.ttl</strong> – provides metadata for individual datasets (S2ID, INMET, IBGE, MapBiomas, etc.), including distribution URLs, formats, and temporal/spatial coverage.</li>
+    </ul>
+
+    <p>These serializations enable integration into <strong>open data portals</strong>, support for <strong>SPARQL queries</strong>, and visualization using <strong>RDF tools</strong>.</p>
+  </div>
+
+  <!-- RDF VISUAL GIST -->
+  <section id="rdf-gist" class="container my-5" data-aos="fade-up">
+    <div class="section-title mb-4" data-aos="fade-up">
+      <h2>RDF Serialization of Datasets Catalog</h2>
+      <p>
+        Below is an overview of the datasets used and produced within this project, presented in 
+        <span class="underlined underlined--offset"><b>RDF/Turtle format</b></span>. 
+        For more details, refer to the <a href="#analyses">Technical Analysis</a> or to the 
+        <a href="https://github.com/CarlaMenegat/OADF_Project/blob/main/docs/Documentation.pdf" target="_blank">project documentation</a>.
+      </p>
+    </div>
+
+    <!-- Embed Gist -->
+    <script src="https://gist.github.com/CarlaMenegat/3f8b8b42244a9a43f395c2b6753f888e.js"></script>
+  </section>
+
+  <!-- Importação do RDF2h via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/rdf2h@1.0.0/build/rdf2h.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $.get("rdf_serialization/serialization_catalog.ttl", function(data) {
+        const parser = new N3.Parser();
+        const triples = [];
+
+        parser.parse(data, (error, triple, prefixes) => {
+          if (triple) {
+            triples.push(triple);
+          } else {
+            // Visualization setup
+            const store = new N3.Store(triples);
+            const visualizer = new RDF2h(store);
+            $('#rdf-viewer').html(visualizer.render());
+          }
+        });
+      }).fail(function() {
+        $('#rdf-viewer').html("<p>Error loading RDF file.</p>");
+      });
+    });
+  </script>
+
+  <footer class="footer mt-5 p-4 text-center py3 bg-light ">
+    <div class="container">
+      <span class="text-muted text-white">Authored by Carla Menegat, Catalina Salguero and Rubens Fernandes Jr.</span><br>
+      <span class="text-muted text-white">This website is licensed under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license.</a></span>
+    </div>
+  </footer>
+
+  <script>
+    function showTab(tab) {
+      // Clear active button
+      document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
+
+      if (tab === 'all') {
+        document.querySelectorAll('.col').forEach(card => card.style.display = 'block');
+        document.querySelector('.btn-filter:nth-child(1)').classList.add('active');
+      } else if (tab === 'source') {
+        document.querySelectorAll('.col').forEach(card => {
+          if (card.classList.contains('mashup-only')) {
+            card.style.display = 'none';
+          } else {
+            card.style.display = 'block';
+          }
+        });
+        document.querySelector('.btn-filter:nth-child(2)').classList.add('active');
+      } else if (tab === 'mashup') {
+        document.querySelectorAll('.col').forEach(card => {
+          if (card.classList.contains('mashup-only')) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        document.querySelector('.btn-filter:nth-child(3)').classList.add('active');
+      }
+    }
+
+    // Initialize to show all
+    showTab('all');
+  </script>
 </body>
 </html>
