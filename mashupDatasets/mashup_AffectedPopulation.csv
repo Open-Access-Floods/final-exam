@@ -1,0 +1,498 @@
+﻿CD_MUN,municipality,area,population2022,population2024,event,status,deaths,injured,sick,missing,evacuated,displaced,otherAffected,record,totalAffected,totalNotAffected,totalAffectedNormalized,totalNotAffectedNormalized,percentageAffected
+4300034,Aceguá,1551.339,4170,4253,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1,0,30,02/05/2024,31,4222,31,4222,0.728897249
+4300059,Água Santa,291.526,3912,4000,,,,,,,,,,,,,,,
+4300109,Agudo,534.624,16041,16346,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,9,0,27,100,15904,04/05/2024,16041,305,16041,305,98.13410009
+4300208,Ajuricaba,322.674,6720,6848,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6720,08/05/2024,6720,128,6720,128,98.13084112
+4300307,Alecrim,316.394,6123,6228,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,0,500,07/05/2024,510,5718,510,5718,8.188824663
+4300406,Alegrete,7800.552,72409,74329,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,296,214,690,04/05/2024,1200,73129,1200,73129,1.614443891
+4300455,Alegria,172.794,3651,3711,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4301,06/05/2024,4301,-590,4301,0,100
+4300471,Almirante Tamandaré do Sul,265.042,1969,2008,,,,,,,,,,,,,,,
+4300505,Alpestre,325.979,7117,7243,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,7117,06/05/2024,7117,126,7117,126,98.26038934
+4300554,Alto Alegre,115.335,1800,1837,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,20,0,1828,03/05/2024,1848,-11,1848,0,100
+4300570,Alto Feliz,78.17,3072,3143,Enxurradas,Reconhecido,0,0,0,0,0,20,3052,06/05/2024,3072,71,3072,71,97.74101177
+4300604,Alvorada,71.702,187315,194116, Inundações,Reconhecido,0,5,2000,0,9802,212,183699,03/05/2024,195718,-1602,195718,0,100
+4300638,Amaral Ferrador,506.109,5310,5394,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,4,0,6351,06/05/2024,6355,-961,6355,0,100
+4300646,Ametista do Sul,93.605,7650,7822,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,4,0,7319,03/05/2024,7323,499,7323,499,93.6205574
+4300661,André da Rocha,331.208,1135,1157,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,6,0,0,04/05/2024,6,1151,6,1151,0.518582541
+4300703,Anta Gorda,242.1,5957,6080,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,50,30,6000,03/05/2024,6080,0,6080,0,100
+4300802,Antônio Prado,347.541,13045,13328,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,3,0,0,40,36,12758,06/05/2024,12837,491,12837,491,96.31602641
+4300851,Arambaré,518.193,4112,4211,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,480,80,0,08/05/2024,560,3651,560,3651,13.29850392
+4300877,Araricá,35.195,8525,8794,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,72,9,4800,02/05/2024,4881,3913,4881,3913,55.50375256
+4300901,Aratiba,342.279,6483,6618,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,0,140,05/05/2024,150,6468,150,6468,2.266545784
+4301008,Arroio do Meio,157.088,21958,22490,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,0,0,0,12000,1000,21996,04/05/2024,34998,-12508,34998,0,100
+4301057,Arroio do Sal,119.16,11057,11384,,,,,,,,,,,,,,,
+4301073,Arroio do Padre,124.693,2599,2651,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2000,17/05/2024,2000,651,2000,651,75.44322897
+4301107,Arroio dos Ratos,425.791,14601,14923,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,10,0,0,1800,60,0,15/05/2024,1870,13053,1870,13053,12.53099243
+4301206,Arroio do Tigre,315.132,12058,12296,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,770,32,11256,06/05/2024,12058,238,12058,238,98.06441119
+4301305,Arroio Grande,2508.557,17558,17887,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0,0,0,0,24,75,4100,24/06/2024,4199,13688,4199,13688,23.47514955
+4301404,Arvorezinha,269.31,10322,10545,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,0,1,1000,200,3511,02/05/2024,4713,5832,4713,5832,44.69416785
+4301503,Augusto Pestana,348.219,7149,7302,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,7149,06/05/2024,7149,153,7149,153,97.90468365
+4301552,Áurea,156.727,3396,3460,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3665,05/05/2024,3665,-205,3665,0,100
+4301602,Bagé,4090.36,117938,121900,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,116792,14/05/2024,116792,5108,116792,5108,95.80968007
+4301636,Balneário Pinhal,102.387,14955,15371,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,4036,6,0,03/05/2024,4042,11329,4042,11329,26.2962722
+4301651,Barão,122.567,6461,6489,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,81,0,0,06/05/2024,81,6408,81,6408,1.248266297
+4301701,Barão de Cotegipe,260.505,7144,7313,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,45,0,7099,06/05/2024,7144,169,7144,169,97.6890469
+4301750,Barão do Triunfo,436.101,5889,5983,Enxurradas,Reconhecido,0,0,0,0,0,0,5889,08/05/2024,5889,94,5889,94,98.42888183
+4301800,Barracão,515.469,4831,4920,,,,,,,,,,,,,,,
+4301859,Barra do Guarita,62.801,3161,3230,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,52,40,2997,04/05/2024,3089,141,3089,141,95.63467492
+4301875,Barra do Quaraí,1055.937,4241,4337,,,,,,,,,,,,,,,
+4301909,Barra do Ribeiro,729.316,12225,12475,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,780,416,8200,06/05/2024,9396,3079,9396,3079,75.31863727
+4301925,Barra do Rio Azul,146.995,1696,1724,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,420,1276,03/05/2024,1696,28,1696,28,98.37587007
+4301958,Barra Funda,60.437,2498,2555,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,24,0,2526,03/05/2024,2550,5,2550,5,99.80430528
+4302006,Barros Cassal,647.994,9296,9442,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,1,0,0,5047,05/05/2024,5048,4394,5048,4394,53.46324931
+4302055,Benjamin Constant do Sul,132.351,2082,2120,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,03/05/2024,0,2120,0,2120,0
+4302105,Bento Gonçalves,272.287,123151,127775,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,4,64,0,8,600,104,0,03/05/2024,780,126995,780,126995,0.610448053
+4302154,Boa Vista das Missões,196.064,1933,1969,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2114,03/05/2024,2114,-145,2114,0,100
+4302204,Boa Vista do Buricá,109.541,6966,7125,,,,,,,,,,,,,,,
+4302220,Boa Vista do Cadeado,701.221,2229,2271,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2226,11/05/2024,2226,45,2226,45,98.01849406
+4302238,Boa Vista do Incra,504.114,2271,2315,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,486,07/05/2024,486,1829,486,1829,20.99352052
+4302253,Boa Vista do Sul,93.108,2779,2815,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,0,0,0,5,0,2772,03/05/2024,2779,36,2779,36,98.72113677
+4302303,Bom Jesus,2622.837,11202,11431,Tempestade Local/Convectiva - Vendaval,Reconhecido,0,0,0,0,0,0,11309,07/05/2024,11309,122,11309,122,98.9327268
+4302352,Bom Princípio,90.023,13142,13650,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,468,171,63,03/05/2024,703,12947,703,12947,5.15018315
+4302378,Bom Progresso,89.206,2096,2134,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2328,09/05/2024,2328,-194,2328,0,100
+4302402,Bom Retiro do Sul,102.54,12294,12578,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1400,55,2500,04/05/2024,3955,8623,3955,8623,31.44379075
+4302451,Boqueirão do Leão,257.789,6247,6215,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,114,0,0,02/05/2024,114,6101,114,6101,1.834271923
+4302501,Bossoroca,1610.056,5890,5988,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6887,17/05/2024,6887,-899,6887,0,100
+4302584,Bozano,200.497,2151,2195,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2200,10/05/2024,2200,-5,2200,0,100
+4302600,Braga,132.044,3268,3326,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,120,0,3148,07/05/2024,3268,58,3268,58,98.25616356
+4302659,Brochier,105.353,4966,5079,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,100,3,4863,06/05/2024,4966,113,4966,113,97.77515259
+4302709,Butiá,752.187,19084,19433,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,50,50,1000,02/05/2024,1100,18333,1100,18333,5.660474451
+4302808,Caçapava do Sul,3048.147,32515,33508,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,02/05/2024,0,33508,0,33508,0
+4302907,Cacequi,2373.507,11157,11324,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,107,16,11034,07/05/2024,11157,167,11157,167,98.52525609
+4303004,Cachoeira do Sul,3736.064,80070,82250,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,15,7,0,2446,372,80987,06/05/2024,83827,-1577,83827,0,100
+4303103,Cachoeirinha,43.76,136258,141303,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3016,1853,131389,07/05/2024,136258,5045,136258,5045,96.42965825
+4303202,Cacique Doble,203.582,4603,4694,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,10,4583,06/05/2024,4603,91,4603,91,98.06135492
+4303301,Caibaté,261.28,4704,4797,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4704,28/05/2024,4704,93,4704,93,98.06128831
+4303400,Caiçara,189.071,4836,4933,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5071,03/05/2024,5071,-138,5071,0,100
+4303509,Camaquã,1679.242,62200,63959,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1000,06/05/2024,1000,62959,1000,62959,1.563501618
+4303558,Camargo,138.069,2981,3056,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2981,05/05/2024,2981,75,2981,75,97.54581152
+4303608,Cambará do Sul,1181.811,6361,6492,Tempestade Local/Convectiva - Vendaval,Reconhecido,0,0,0,0,4,0,299,13/05/2024,303,6189,303,6189,4.66728281
+4303673,Campestre da Serra,538.487,3242,3311,Enxurradas,Reconhecido,0,0,0,0,0,0,350,05/05/2024,350,2961,350,2961,10.57082452
+4303707,Campina das Missões,224.792,5882,6001,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0,0,0,0,0,0,5882,06/05/2024,5882,119,5882,119,98.01699717
+4303806,Campinas do Sul,276.162,5284,5390,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3,0,5281,04/05/2024,5284,106,5284,106,98.03339518
+4303905,Campo Bom,60.562,62886,64704,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3200,280,6120,07/05/2024,9600,55104,9600,55104,14.83679525
+4304002,Campo Novo,220.719,4975,5068,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1200,05/06/2024,1200,3868,1200,3868,23.67797948
+4304101,Campos Borges,226.202,3613,3693,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,30,0,0,02/05/2024,30,3663,30,3663,0.812347685
+4304200,Candelária,944.735,28906,29783,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,7,25,120,800,500,23000,02/05/2024,24453,5723,24453,5723,81.03459703
+4304309,Cândido Godói,247.047,6294,6421,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6294,06/05/2024,6294,127,6294,127,98.02211494
+4304358,Candiota,933.628,10710,10992,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,10710,07/05/2024,10710,282,10710,282,97.43449782
+4304408,Canela,253.002,48946,50613,Deslizamentos,Reconhecido,2,7,5,0,402,235,45000,03/05/2024,45651,4962,45651,4962,90.19619465
+4304507,Canguçu,3526.316,49680,50998,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,21284,06/05/2024,21284,29714,21284,29714,41.73497
+4304606,Canoas,130.774,347657,359554,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,372,0,114,157512,22000,0,08/05/2024,180000,179554,180000,179554,50.06202128
+4304614,Canudos do Vale,82.943,1656,1687,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,34,0,1622,05/05/2024,1656,31,1656,31,98.16241849
+4304622,Capão Bonito do Sul,526.85,1733,1769,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1753,06/05/2024,1753,16,1753,16,99.0955342
+4304630,Capão da Canoa,98.383,63594,66012,,,,,,,,,,,,,,,
+4304655,Capão do Cipó,1007.796,3119,3186,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3699,17/05/2024,3699,-513,3699,0,100
+4304663,Capão do Leão,783.196,26487,27389,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,7500,10/05/2024,7500,19889,7500,19889,27.38325605
+4304671,Capivari do Sul,412.889,3991,4079,,,,,,,,,,,,,,,
+4304689,Capela de Santana,182.756,11159,11416,Alagamentos,Reconhecido,0,0,0,0,100,50,0,03/05/2024,150,11266,150,11266,1.31394534
+4304697,Capitão,73.967,2921,2991,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,15,0,0,106,32,2789,06/05/2024,2944,47,2944,47,98.42861919
+4304705,Carazinho,666.694,61804,63638,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,7,0,0,07/05/2024,7,4072,7,4072,0.171610689
+4304713,Caraá,294.606,7394,7553,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,22,0,7291,06/05/2024,7313,240,7313,240,96.82245465
+4304804,Carlos Barbosa,230.061,30420,31528,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,73,0,03/05/2024,73,31455,73,31455,0.231540218
+4304853,Carlos Gomes,83.196,1368,1387,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1355,06/05/2024,1355,32,1355,32,97.69286229
+4304903,Casca,272.041,9465,9689,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3500,07/05/2024,3500,6189,3500,6189,36.12343895
+4304952,Caseiros,235.649,3000,3064,,,,,,,,,,,,,,,
+4305009,Catuípe,583.18,8674,8840,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,9323,07/05/2024,9323,-483,9323,0,100
+4305108,Caxias do Sul,1652.32,463501,479256,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,5,0,0,6,760,44,434667,06/05/2024,435482,43774,435482,43774,90.86625937
+4305116,Centenário,134.78,2721,2779,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2967,06/05/2024,2967,-188,2967,0,100
+4305124,Cerrito,451.699,5808,5915,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2000,07/05/2024,2000,3915,2000,3915,33.8123415
+4305132,Cerro Branco,158.025,3802,3865,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,200,100,3500,03/05/2024,3800,65,3800,65,98.31824062
+4305157,Cerro Grande,73.438,2379,2429,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2417,03/05/2024,2417,12,2417,12,99.50596953
+4305173,Cerro Grande do Sul,324.908,9178,9343,Enxurradas,Reconhecido,0,0,0,0,150,103,1000,09/05/2024,1253,8090,1253,8090,13.41110992
+4305207,Cerro Largo,176.742,13705,14009,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,13705,08/05/2024,13705,304,13705,304,97.82996645
+4305306,Chapada,684.247,9540,9748,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3,0,9475,05/05/2024,9478,270,9478,270,97.23020107
+4305355,Charqueadas,217.362,35012,36109,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,6300,615,0,03/05/2024,6915,29194,6915,29194,19.15035033
+4305371,Charrua,198.748,2768,2807,,,,,,,,,,,,,,,
+4305405,Chiapetta,397.179,3913,3992,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4044,04/05/2024,4044,-52,4044,0,100
+4305439,Chuí,202.387,6262,6405,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,34,0,6228,27/05/2024,6262,143,6262,143,97.76736924
+4305447,Chuvisca,220.471,4597,4686,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4944,15/05/2024,4944,-258,4944,0,100
+4305454,Cidreira,243.419,17071,17538,Alagamentos,Não reconhecido,0,0,0,0,3200,0,0,07/05/2024,3200,14338,3200,14338,18.2460942
+4305504,Ciríaco,274.35,4149,4215,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4149,03/05/2024,4149,66,4149,66,98.4341637
+4305587,Colinas,60.732,2423,2474,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,80,200,0,1150,200,1030,03/05/2024,2660,-240,2660,0,100
+4305603,Colorado,286.295,3258,3319,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,2,0,3548,06/05/2024,3550,-231,3550,0,100
+4305702,Condor,463.568,6406,6539,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,0,6460,07/05/2024,6500,39,6500,39,99.40357853
+4305801,Constantina,203.614,10385,10623,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,45,72,9624,04/05/2024,9741,882,9741,882,91.69726066
+4305835,Coqueiro Baixo,112.638,1290,1311,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,1,1279,07/05/2024,1290,21,1290,21,98.39816934
+4305850,Coqueiros do Sul,277.147,2211,2251,,,,,,,,,,,,,,,
+4305871,Coronel Barros,163.716,2822,2892,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,0,2812,29/05/2024,2822,70,2822,70,97.57952974
+4305900,Coronel Bicaco,492.303,6144,6230,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,8,0,7740,03/05/2024,7748,-1518,7748,0,100
+4305934,Coronel Pilar,105.668,1607,1638,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,20,70,1300,04/05/2024,1390,248,1390,248,84.85958486
+4305959,Cotiporã,173.207,3846,3926,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,160,70,3686,12/05/2024,3917,9,3917,9,99.77075904
+4305975,Coxilha,422.101,2667,2719,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,0,0,200,16/05/2024,200,2519,200,2519,7.355645458
+4306007,Crissiumal,362.194,12886,13127,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,14085,07/05/2024,14085,-958,14085,0,100
+4306056,Cristal,679.742,7299,7454,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,144,0,0,30/04/2024,144,7310,144,7310,1.931848672
+4306072,Cristal do Sul,97.073,2692,2746,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,4,8,2814,04/05/2024,2826,-80,2826,0,100
+4306106,Cruz Alta,1360.548,58913,60486,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,58913,02/05/2024,58913,1573,58913,1573,97.39939821
+4306130,Cruzaltense,166.883,1635,1655,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1635,02/05/2024,1635,20,1635,20,98.79154079
+4306205,Cruzeiro do Sul,155.482,11600,12571,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,3,0,0,0,2987,800,12331,01/05/2024,16121,-3550,16121,0,100
+4306304,David Canabarro,174.172,4321,4403,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1728,20/04/2024,1728,2675,1728,2675,39.24596866
+4306320,Derrubadas,360.851,2751,2797,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,0,2739,07/05/2024,2751,46,2751,46,98.35538077
+4306353,Dezesseis de Novembro,216.341,2507,2544,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,06/05/2024,0,2544,0,2544,0
+4306379,Dilermando de Aguiar,600.518,2806,2859,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,64,0,3000,01/05/2024,3064,-205,3064,0,100
+4306403,Dois Irmãos,67.509,30709,31769,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,60,0,0,07/05/2024,60,31709,60,31709,0.188863357
+4306429,Dois Irmãos das Missões,226.072,2090,2133,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,0,2145,03/05/2024,2157,-24,2157,0,100
+4306452,Dois Lajeados,133.535,3097,3158,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,39,0,03/05/2024,39,3119,39,3119,1.234958835
+4306502,Dom Feliciano,1355.195,13051,13291,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,120,0,0,07/05/2024,120,13171,120,13171,0.902866601
+4306551,Dom Pedro de Alcântara,78.216,2562,2617,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1930,13/05/2024,1930,36164,1930,36164,5.066414658
+4306601,Dom Pedrito,5194.051,36981,38094, Inundações,Reconhecido,0,0,0,0,0,0,18,09/05/2024,18,2532,18,2532,0.705882353
+4306700,Dona Francisca,114.149,3079,3136,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,150,80,3171,03/05/2024,3401,-265,3401,0,100
+4306734,Doutor Maurício Cardoso,255.731,4470,4542,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4470,07/05/2024,4470,72,4470,72,98.41479524
+4306759,Doutor Ricardo,107.96,1888,1925,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,200,50,1638,24/05/2024,1888,37,1888,37,98.07792208
+4306767,Eldorado do Sul,509.632,39559,40954,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,300,20000,6000,13259,06/05/2024,39559,1395,39559,1395,96.59373932
+4306809,Encantado,140.006,22962,23494,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,12,0,2,923,726,21298,04/05/2024,22962,532,22962,532,97.73559207
+4306908,Encruzilhada do Sul,3347.861,23819,24280,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,15,0,7000,06/05/2024,7015,17265,7015,17265,28.89209226
+4306924,Engenho Velho,71.191,1296,1317,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,15,15,1500,03/05/2024,1530,-213,1530,0,100
+4306957,Entre Rios do Sul,553.915,9158,9364,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,0,3068,03/05/2024,3080,-349,3080,0,100
+4306932,Entre-Ijuís,119.912,2685,2731,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,60,0,9098,16/05/2024,9158,206,9158,206,97.80008543
+4306973,Erebango,152.793,3054,3121,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3054,24/06/2024,3054,67,3054,67,97.85325216
+4307005,Erechim,429.164,105705,109497,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,2,0,0,52,0,0,03/05/2024,54,109443,54,109443,0.04931642
+4307054,Ernestina,238.558,3034,3097,,,,,,,,,,,,,,,
+4307104,Herval,1759.717,6191,6307,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6191,06/05/2024,6191,116,6191,116,98.16077374
+4307203,Erval Grande,285.677,4930,5029,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,4,5163,03/05/2024,5167,-138,5167,0,100
+4307302,Erval Seco,357.181,6787,6902,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,7878,03/05/2024,7878,-976,7878,0,100
+4307401,Esmeralda,829.587,3195,3264,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0,0,0,0,0,0,40,10/05/2024,40,3224,40,3224,1.225490196
+4307450,Esperança do Sul,148.909,3226,3294,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3272,15/05/2024,3272,22,3272,22,99.332119
+4307500,Espumoso,783.642,15173,15478,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,800,48,14325,03/05/2024,15173,305,15173,305,98.02946117
+4307559,Estação,99.757,5582,5688,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5517,03/05/2024,5517,171,5517,171,96.99367089
+4307609,Estância Velha,51.779,47924,49440,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,0,0,12,08/05/2024,12,49428,12,49428,0.024271845
+4307708,Esteio,27.676,76137,78181, Inundações,Não reconhecido,0,0,0,0,10000,1061,65076,18/05/2024,76137,2044,76137,2044,97.38555403
+4307807,Estrela,185.032,32183,33243, Inundações,Reconhecido,0,0,0,0,4000,1100,32183,03/05/2024,37283,-4040,37283,0,100
+4307815,Estrela Velha,281.613,3070,3120,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,32,14,3024,06/05/2024,3070,50,3070,50,98.3974359
+4307831,Eugênio de Castro,417.821,2633,2685,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,16,0,0,06/05/2024,16,2669,16,2669,0.595903166
+4307864,Fagundes Varela,134.295,2566,2620,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5,0,150,04/05/2024,155,2465,155,2465,5.916030534
+4307906,Farroupilha,361.341,70286,72477,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,111,0,0,03/05/2024,111,72366,111,72366,0.153152034
+4308003,Faxinal do Soturno,169.514,6702,6846,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,320,43,6309,30/04/2024,6672,174,6672,174,97.45836985
+4308052,Faxinalzinho,143.321,2520,2572,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,0,2555,03/05/2024,2567,5,2567,5,99.80559876
+4308078,Fazenda Vilanova,84.794,4291,4399,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4291,07/05/2024,4291,108,4291,108,97.54489657
+4308102,Feliz,94.659,13764,13979,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1200,80,12484,03/05/2024,13764,215,13764,215,98.46197868
+4308201,Flores da Cunha,276.241,30892,31973,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,80,12,30800,03/05/2024,30892,1081,30892,1081,96.6190223
+4308250,Floriano Peixoto,168.521,1668,1694,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1668,09/05/2024,1668,26,1668,26,98.46517119
+4308300,Fontoura Xavier,583.239,9550,9721,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,91,62,0,400,23,6731,02/05/2024,7308,2413,7308,2413,75.17745088
+4308409,Formigueiro,578.875,6413,6533,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,9,0,6404,03/05/2024,6413,120,6413,120,98.16317159
+4308433,Forquetinha,93.278,2393,2441,Enxurradas,Reconhecido,2,8,0,0,189,0,1023,07/05/2024,1222,1219,1222,1219,50.06145023
+4308458,Fortaleza dos Valos,650.512,4477,4569,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4577,06/05/2024,4577,-8,4577,0,100
+4308508,Frederico Westphalen,264.876,32627,33684,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,22,6,32599,04/05/2024,32627,1057,32627,1057,96.86201164
+4308607,Garibaldi,168.492,34335,35522,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,17,31500,02/05/2024,31517,4005,31517,4005,88.725297
+4308656,Garruchos,803.97,2688,2729,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,88,0,2600,07/05/2024,2688,41,2688,41,98.49761818
+4308706,Gaurama,204.428,5665,5780,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5665,09/05/2024,5665,115,5665,115,98.01038062
+4308805,General Câmara,510.01,7612,7751,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,300,400,0,03/05/2024,701,7050,701,7050,9.043994323
+4308854,Gentil,184.715,1744,1783,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1,0,1743,04/05/2024,1744,39,1744,39,97.81267527
+4308904,Getúlio Vargas,287.466,16602,16950,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,16156,15/05/2024,16156,794,16156,794,95.31563422
+4309001,Giruá,855.56,16013,16282,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1890,09/05/2024,1890,14392,1890,14392,11.60791058
+4309050,Glorinha,323.955,7658,7842,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2000,13/05/2024,2000,5842,2000,5842,25.50369804
+4309100,Gramado,239.341,40134,41621,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,7,2,0,0,900,272,103,05/05/2024,1284,40337,1284,40337,3.084981139
+4309126,Gramado dos Loureiros,131.396,2014,2049,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,160,10,2099,06/05/2024,2269,-220,2269,0,100
+4309159,Gramado Xavier,216.79,3304,3356,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,164,12,0,3128,03/05/2024,3304,52,3304,52,98.45053635
+4309209,Gravataí,468.288,265074,275294,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,1200,314,8000,18/05/2024,9514,265780,9514,265780,3.455941648
+4309258,Guabiju,146.925,1417,1442,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1598,06/05/2024,1598,0,1598,0,100
+4309308,Guaíba,377.664,92924,95956,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,6870,0,0,40000,13000,0,06/05/2024,59870,35360,59870,35360,62.86884385
+4309407,Guaporé,297.545,25268,26138,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,76,7,25885,02/05/2024,25968,-3158,25968,0,100
+4309506,Guarani das Missões,289.516,7415,7553,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,7415,27/05/2024,7415,700,7415,700,91.37399877
+4309555,Harmonia,48.54,5378,5524,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,179,28,16,07/05/2024,223,4031,223,4031,5.242125059
+4309571,Herveiras,117.981,2565,2608,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,0,2486,07/05/2024,2526,428,2526,428,85.51117129
+4309605,Horizontina,229.694,18851,19246,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,31,0,19358,06/05/2024,19389,-1039,19389,0,100
+4309654,Hulha Negra,822.608,5976,6102,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6048,15/05/2024,6048,0,6048,0,100
+4309704,Humaitá,135.01,4681,4774,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4681,07/05/2024,4681,238,4681,238,95.16161822
+4309753,Ibarama,195.426,3732,3793,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,10,0,0,150,27,3549,05/05/2024,3736,635,3736,635,85.47243194
+4309803,Ibiaçá,348.778,4527,4618,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2500,05/05/2024,2500,2210,2500,2210,53.07855626
+4309902,Ibiraiaras,280.816,6776,6830,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0,0,0,0,0,0,7175,08/05/2024,7175,0,7175,0,100
+4309951,Ibirapuitã,307.164,3723,3793,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1670,04/05/2024,1670,2391,1670,2391,41.12287614
+4310009,Ibirubá,607.185,21583,22082,Alagamentos,Registro,0,0,0,0,100,0,0,02/05/2024,100,19212,100,19212,0.517812759
+4310108,Igrejinha,138.116,32808,34763,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,25000,500,6163,06/05/2024,31663,0,31663,0,100
+4310207,Ijuí,688.982,84780,87775,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,84041,06/05/2024,84041,-5121,84041,0,100
+4310306,Ilópolis,123.602,4157,4245,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,32,0,0,03/05/2024,32,4066,32,4066,0.780868716
+4310330,Imbé,39.766,26824,27931,,,,,,,,,,,,,,,
+4310363,Imigrante,71.718,3080,3148,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,5,5,20,500,40,2455,30/04/2024,3025,0,3025,0,100
+4310405,Independência,358.284,6427,6558,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1800,06/05/2024,1800,4818,1800,4818,27.19854941
+4310413,Inhacorá,113.749,2014,2049,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2267,06/05/2024,2267,0,2267,0,100
+4310439,Ipê,599.032,5399,5496,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,78,0,5939,03/05/2024,6017,0,6017,0,100
+4310462,Ipiranga do Sul,158.71,1720,1750,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1720,28/06/2024,1720,224,1720,224,88.47736626
+4310504,Iraí,181.85,7482,7624,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,92,0,7986,03/05/2024,8078,0,8078,0,100
+4310538,Itaara,172.801,5572,5706,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,18,0,0,50,50,441,03/05/2024,560,4451,560,4451,11.17541409
+4310553,Itacurubi,1120.249,2995,3042,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2995,17/05/2024,2995,446,2995,446,87.03865155
+4310579,Itapuca,184.673,1937,1967,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3,0,1515,06/05/2024,1518,819,1518,819,64.9550706
+4310603,Itaqui,3405.999,35768,36830, Inundações,Reconhecido,0,0,0,0,1379,90,0,10/05/2024,1469,36697,1469,36697,3.848975528
+4310652,Itati,205.06,2638,2695,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,600,80,1602,02/05/2024,2282,307,2282,307,88.14213982
+4310702,Itatiba do Sul,212.669,3208,3249,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4171,03/05/2024,4171,0,4171,0,100
+4310751,Ivorá,122.93,1929,1964,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,6,0,23,11,177,03/05/2024,218,1938,218,1938,10.11131725
+4310801,Ivoti,63.092,22983,23533,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,361,55,300,10/05/2024,716,19161,716,19161,3.602153242
+4310850,Jaboticaba,127.589,3779,3850,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4111,03/05/2024,4111,0,4111,0,100
+4310876,Jacuizinho,339.399,2040,2070,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,5,2000,06/05/2024,2045,462,2045,462,81.57159952
+4310900,Jacutinga,178.009,3338,3401,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3630,20/05/2024,3630,0,3630,0,100
+4311007,Jaguarão,2051.845,26603,27406,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,27942,06/05/2024,27942,0,27942,0,100
+4311106,Jaguari,675.108,10579,10779,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,36,0,11442,19/04/2024,11478,0,11478,0,100
+4311122,Jaquirana,908.879,3690,3755,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4177,26/06/2024,4177,0,4177,0,100
+4311130,Jari,853.08,3349,3414,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3349,03/05/2024,3349,226,3349,226,93.67832168
+4311155,Jóia,1238.709,7184,7305,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,8329,06/05/2024,8329,0,8329,0,100
+4311205,Júlio de Castilhos,1929.544,18226,18557,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,7,19579,30/04/2024,19596,-17,19596,0,100
+4311239,Lagoa Bonita do Sul,109.758,2251,2287,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,0,0,15,0,2235,01/05/2024,2251,411,2251,411,84.56048084
+4311254,Lagoão,387.453,5341,5429,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6185,02/05/2024,6185,0,6185,0,100
+4311270,Lagoa dos Três Cantos,138.602,1738,1779,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1738,04/05/2024,1738,-140,1738,0,100
+4311304,Lagoa Vermelha,1272.725,27659,28617,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5,7,27517,04/05/2024,27529,0,27529,0,100
+4311403,Lajeado,90.801,93646,96651,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,10,60,0,50,5000,1326,65000,04/05/2024,71446,35,71446,35,99.95103594
+4311429,Lajeado do Bugre,67.947,2601,2660,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2487,03/05/2024,2487,0,2487,0,100
+4311502,Lavras do Sul,2600.969,7157,7294,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,0,300,02/05/2024,310,7359,310,7359,4.042248011
+4311601,Liberato Salzano,245.627,4781,4854,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,20,0,0,404,0,5356,03/05/2024,5780,0,5780,0,100
+4311627,Lindolfo Collor,33.351,6248,6409,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,0,0,250,150,0,07/05/2024,401,4828,401,4828,7.668770319
+4311643,Linha Nova,63.502,1683,1720,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,30,5,0,08/05/2024,35,1589,35,1589,2.155172414
+4311700,Machadinho,335.344,5735,5864,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2127,09/05/2024,2127,3388,2127,3388,38.56754306
+4311718,Maçambará,1682.676,4425,4487,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3430,08/05/2024,3430,1312,3430,1312,72.33234922
+4311734,Mampituba,156.653,3131,3201,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,30,0,3101,16/05/2024,3131,-134,3131,0,100
+4311759,Manoel Viana,1365.086,6801,6917,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,432,8,0,03/05/2024,440,6634,440,6634,6.219960418
+4311775,Maquiné,613.58,7418,7588,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,300,52,2900,06/05/2024,3252,3656,3252,3656,47.07585408
+4311791,Maratá,82.063,2470,2521,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,19,0,1909,03/05/2024,1928,599,1928,599,76.29600317
+4311809,Marau,649.77,45124,46656,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,24,30,9300,03/05/2024,9354,27029,9354,27029,25.70980953
+4311908,Marcelino Ramos,229.551,4320,4389,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,0,0,05/05/2024,12,5122,12,5122,0.233735878
+4311981,Mariana Pimentel,338.45,3916,4003,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,14,0,4306,23/05/2024,4320,814,4320,814,84.14491624
+4312005,Mariano Moro,98.727,1858,1888,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1858,03/05/2024,1858,352,1858,352,84.07239819
+4312054,Marques de Souza,125.714,3969,4050,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,20,0,1,150,400,3497,30/04/2024,4068,0,4068,0,100
+4312104,Mata,316.121,4698,4786,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,700,100,4311,03/05/2024,5111,0,5111,0,100
+4312138,Mato Castelhano,238.268,2553,2610,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,59,0,1500,06/05/2024,1559,911,1559,911,63.11740891
+4312153,Mato Leitão,46.799,4859,4990,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,48,0,0,06/05/2024,48,3821,48,3821,1.240630654
+4312179,Mato Queimado,114.653,1795,1833,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3,0,1796,17/05/2024,1799,0,1799,0,100
+4312203,Maximiliano de Almeida,208.955,4191,4258,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4191,20/04/2024,4191,716,4191,716,85.40859996
+4312252,Minas do Leão,424.339,7505,7661,Alagamentos,Reconhecido,0,0,0,0,68,12,140,06/05/2024,220,7411,220,7411,2.882977329
+4312302,Miraguaí,131.236,4427,4506,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4855,05/05/2024,4855,0,4855,0,100
+4312351,Montauri,82.23,1499,1530,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,04/05/2024,0,1542,0,1542,0
+4312377,Monte Alegre dos Campos,549.455,3180,3250,Tempestade Local/Convectiva - Vendaval,Reconhecido,0,0,0,0,0,2,276,29/04/2024,278,2820,278,2820,8.973531311
+4312385,Monte Belo do Sul,69.726,2557,2609,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,19,0,0,50,147,0,06/05/2024,216,2454,216,2454,8.08988764
+4312401,Montenegro,425.023,64322,66295,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,7845,768,2650,01/05/2024,11263,48173,11263,48173,18.94979474
+4312427,Mormaço,146.191,2756,2815,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,7,0,2749,06/05/2024,2756,-7,2756,0,100
+4312443,Morrinhos do Sul,166.224,3071,3134,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3185,06/05/2024,3185,0,3185,0,100
+4312450,Morro Redondo,244.645,6046,6169,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1940,23/05/2024,1940,4291,1940,4291,31.13464933
+4312476,Morro Reuter,87.037,6029,6163,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,0,1500,06/05/2024,1540,4140,1540,4140,27.11267606
+4312500,Mostardas,1977.442,12090,12346,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,03/05/2024,0,12130,0,12130,0
+4312609,Muçum,111.247,4601,4694,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3520,306,965,02/05/2024,4791,0,4791,0,100
+4312617,Muitos Capões,1193.23,2879,2938,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,0,2869,08/05/2024,2879,98,2879,98,96.7080954
+4312625,Muliterno,110.969,1721,1755,,,,,,,,,,,,,,,
+4312658,Não-Me-Toque,361.689,17898,18314,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,0,0,3,3,3600,06/05/2024,3607,12331,3607,12331,22.63144686
+4312674,Nicolau Vergueiro,154.995,1932,1979,Tempestade Local/Convectiva - Vendaval,Registro,0,0,0,0,0,0,0,01/04/2024,0,1721,0,1721,0
+4312708,Nonoai,468.962,13719,14056,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,52,0,12024,04/05/2024,12076,0,12076,0,100
+4312757,Nova Alvorada,148.861,3163,3229,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,103,22,0,04/05/2024,125,3052,125,3052,3.93452943
+4312807,Nova Araçá,75.514,4954,5086,,,,,,,,,,,,,,,
+4312906,Nova Bassano,211.611,9649,9877,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,650,0,8999,02/05/2024,9649,-809,9649,0,100
+4312955,Nova Boa Vista,93.733,2042,2088,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1,0,2041,03/05/2024,2042,-82,2042,0,100
+4313003,Nova Bréscia,102.994,3044,3105,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5,16,3013,05/05/2024,3034,150,3034,150,95.28894472
+4313011,Nova Candelária,97.579,3061,3134,,,,,,,,,,,,,,,
+4313037,Nova Esperança do Sul,191.772,4865,4974,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4671,02/05/2024,4671,0,4671,0,100
+4313060,Nova Hartz,62.088,20088,20539,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,32,0,200,09/05/2024,232,18114,232,18114,1.264580835
+4313086,Nova Pádua,102.643,2343,2390,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,72,0,0,08/05/2024,72,2318,72,2318,3.012552301
+4313102,Nova Palma,314.613,5586,5683,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,550,50,5745,03/05/2024,6345,0,6345,0,100
+4313201,Nova Petrópolis,290.164,23300,23889,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,3,0,1200,35,21000,05/05/2024,22238,-3180,22238,0,100
+4313300,Nova Prata,259.941,25692,26587,Enxurradas,Reconhecido,0,0,0,0,180,3,8412,02/05/2024,8595,14235,8595,14235,37.6478318
+4313334,Nova Ramada,255.264,2163,2201,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,16,0,2421,03/05/2024,2437,0,2437,0,100
+4313359,Nova Roma do Sul,149.767,3466,3543,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3466,02/05/2024,3466,-119,3466,0,100
+4313375,Nova Santa Rita,218.094,29024,30121,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,50,0,8000,1500,0,14/05/2024,9550,13156,9550,13156,42.05936757
+4313391,Novo Cabrais,192.998,3568,3636,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,50,10,0,03/05/2024,60,3795,60,3795,1.556420233
+4313409,Novo Hamburgo,222.548,227646,235879,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10000,3981,7000,02/05/2024,20981,218070,20981,218070,8.776788217
+4313425,Novo Machado,218.836,3198,3246,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3198,07/05/2024,3198,729,3198,729,81.43621085
+4313441,Novo Tiradentes,75.428,2146,2188,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,7,0,2139,03/05/2024,2146,131,2146,131,94.24681599
+4313466,Novo Xingu,79.851,1646,1678,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,50,0,1596,03/05/2024,1646,111,1646,111,93.6824132
+4313490,Novo Barreiro,123.344,4272,4371,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,48,0,4224,07/05/2024,4272,-294,4272,0,100
+4313508,Osório,663.878,47396,48929,Alagamentos,Não reconhecido,0,0,0,0,10,0,0,22/05/2024,10,40931,10,40931,0.024425393
+4313607,Paim Filho,181.998,3629,3691,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3629,04/05/2024,3629,614,3629,614,85.52910676
+4313656,Palmares do Sul,949.201,12844,13170,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,150,0,0,06/05/2024,150,10821,150,10821,1.367240908
+4313706,Palmeira das Missões,1421.101,33216,34233,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,34335,04/05/2024,34335,0,34335,0,100
+4313805,Palmitinho,144.181,7839,8032,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,54,10,7775,03/05/2024,7839,-919,7839,0,100
+4313904,Panambi,491.57,43515,45042,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,36064,0,0,0,4,0,0,03/05/2024,36068,2000,36068,2000,94.74624356
+4313953,Pantano Grande,841.225,10212,10438,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,2550,80,2770,02/05/2024,5401,4494,5401,4494,54.58312279
+4314001,Paraí,121.745,7194,7357,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6812,05/05/2024,6812,0,6812,0,100
+4314027,Paraíso do Sul,337.534,6519,6635,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6519,03/05/2024,6519,817,6519,817,88.86314068
+4314035,Pareci Novo,57.485,4319,4433,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,626,503,0,05/05/2024,1129,2382,1129,2382,32.15608089
+4314050,Parobé,108.56,52058,53555,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,500,0,6000,598,0,08/05/2024,7098,44383,7098,44383,13.78761096
+4314068,Passa Sete,304.299,3983,4036,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1000,0,3982,04/05/2024,4982,177,4982,177,96.56910254
+4314076,Passo do Sobrado,265.133,6025,6154,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,50,34,2800,03/05/2024,2884,3127,2884,3127,47.97870571
+4314100,Passo Fundo,784.406,206215,214564,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,468,0,0,05/06/2024,468,184401,468,184401,0.253152232
+4314134,Paulo Bento,149.669,2144,2188,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,6,0,2190,06/05/2024,2196,0,2196,0,100
+4314159,Paverama,171.863,7978,8146,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,0,0,0,95,0,5000,30/04/2024,5097,2950,5097,2950,63.3403753
+4314175,Pedras Altas,1373.985,2061,2100,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2061,07/05/2024,2061,157,2061,157,92.92155095
+4314209,Pedro Osório,603.757,7484,7634, Inundações,Reconhecido,0,0,0,0,0,0,0,08/05/2024,0,7817,0,7817,0
+4314308,Pejuçara,414.106,3745,3819,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,0,0,3745,07/05/2024,3745,228,3745,228,94.26126353
+4314407,Pelotas,1608.78,325685,336131,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,720,740,104000,18/05/2024,105460,222318,105460,222318,32.17421548
+4314423,Picada Café,84.28,5351,5470,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,16,13,5322,06/05/2024,5351,-169,5351,0,100
+4314456,Pinhal,68.222,2959,3034,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,150,2809,05/05/2024,2959,-444,2959,0,100
+4314464,Pinhal da Serra,438.11,2248,2299,,,,,,,,,,,,,,,
+4314472,Pinhal Grande,478.11,3805,3867,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,1,43,26,4400,01/05/2024,4471,0,4471,0,100
+4314498,Pinheirinho do Vale,105.385,4540,4637,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,20,0,4503,07/05/2024,4523,-20,4523,0,100
+4314506,Pinheiro Machado,2249.176,11214,11409,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,11214,03/05/2024,11214,1573,11214,1573,87.69844373
+4314548,Pinto Bandeira,104.801,2723,2784,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,100,15,200,14/05/2024,315,2469,315,2469,11.31465517
+4314555,Pirapó,281.794,2260,2260,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1200,11/05/2024,1200,1557,1200,1557,43.52557127
+4314605,Piratini,3538.3,17504,17792,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,19831,06/05/2024,19831,0,19831,0,100
+4314704,Planalto,228.552,10406,10624,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,10524,04/05/2024,10524,0,10524,0,100
+4314753,Poço das Antas,67.618,2171,2222,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,1,61,0,1955,07/05/2024,2017,0,2017,0,100
+4314779,Pontão,502.709,3296,3350,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5,0,0,07/05/2024,5,3852,5,3852,0.129634431
+4314787,Ponte Preta,99.504,1575,1604,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,167,0,1408,03/05/2024,1575,175,1575,175,90
+4314803,Portão,159.298,34071,35237, Inundações,Reconhecido,0,0,0,0,70,22,100,02/05/2024,192,30689,192,30689,0.621741524
+4314902,Porto Alegre,495.977,1332845,1389322,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,50,50,0,10000,83,0,06/05/2024,10183,1399756,10183,1399756,0.722229827
+4315008,Porto Lucena,250.876,4360,4424,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,33,2,4325,06/05/2024,4360,1061,4360,1061,80.42796532
+4315057,Porto Mauá,105.811,2142,2176,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2142,06/05/2024,2142,402,2142,402,84.19811321
+4315073,Porto Vera Cruz,114.284,1560,1585,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1560,06/05/2024,1560,292,1560,292,84.23326134
+4315107,Porto Xavier,281.497,9938,10132,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,760,50,9748,06/05/2024,10558,2,10558,2,99.98106061
+4315131,Pouso Novo,105.338,1739,1773,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,2,0,0,90,0,1647,08/05/2024,1739,136,1739,136,92.74666667
+4315149,Presidente Lucena,49.628,3077,3159,Enxurradas,Reconhecido,0,0,0,0,0,0,3077,02/05/2024,3077,-592,3077,0,100
+4315156,Progresso,256.039,5340,5430,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5340,03/05/2024,5340,821,5340,821,86.67424119
+4315172,Protásio Alves,171.994,2025,2069,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,13,0,61,03/05/2024,74,1926,74,1926,3.7
+4315206,Putinga,216.159,3747,3814,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,0,0,0,03/05/2024,1,4146,1,4146,0.024113817
+4315305,Quaraí,3139.995,23500,23988,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,57,7000,02/05/2024,7057,15964,7057,15964,30.6546197
+4315313,Quatro Irmãos,268.971,1552,1579,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1552,21/05/2024,1552,226,1552,226,87.28908886
+4315321,Quevedos,543.359,2507,2555,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2710,22/04/2024,2710,0,2710,0,100
+4315354,Quinze de Novembro,223.072,3910,4000,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2500,02/05/2024,2500,1153,2500,1153,68.43690118
+4315404,Redentora,303.705,9738,9934,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,65,42,10115,03/05/2024,10222,0,10222,0,100
+4315453,Relvado,108.188,1796,1828,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,4,0,0,2,800,400,0,04/05/2024,1206,949,1206,949,55.96287703
+4315503,Restinga Sêca,968.62,14939,15213,Enxurradas,Registro,0,0,0,0,146,151,0,03/05/2024,297,15553,297,15553,1.873817035
+4315552,Rio dos Índios,235.854,2835,2874,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5,0,3611,07/05/2024,3616,0,3616,0,100
+4315602,Rio Grande,2682.867,191900,198958,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,09/05/2024,0,197253,0,197253,0
+4315701,Rio Pardo,2051.112,34654,35666, Inundações,Reconhecido,0,0,0,0,3088,414,0,02/05/2024,3502,34100,3502,34100,9.313334397
+4315750,Riozinho,239.09,4473,4572,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,13,0,4460,06/05/2024,4473,-146,4473,0,100
+4315800,Roca Sales,208.108,10418,10644,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,3,14,0,14,3000,350,0,05/05/2024,3381,6906,3381,6906,32.86672499
+4315909,Rodeio Bonito,83.278,6654,6821,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6694,04/05/2024,6694,-951,6694,0,100
+4315958,Rolador,295.201,2291,2332,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,8,0,2192,09/05/2024,2200,346,2200,346,86.41005499
+4316006,Rolante,296.09,21253,21733,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,4,0,0,7000,200,14049,05/05/2024,21253,-1760,21253,0,100
+4316105,Ronda Alta,418.675,9777,9972,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,10228,03/05/2024,10228,0,10228,0,100
+4316204,Rondinha,252.454,4991,5083,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5520,03/05/2024,5520,0,5520,0,100
+4316303,Roque Gonzales,349.084,6576,6698,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,06/05/2024,0,7206,0,7206,0
+4316402,Rosário do Sul,4343.656,36630,37700,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,158,0,3860,06/05/2024,4018,35733,4018,35733,10.10792181
+4316428,Sagrada Família,77.889,2480,2529,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,16,0,2579,03/05/2024,2595,0,2595,0,100
+4316436,Saldanha Marinho,221.554,2575,2621,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2575,29/05/2024,2575,294,2575,294,89.75252701
+4316451,Salto do Jacuí,507.698,10203,10373,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,120,0,10168,03/05/2024,10288,1592,10288,1592,86.5993266
+4316477,Salvador das Missões,95.952,2877,2953,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2877,09/05/2024,2877,-208,2877,0,100
+4316501,Salvador do Sul,99.026,6879,7182,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,0,0,0,60,30,0,06/05/2024,92,6655,92,6655,1.363568994
+4316600,Sananduva,504.499,16399,16759,Tempestade Local/Convectiva - Chuvas Intensas,Registro,0,0,0,0,0,0,0,21/05/2024,0,15373,0,15373,0
+4316709,Santa Bárbara do Sul,975.799,8122,8275,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,8829,28/05/2024,8829,0,8829,0,100
+4316733,Santa Cecília do Sul,200.056,1674,1710,,,,,,,,,,,,,,,
+4316758,Santa Clara do Sul,86.491,6887,7067,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,0,0,60,0,0,30/04/2024,61,5631,61,5631,1.07167955
+4316808,Santa Cruz do Sul,734.516,133230,138104,Alagamentos,Reconhecido,1,5,20,3,11603,272,6961,06/05/2024,18865,99422,18865,99422,15.94849814
+4316907,Santa Maria,1780.194,271735,282244,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,5,2,0,0,2000,120,269000,02/05/2024,271127,-10100,271127,0,100
+4316956,Santa Maria do Herval,140.437,6340,6482,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,56,16/05/2024,56,5997,56,5997,0.925161077
+4316972,Santa Margarida do Sul,955.299,2596,2658,Santa Margarida do Sul,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2352,03/05/2024,2352,2352,2352,0
+4317004,Santana da Boa Vista,1418.805,7024,7140,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,4,8240,03/05/2024,8244,-1104,8244,0,100
+4317103,Sant'Ana do Livramento,6946.407,84421,87296,Sant'Ana do Livramento,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,8703,23/05/2024,8703,82513,8703,73810
+4317202,Santa Rosa,489.38,76963,79395,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1300,06/05/2024,1300,67295,1300,67295,1.895181865
+4317251,Santa Tereza,73.669,1505,1531,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,948,0,557,02/05/2024,1505,212,1505,212,87.65288294
+4317301,Santa Vitória do Palmar,5206.977,30983,31961,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,60,25,30917,10/05/2024,31002,0,31002,0,100
+4317400,Santiago,2413.419,48938,50331,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,6,49280,04/05/2024,49298,-216,49298,0,100
+4317509,Santo Ângelo,678.502,76917,79130,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,76304,07/05/2024,76304,0,76304,0,100
+4317558,Santo Antônio do Palma,126.094,2091,2134,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,6,0,2133,06/05/2024,2139,0,2139,0,100
+4317608,Santo Antônio da Patrulha,1049.583,42947,44393,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,9886,09/05/2024,9886,29793,9886,29793,24.91494241
+4317707,Santo Antônio das Missões,1710.466,10300,10493,Tempestade Local/Convectiva - Vendaval,Registro,0,0,0,0,0,0,520,19/06/2024,520,10690,520,10690,4.638715433
+4317756,Santo Antônio do Planalto,203.44,2089,2136,,,,,,,,,,,,,,,
+4317806,Santo Augusto,467.775,13902,14196,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,13970,03/05/2024,13970,0,13970,0,100
+4317905,Santo Cristo,367.202,15320,15656,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,15320,06/05/2024,15320,-942,15320,0,100
+4317954,Santo Expedito do Sul,125.334,2349,2395,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2461,06/05/2024,2461,0,2461,0,100
+4318002,São Borja,3616.674,59676,61323, Inundações,Reconhecido,0,0,0,0,500,200,1000,07/05/2024,1700,59962,1700,59962,2.756965392
+4318051,São Domingos do Sul,78.67,2754,2808,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2926,03/05/2024,2926,0,2926,0,100
+4318101,São Francisco de Assis,2534.789,17618,17949,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,0,3000,03/05/2024,3040,16218,3040,16218,15.78564752
+4318200,São Francisco de Paula,3317.794,21893,22373,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,4,20496,03/05/2024,20540,0,20540,0,100
+4318309,São Gabriel,5053.46,58487,60102, Inundações,Reconhecido,0,0,0,0,1850,50,10000,30/04/2024,11900,48608,11900,48608,19.66682092
+4318408,São Jerônimo,935.596,21028,21421,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,120,150,1,4080,975,16815,06/05/2024,22141,0,22141,0,100
+4318424,São João da Urtiga,171.504,4461,4549,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4726,05/05/2024,4726,0,4726,0,100
+4318432,São João do Polêsine,78.32,2649,2707,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,1,1,0,100,21,2525,06/05/2024,2649,-14,2649,0,100
+4318440,São Jorge,125.731,2912,2976,Enxurradas,Registro,0,0,0,0,90,0,2684,03/05/2024,2774,0,2774,0,100
+4318457,São José das Missões,98.125,2362,2403,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,8,0,2712,03/05/2024,2720,0,2720,0,100
+4318465,São José do Herval,102.912,1902,1934,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,800,02/05/2024,800,1404,800,1404,36.29764065
+4318481,São José do Hortêncio,63.709,4447,4551,Enxurradas,Reconhecido,0,0,0,0,143,2,100,06/05/2024,245,3849,245,3849,5.984367367
+4318499,São José do Inhacorá,77.732,2406,2463,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,20,0,2386,06/05/2024,2406,-206,2406,0,100
+4318507,São José do Norte,1072.338,25443,26245, Inundações,Reconhecido,0,0,0,0,1000,273,0,10/05/2024,1273,24250,1273,24250,4.987658191
+4318606,São José do Ouro,335.215,6834,6978,,,,,,,,,,,,,,,
+4318614,São José do Sul,54.764,2380,2440,Enxurradas,Reconhecido,0,0,0,0,13,0,1632,02/05/2024,1645,437,1645,437,79.01056676
+4318622,São José dos Ausentes,1173.907,4172,4286,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,700,06/05/2024,700,2590,700,2590,21.27659574
+4318705,São Leopoldo,103.009,217409,225669,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,165000,15000,36436,07/05/2024,216437,-2227,216437,0,100
+4318804,São Lourenço do Sul,2039.257,41989,43283,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,2000,152,40962,10/05/2024,43114,0,43114,0,100
+4318903,São Luiz Gonzaga,1296.773,34752,35858,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,34558,30/05/2024,34558,0,34558,0,100
+4319000,São Marcos,256.159,21084,21537,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,15,0,350,03/05/2024,365,19740,365,19740,1.815468789
+4319109,São Martinho,171.245,5481,5589,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5773,08/05/2024,5773,0,5773,0,100
+4319125,São Martinho da Serra,669.547,2860,2911,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,250,23,0,06/05/2024,273,2928,273,2928,8.528584817
+4319158,São Miguel das Missões,1228.91,7056,7196,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,7056,06/05/2024,7056,365,7056,365,95.0815254
+4319208,São Nicolau,497.446,5118,5248,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5727,10/05/2024,5727,0,5727,0,100
+4319307,São Paulo das Missões,222.504,5846,5948,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4,10/05/2024,4,6363,4,6363,0.062823936
+4319356,São Pedro da Serra,37.631,3548,3614,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,1,0,0,40,38,0,04/05/2024,79,3238,79,3238,2.381670184
+4319364,São Pedro das Missões,79.894,1757,1791,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1757,03/05/2024,1757,129,1757,129,93.16012725
+4319372,São Pedro do Butiá,107.394,3070,3139,Tempestade Local/Convectiva - Chuvas Intensas,Não reconhecido,0,0,0,0,0,0,3070,06/05/2024,3070,-197,3070,0,100
+4319406,São Pedro do Sul,873.394,15577,15870,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,2,0,120,4,500,06/05/2024,626,15745,626,15745,3.82383483
+4319505,São Sebastião do Caí,113.097,24428,24883,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5000,600,18828,05/05/2024,24428,-2484,24428,0,100
+4319604,São Sepé,2204.779,21219,21575,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,10,0,0,206,597,20000,02/05/2024,20813,2985,20813,2985,87.45692915
+4319703,São Valentim,154.45,3264,3324,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3264,03/05/2024,3264,368,3264,368,89.86784141
+4319711,São Valentim do Sul,91.898,2207,2255,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,10,0,1,70,15,2207,05/05/2024,2303,-135,2303,0,100
+4319737,São Valério do Sul,107.402,2543,2594,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2543,07/05/2024,2543,104,2543,104,96.0710238
+4319752,São Vendelino,31.899,2251,2306,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,5,0,0,43,65,0,03/05/2024,115,1829,115,1829,5.91563786
+4319802,São Vicente do Sul,1174.225,8097,8259,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,90,60,8290,06/05/2024,8440,0,8440,0,100
+4319901,Sapiranga,137.759,75648,77898,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,273,55,2500,05/05/2024,2828,72192,2828,72192,3.769661424
+4320008,Sapucaia do Sul,58.247,132107,136542,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,5000,550,56000,05/05/2024,61550,69438,61550,69438,46.98903716
+4320107,Sarandi,351.718,22851,23356,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,845,35,20432,03/05/2024,21312,0,21312,0,100
+4320206,Seberi,301.032,11950,12313,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,60,20,11870,03/05/2024,11950,-1048,11950,0,100
+4320230,Sede Nova,119.312,2704,2753,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,06/05/2024,0,3011,0,3011,0
+4320263,Segredo,245.17,6009,6107,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6009,03/05/2024,6009,1149,6009,1149,83.94803018
+4320305,Selbach,176.47,5107,5220,Alagamentos,Reconhecido,0,0,0,0,0,0,0,06/05/2024,0,4929,0,4929,0
+4320321,Senador Salgado Filho,147.097,2673,2726,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2673,06/05/2024,2673,141,2673,141,94.98933902
+4320354,Sentinela do Sul,282.13,5306,5422,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,4,687,04/05/2024,691,4506,691,4506,13.29613238
+4320404,Serafina Corrêa,163.31,16961,17379,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,3,0,1,466,106,16383,02/05/2024,16961,-2718,16961,0,100
+4320453,Sério,105.428,1941,2093,Enxurradas,Reconhecido,0,0,0,0,41,0,2240,03/05/2024,2281,0,2281,0,100
+4320503,Sertão,440.631,5541,5637,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6294,06/05/2024,6294,0,6294,0,100
+4320552,Sertão Santana,252.013,5863,5988,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3,500,1800,07/05/2024,2303,3547,2303,3547,39.36752137
+4320578,Sete de Setembro,131.66,1830,1884,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1830,10/05/2024,1830,296,1830,296,86.07714017
+4320602,Severiano de Almeida,167.598,3406,3467,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,180,0,3662,03/05/2024,3842,0,3842,0,100
+4320651,Silveira Martins,119.285,2028,2060,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,200,24,2227,07/05/2024,2452,0,2452,0,100
+4320677,Sinimbu,509.778,8578,8698,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,1200,800,6578,01/05/2024,8578,1489,8578,1489,85.20909904
+4320701,Sobradinho,128.823,14226,14512,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,140,510,13576,06/05/2024,14226,59,14226,59,99.58697935
+4320800,Soledade,1215.056,29991,30936,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,25,15,30025,03/05/2024,30065,0,30065,0,100
+4320859,Tabaí,94.754,4461,4565,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,50,01/05/2024,50,4081,50,4081,1.210360687
+4320909,Tapejara,238.082,24557,25201,,,,,,,,,,,,,,,
+4321006,Tapera,179.935,10592,10822,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,10,26,0,06/05/2024,36,10416,36,10416,0.344431688
+4321105,Tapes,805.452,14695,14938,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,608,72,2320,17/05/2024,3000,13649,3000,13649,18.01910025
+4321204,Taquara,450.195,53242,54360,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,0,0,0,8800,439,6747,06/05/2024,15988,38668,15988,38668,29.25204918
+4321303,Taquari,349.967,25198,25968,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,894,90,24214,01/05/2024,25198,937,25198,937,96.41476947
+4321329,Taquaruçu do Sul,76.917,3119,3190,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,15,0,3104,03/05/2024,3119,-149,3119,0,100
+4321352,Tavares,610.107,5212,5319,Alagamentos,Reconhecido,0,0,0,0,0,0,1800,09/05/2024,1800,3551,1800,3551,33.63857223
+4321402,Tenente Portela,337.495,14497,14811,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,12,0,13704,06/05/2024,13716,0,13716,0,100
+4321436,Terra de Areia,142.304,10334,10569,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,40,0,100,21/05/2024,140,9738,140,9738,1.41729095
+4321451,Teutônia,175.874,32797,33963,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,3,250,21,0,01/05/2024,274,26991,274,26991,1.004951403
+4321469,Tio Hugo,113.944,3267,3352,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3267,23/06/2024,3267,-543,3267,0,100
+4321477,Tiradentes do Sul,236.653,5129,5201,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,6461,04/05/2024,6461,0,6461,0,100
+4321493,Toropi,198.316,2554,2598,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,11,0,0,04/05/2024,11,2941,11,2941,0.372628726
+4321501,Torres,161.63,41751,43268,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,4,0,0,6,0,60,02/05/2024,70,34576,70,34576,0.202043526
+4321600,Tramandaí,142.878,54387,56296,,,,,,,,,,,,,,,
+4321626,Travesseiro,80.681,2152,2193,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,20,3,1,350,40,2152,03/05/2024,2568,-254,2568,0,100
+4321634,Três Arroios,148.601,2591,2638,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,11,0,2580,06/05/2024,2591,264,2591,264,90.7530648
+4321667,Três Cachoeiras,251.483,10962,11216,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,0,07/05/2024,0,10239,0,10239,0
+4321709,Três Coroas,168.124,24425,24420,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,3,0,0,0,18200,1120,0,05/05/2024,19323,4532,19323,4532,81.0018864
+4321808,Três de Maio,421.461,24916,25452,Enxurradas,Não reconhecido,0,0,0,0,8,0,23718,07/05/2024,23726,0,23726,0,100
+4321832,Três Forquilhas,217.386,2760,2814,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,384,0,508,05/05/2024,892,2020,892,2020,30.63186813
+4321857,Três Palmeiras,180.599,4716,4826,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,4617,03/05/2024,4617,-236,4617,0,100
+4321907,Três Passos,268.902,25436,26284,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,25436,04/05/2024,25436,-1463,25436,0,100
+4321956,Trindade do Sul,268.417,7556,7766,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,24,0,5763,03/05/2024,5787,0,5787,0,100
+4322004,Triunfo,817.807,27498,28414,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,8000,937,18561,07/05/2024,27498,-1687,27498,0,100
+4322103,Tucunduva,181.198,5542,5649,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,5901,03/05/2024,5901,0,5901,0,100
+4322152,Tunas,217.302,3681,3739,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,120,0,3561,06/05/2024,3681,714,3681,714,83.75426621
+4322186,Tupanci do Sul,135.664,1374,1398,,,,,,,,,,,,,,,
+4322202,Tupanciretã,2253.234,20005,20345,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,46,1,19958,04/05/2024,20005,2281,20005,2281,89.76487481
+4322251,Tupandi,59.406,5029,5160,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,50,0,4979,02/05/2024,5029,-1110,5029,0,100
+4322301,Tuparendi,307.71,8363,8536,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,8557,06/05/2024,8557,0,8557,0,100
+4322327,Turuçu,253.635,3419,3489,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1400,15/05/2024,1400,2122,1400,2122,39.75014196
+4322343,Ubiretama,125.876,1994,2028,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2296,06/05/2024,2296,0,2296,0,100
+4322350,União da Serra,131.154,1170,1186,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,1080,04/05/2024,1080,407,1080,407,72.62945528
+4322376,Unistalda,602.26,1995,2052,,,,,,,,,,,,,,,
+4322400,Uruguaiana,5702.098,117210,120885, Inundações,Reconhecido,0,0,0,0,1836,297,1200,07/05/2024,3333,122174,3333,122174,2.65562877
+4322509,Vacaria,2124.492,64197,66110,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,64817,07/05/2024,64817,-3472,64817,0,100
+4322525,Vale Verde,329.727,3150,3214,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,73,0,1613,28/05/2024,1686,1567,1686,1567,51.82908085
+4322533,Vale do Sol,329.389,9897,10080,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,1,0,0,0,300,16,2000,03/05/2024,2317,8760,2317,8760,20.91721585
+4322541,Vale Real,45.085,6058,6213,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,10,0,0,1200,300,4548,04/05/2024,6058,-937,6058,0,100
+4322558,Vanini,64.905,2004,2047,,,,,,,,,,,,,,,
+4322608,Venâncio Aires,772.701,68763,70805,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,2,19,0,0,23235,391,0,04/05/2024,23647,42317,23647,42317,35.84834152
+4322707,Vera Cruz,309.994,26710,27638,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,200,0,0,2000,150,24320,01/05/2024,26670,-2684,26670,0,100
+4322806,Veranópolis,289.397,24021,24540,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,5,21,0,1,348,146,22815,06/05/2024,23336,-521,23336,0,100
+4322855,Vespasiano Corrêa,113.622,1818,1852,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,12,0,0,126,0,1680,03/05/2024,1818,156,1818,156,92.09726444
+4322905,Viadutos,266.67,4769,4852,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,15,0,4754,06/05/2024,4769,542,4769,542,89.79476558
+4323002,Viamão,1496.019,224112,232113,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,378,11,0,10/05/2024,389,238845,389,238845,0.162602306
+4323101,Vicente Dutra,193.023,4665,4747,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,36,0,5249,03/05/2024,5285,0,5285,0,100
+4323200,Victor Graeff,238.133,2780,2832,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,3,0,3033,08/05/2024,3036,0,3036,0,100
+4323309,Vila Flores,107.703,3646,3736,Enxurradas,Reconhecido,0,0,0,0,0,0,200,04/05/2024,200,3007,200,3007,6.236357967
+4323358,Vila Lângaro,151.673,2079,2122,,,,,,,,,,,,,,,
+4323408,Vila Maria,181.061,4413,4512,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,25,60,0,04/05/2024,85,4136,85,4136,2.01374082
+4323457,Vila Nova do Sul,508.278,3863,3935,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,7,0,250,06/05/2024,257,3964,257,3964,6.088604596
+4323507,Vista Alegre,77.656,2660,2712,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,2832,05/05/2024,2832,0,2832,0,100
+4323606,Vista Alegre do Prata,119.327,1590,1624,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,2,0,0,17,5,0,03/05/2024,24,1545,24,1545,1.529636711
+4323705,Vista Gaúcha,90.022,2783,2842,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,56,0,2727,06/05/2024,2783,-24,2783,0,100
+4323754,Vitória das Missões,258.454,3260,3318,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,0,0,3485,07/05/2024,3485,0,3485,0,100
+4323770,Westfália,66.875,3098,3219,Tempestade Local/Convectiva - Chuvas Intensas,Reconhecido,0,0,0,0,87,0,2706,06/05/2024,2793,0,2793,0,100
+4323804,Xangri-lá,60.756,16463,16907,,,,,,,,,,,,,,,
