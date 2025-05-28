@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#map {
+  height: 70vh; /* or whatever you want */
+  width: 100%;
+}
+
+#map-tooltip {
+  position: fixed;
+  background: rgba(255,255,255,0.95);
+  padding: 6px 10px;
+  border-radius: 6px;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  font-size: 14px;
+  display: none;
+}
+
+.info {
+  padding: 6px 8px;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+}
