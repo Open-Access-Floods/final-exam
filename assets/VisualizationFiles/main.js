@@ -1,9 +1,9 @@
 let map = L.map('map').setView([-30.0, -53.0], 6);
 
 // Base map layer
-L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://stamen.com">Stamen Design</a>',
-  maxZoom: 20
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
 let currentLayer;
