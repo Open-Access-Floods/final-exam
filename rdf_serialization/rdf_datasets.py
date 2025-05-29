@@ -195,7 +195,7 @@ datasets_list = [
         }
     },
     # MASHUPS DATASETS - Assuming these are also "datasets" within your catalog context
-    { # MD1
+    { # MD1_Affected_Population dataset
         "id": "MD1_Affected_Population",
         "uri": BRASIL["MD1_Affected_Population"], # Construct URI using BRASIL namespace
         "title": "Affected Population by Disaster Type in Brazil",
@@ -224,7 +224,165 @@ datasets_list = [
             "label": "Population and Society"
         },
         # For mashups, publisher/creator could be the project members
-        "publisher_uri": "https://github.com/Open-Access-Floods/final-exam/#project_team", # Example URI for the project team
+        "publisher_uri": "https://github.com/Open-Access-Floods/", # Example URI for the project team
+        "publisher_name": "Open Access Floods Project Team",
+    },
+    { # MD1_Municipality_Rainfall
+        "id": "MD2_Municipality_Rainfall",
+        "uri": BRASIL["MD2_Municipality_Rainfall"], # Construct URI using BRASIL namespace
+        "title": "Monthly Rainfall Aggregated by Municipality – Brazil (2024)",
+        "description": "This dataset aggregates monthly precipitation totals for Brazilian municipalities in 2024, based on INMET weather station data geolocated to administrative boundaries. It supports hydrological risk and disaster analysis.",
+        "language": "en", # Assuming English for this Mashup
+        "issued_date": "2025-05-28", # Today's date
+        "modified_date": "2025-05-28",
+        "temporal_coverage": {
+            "start_date": "2000-01-01", # Example coverage
+            "end_date": "2024-12-31"
+        },
+        "spatial_coverage_uri": "http://publications.europa.eu/resource/authority/country/BRA",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD2_Municipality_Rainfall.csv", # Example access URL
+            "media_type": "text/csv",
+            "format": "CSV",
+            "byte_size": 10000,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Precipitation", "Rainfall", "Climate data", "Brazil", "Municipal level", "Hydrological risk", "Disaster analysis"
+        ],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", # Example URI for the project team
+        "publisher_name": "Open Access Floods Project Team",
+    },
+    { # MD3_Deforestation_RS
+        "id": "MD3_Deforestation_RS",
+        "uri": BRASIL["MD3_Deforestation_RS"], # Construct URI using BRASIL namespace
+        "title": "Deforestation in Rio Grande do Sul – MapBiomas (2000–2022)",
+        "description": "This dataset presents annual deforestation figures for municipalities in the state of Rio Grande do Sul, derived from MapBiomas land cover classifications. It enables the assessment of forest loss trends over two decades.",
+        "language": "en", # Assuming English for this Mashup
+        "issued_date": "2025-05-27", # Today's date
+        "modified_date": "2025-05-27",
+        "temporal_coverage": {
+            "start_date": "2000-01-01", # Example coverage
+            "end_date": "2022-12-31"
+        },
+        "spatial_coverage_uri": "http://publications.europa.eu/resource/authority/country/BRA",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD3_Deforestation_RS.csv", # Example access URL
+            "media_type": "text/csv",
+            "format": "CSV",
+            "byte_size": 9000,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Brazil", "Floods", "Landslides", "Deforestation", "Forest loss", "Land cover", "MapBiomas", "Rio Grande do Sul"
+        ],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", # Example URI for the project team
+        "publisher_name": "Open Access Floods Project Team",
+    },
+    { # MD4_Rain_Precipitation_States dataset
+        "id": "MD4_Rain_Precipitation_States",
+        "uri": BRASIL["MD4_Rain_Precipitation_States"], # Construct URI using BRASIL namespace
+        "title": "Rainfall Volume by Brazilian State – INMET (2024)",
+        "description": "This dataset provides aggregated rainfall data for each Brazilian state for the year 2024, based on meteorological station records from INMET. It supports regional analysis of extreme precipitation events.",
+        "language": "en", # Assuming English for this Mashup
+        "issued_date": "2025-05-27", # Today's date
+        "modified_date": "2025-05-27",
+        "temporal_coverage": {
+            "start_date": "2024-01-01", # Example coverage
+            "end_date": "2024-12-31"
+        },
+        "spatial_coverage_uri": "http://publications.europa.eu/resource/authority/country/BRA",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD4_Rain_Precipitation_States.csv", # Example access URL
+            "media_type": "text/csv",
+            "format": "CSV",
+            "byte_size": 7000,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Climate", "Precipitation", "Brazil", "INMET", "Rainfall", "Meteorological data", "Extreme weather", "Hydrological risk"
+        ],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/REGI", # Changed to SOCIETY theme
+            "label": "Regions and Cities"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", # Example URI for the project team
+        "publisher_name": "Open Access Floods Project Team",
+    },
+    { # MD5_Monthly_Rainfall_Stations_RS
+        "id": "MD5_Monthly_Rainfall_Stations_RS",
+        "uri": BRASIL["MD5_Monthly_Rainfall_Stations_RS"], # Construct URI using BRASIL namespace
+        "title": "Monthly Rainfall by Weather Station – Rio Grande do Sul (2024)",
+        "description": "This dataset presents monthly rainfall measurements from INMET meteorological stations located in the state of Rio Grande do Sul, Brazil, for the year 2024. It enables fine-grained temporal and spatial analysis of precipitation patterns during extreme weather events.",
+        "language": "en", # Assuming English for this Mashup
+        "issued_date": "2025-05-27", # Today's date
+        "modified_date": "2025-05-27",
+        "temporal_coverage": {
+            "start_date": "2024-01-01", # Example coverage
+            "end_date": "2024-12-31"
+        },
+        "spatial_coverage_uri": "http://publications.europa.eu/resource/authority/country/BRA",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD5_Monthly_Rainfall_Stations_RS.csv", # Example access URL
+            "media_type": "text/csv",
+            "format": "CSV",
+            "byte_size": 8500,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Affected population", "Disaster type", "Brazil", "Rainfall", "Meteorological stations", "Rio Grande do Sul", "Monthly data", "INMET"],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI", # Changed to SOCIETY theme
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", # Example URI for the project team
+        "publisher_name": "Open Access Floods Project Team",
+    },
+    { # MD7_Urbanization_Growth_RS
+        "id": "MD7_Urbanization_Growth_RS",
+        "uri": BRASIL["MD7_Urbanization_Growth_RS"], # Construct URI using BRASIL namespace
+        "title": "Urbanization Growth by Municipality – Rio Grande do Sul (2013–2023)",
+        "description": "This dataset presents the percentage growth in urbanized land area for each municipality in Rio Grande do Sul, Brazil, between 2013 and 2023. The data is derived from MapBiomas and supports analysis of land use changes related to climate vulnerability and disaster risk.",
+        "language": "en", 
+        "issued_date": "2025-05-27", 
+        "modified_date": "2025-05-28",
+        "temporal_coverage": {
+            "start_date": "2013-01-01", 
+            "end_date": "2023-12-31"
+        },
+        "spatial_coverage_uri": "http://publications.europa.eu/resource/authority/country/BRA",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MMD7_Urbanization_Growth_RS.csv", # Example access URL
+            "media_type": "text/csv",
+            "format": "CSV",
+            "byte_size": 4800,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Urbanization", "Land use change", "Rio Grande do Sul", "MapBiomas","Urban growth"],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", 
         "publisher_name": "Open Access Floods Project Team",
     }
 ]

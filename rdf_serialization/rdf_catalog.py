@@ -89,6 +89,11 @@ dataset_ids = [
     "D5_Deforestation",
     "D6_Civil_Defense",
     "MD1_Affected_Population",
+    "MD2_Municipality_Rainfall",
+    "MD3_Deforestation_RS",
+    "MD4_Rain_Precipitation_States",
+    "MD5_Monthly_Rainfall_Stations_RS",
+    "MD7_Urbanization_Growth_RS"
 ]
 
 # Add each dataset ID using the custom 'dcat3:dataset' property

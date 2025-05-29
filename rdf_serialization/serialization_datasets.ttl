@@ -11,16 +11,21 @@ brasil:catalog dcat:dataset brasil:D1_Disasters_and_Impact_Data,
         brasil:D4_Urban_Expansion,
         brasil:D5_Deforestation,
         brasil:D6_Civil_Defense,
-        brasil:MD1_Affected_Population .
+        brasil:MD1_Affected_Population,
+        brasil:MD2_Municipality_Rainfall,
+        brasil:MD3_Deforestation_RS,
+        brasil:MD4_Rain_Precipitation_States,
+        brasil:MD5_Monthly_Rainfall_Stations_RS,
+        brasil:MD7_Urbanization_Growth_RS .
+
+<http://publications.europa.eu/resource/authority/data-theme/REGI> a skos:Concept ;
+    skos:prefLabel "Regions and Cities"@en .
 
 <http://publications.europa.eu/resource/authority/subject-matter/PCIV> a skos:Concept ;
     skos:prefLabel "Civil Protection"@pt .
 
 <https://bdmep.inmet.gov.br/> a foaf:Agent ;
     foaf:name "Instituto Nacional de Meteorologia (INMET)" .
-
-<https://github.com/Open-Access-Floods/final-exam/#project_team> a foaf:Agent ;
-    foaf:name "Open Access Floods Project Team" .
 
 brasil:D1_Disasters_and_Impact_Data a dcat:Dataset ;
     dct:creator <https://s2id.mi.gov.br/> ;
@@ -189,7 +194,7 @@ brasil:MD1_Affected_Population a dcat:Dataset ;
     dct:language <http://lexvo.org/id/iso639-1/en> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:modified "2025-05-27"^^xsd:date ;
-    dct:publisher <https://github.com/Open-Access-Floods/final-exam/#project_team> ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
     dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dct:endDate "2024-12-31"^^xsd:date ;
@@ -209,6 +214,142 @@ brasil:MD1_Affected_Population a dcat:Dataset ;
         "Landslides"@en,
         "Storms"@en .
 
+brasil:MD2_Municipality_Rainfall a dcat:Dataset ;
+    dct:description "This dataset aggregates monthly precipitation totals for Brazilian municipalities in 2024, based on INMET weather station data geolocated to administrative boundaries. It supports hydrological risk and disaster analysis."@en ;
+    dct:issued "2025-05-28"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-28"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2024-12-31"^^xsd:date ;
+            dct:startDate "2000-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Monthly Rainfall Aggregated by Municipality – Brazil (2024)"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "CSV" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD2_Municipality_Rainfall.csv> ;
+            dcat:byteSize 10000 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Brazil"@en,
+        "Climate data"@en,
+        "Disaster analysis"@en,
+        "Hydrological risk"@en,
+        "Municipal level"@en,
+        "Precipitation"@en,
+        "Rainfall"@en .
+
+brasil:MD3_Deforestation_RS a dcat:Dataset ;
+    dct:description "This dataset presents annual deforestation figures for municipalities in the state of Rio Grande do Sul, derived from MapBiomas land cover classifications. It enables the assessment of forest loss trends over two decades."@en ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-27"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2022-12-31"^^xsd:date ;
+            dct:startDate "2000-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Deforestation in Rio Grande do Sul – MapBiomas (2000–2022)"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "CSV" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD3_Deforestation_RS.csv> ;
+            dcat:byteSize 9000 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Brazil"@en,
+        "Deforestation"@en,
+        "Floods"@en,
+        "Forest loss"@en,
+        "Land cover"@en,
+        "Landslides"@en,
+        "MapBiomas"@en,
+        "Rio Grande do Sul"@en .
+
+brasil:MD4_Rain_Precipitation_States a dcat:Dataset ;
+    dct:description "This dataset provides aggregated rainfall data for each Brazilian state for the year 2024, based on meteorological station records from INMET. It supports regional analysis of extreme precipitation events."@en ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-27"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2024-12-31"^^xsd:date ;
+            dct:startDate "2024-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+    dct:title "Rainfall Volume by Brazilian State – INMET (2024)"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "CSV" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD4_Rain_Precipitation_States.csv> ;
+            dcat:byteSize 7000 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Brazil"@en,
+        "Climate"@en,
+        "Extreme weather"@en,
+        "Hydrological risk"@en,
+        "INMET"@en,
+        "Meteorological data"@en,
+        "Precipitation"@en,
+        "Rainfall"@en .
+
+brasil:MD5_Monthly_Rainfall_Stations_RS a dcat:Dataset ;
+    dct:description "This dataset presents monthly rainfall measurements from INMET meteorological stations located in the state of Rio Grande do Sul, Brazil, for the year 2024. It enables fine-grained temporal and spatial analysis of precipitation patterns during extreme weather events."@en ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-27"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2024-12-31"^^xsd:date ;
+            dct:startDate "2024-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Monthly Rainfall by Weather Station – Rio Grande do Sul (2024)"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "CSV" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MD5_Monthly_Rainfall_Stations_RS.csv> ;
+            dcat:byteSize 8500 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Affected population"@en,
+        "Brazil"@en,
+        "Disaster type"@en,
+        "INMET"@en,
+        "Meteorological stations"@en,
+        "Monthly data"@en,
+        "Rainfall"@en,
+        "Rio Grande do Sul"@en .
+
+brasil:MD7_Urbanization_Growth_RS a dcat:Dataset ;
+    dct:description "This dataset presents the percentage growth in urbanized land area for each municipality in Rio Grande do Sul, Brazil, between 2013 and 2023. The data is derived from MapBiomas and supports analysis of land use changes related to climate vulnerability and disaster risk."@en ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-28"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/BRA> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2023-12-31"^^xsd:date ;
+            dct:startDate "2013-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Urbanization Growth by Municipality – Rio Grande do Sul (2013–2023)"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "CSV" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/processed_RS/MMD7_Urbanization_Growth_RS.csv> ;
+            dcat:byteSize 4800 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Land use change"@en,
+        "MapBiomas"@en,
+        "Rio Grande do Sul"@en,
+        "Urban growth"@en,
+        "Urbanization"@en .
+
 <https://portal.inmet.gov.br/> a foaf:Agent ;
     foaf:name "Intituto Nacional de Meteorologia (INMET)" .
 
@@ -227,12 +368,15 @@ brasil:MD1_Affected_Population a dcat:Dataset ;
 <https://s2id.mi.gov.br/> a foaf:Agent ;
     foaf:name "Sistema Integrado de Informações de Desastres (S2ID)" .
 
-<http://publications.europa.eu/resource/authority/data-theme/ENVI> a skos:Concept ;
-    skos:prefLabel "Environment"@en .
-
 <http://publications.europa.eu/resource/authority/data-theme/SOCI> a skos:Concept ;
     skos:prefLabel "Population and Society"@en .
 
 <https://data.mapbiomas.org/dataverse/brazil> a foaf:Agent ;
     foaf:name "MapBiomas" .
+
+<https://github.com/Open-Access-Floods/> a foaf:Agent ;
+    foaf:name "Open Access Floods Project Team" .
+
+<http://publications.europa.eu/resource/authority/data-theme/ENVI> a skos:Concept ;
+    skos:prefLabel "Environment"@en .
 

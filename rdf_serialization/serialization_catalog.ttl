@@ -27,7 +27,12 @@ brasil: a dcat:Catalog ;
         "D4_Urban_Expansion",
         "D5_Deforestation",
         "D6_Civil_Defense",
-        "MD1_Affected_Population" ;
+        "MD1_Affected_Population",
+        "MD2_Municipality_Rainfall",
+        "MD3_Deforestation_RS",
+        "MD4_Rain_Precipitation_States",
+        "MD5_Monthly_Rainfall_Stations_RS",
+        "MD7_Urbanization_Growth_RS" ;
     prov:wasAttributedTo <https://github.com/Open-Access-Floods/final-exam/> .
 
 <http://publications.europa.eu/resource/authority/data-theme> a skos:ConceptScheme ;
