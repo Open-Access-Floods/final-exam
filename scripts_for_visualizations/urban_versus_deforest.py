@@ -43,7 +43,7 @@ fig = px.bar(
     color="type",
     animation_frame="year",
     barmode="group",
-    color_discrete_sequence=["#7b2c3b", "#145c9e"],  # burgundy e azul
+    color_discrete_sequence=["#121D40", "#495473"],  # burgundy e azul
     labels={"municipality": "Municipality", "area": "Area (ha)", "type": "Type"}
 )
 
@@ -54,3 +54,6 @@ fig.update_layout(
 )
 
 fig.show()
+
+# Salvar o gráfico como HTML
+fig.write_html("plots/urban_vs_deforest.html")
