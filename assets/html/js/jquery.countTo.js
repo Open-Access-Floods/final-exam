@@ -29,7 +29,8 @@
       to:              this.$element.data('to'),
       speed:           this.$element.data('speed'),
       refreshInterval: this.$element.data('refresh-interval'),
-      decimals:        this.$element.data('decimals')
+      decimals:        this.$element.data('decimals'),
+      suffix: this.$element.data('suffix')
     };
 
     var keys = Object.keys(options);
@@ -97,8 +98,22 @@
   };
 
   function formatter(value, options) {
+  let suffix = options.suffix || '';
+
+  if (suffix === '%') {
+    return value.toFixed(options.decimals) + '%';
+  }
+
+  if (value >= 1_000_000_000) {
+    return (value / 1_000_000_000).toFixed(1) + 'B';
+  } else if (value >= 1_000_000) {
+    return (value / 1_000_000).toFixed(1) + 'M';
+  } else if (value >= 1_000) {
+    return (value / 1_000).toFixed(1) + 'K';
+  } else {
     return value.toFixed(options.decimals);
   }
+}
 
   $.fn.countTo = function (option) {
     return this.each(function () {

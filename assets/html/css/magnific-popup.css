@@ -22,7 +22,9 @@
     z-index: 1043;
     position: fixed;
     outline: none !important;
-    -webkit-backface-visibility: hidden; }
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    backface-visibility: hidden; }
 
 .mfp-container {
     text-align: center;
@@ -122,6 +124,7 @@ button.mfp-close, button.mfp-arrow {
     cursor: pointer;
     background: transparent;
     border: 0;
+    appearance: none;
     -webkit-appearance: none;
     display: block;
     outline: none;
@@ -436,8 +439,9 @@ img.mfp-img {
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility:hidden;
-    -ms-backface-visibility:hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /**
