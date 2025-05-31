@@ -2,50 +2,62 @@
 <html class="no-js" lang="en">
 
 <head>
-    <!-- title -->
     <title>Open Data Floods</title>
-    <!-- description -->
     <meta name="description"
         content="A great collection of creative, responsive, elegant onepage templates for different industries.">
-    <!-- keywords -->
     <meta name="keywords"
         content="creative, css3, html5, onepage, multipurpose, bootstrap, responsive, agency, architecture, resume, blog, photography, restaurant, portfolio, spa, travel, wedding, coming soon">
     <meta charset="utf-8">
     <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-    <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <!-- animation -->
     <link rel="stylesheet" href="css/animate.css" />
-    <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- et line icon -->
     <link rel="stylesheet" href="css/et-line-icons.css" />
-    <!-- font-awesome icon -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- owl carousel -->
     <link rel="stylesheet" href="css/owl.transitions.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
-    <!-- magnific popup -->
     <link rel="stylesheet" href="css/magnific-popup.css" />
-    <!-- style -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css" />
-    <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->
+    <style>
+        .smaller-banner {
+            height: 60vh; /* Reduced height, adjust as needed */
+            min-height: 400px; /* Minimum height for smaller screens */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-</head>
+        .smaller-banner-container {
+            width: 60%; /* Adjust as needed */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .smaller-banner-text {
+            /* Reduced font sizes */
+            font-size: 1.2em;
+            padding: 20px;
+        }
+
+        .smaller-banner-title {
+            font-size: 2em; /* Smaller title */
+        }
+
+        .smaller-banner-subtitle {
+            font-size: 1em; /* Smaller subtitle */
+        }
+    </style>
+    </head>
 
 <body>
     <nav class="navbar no-margin-bottom alt-font without-button">
         <div class="container navigation-menu">
             <div class="row">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="col-md-2 navbar-header">
                     <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse"
                         class="navbar-toggle collapsed" type="button">
@@ -54,11 +66,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#home" class="navbar-brand inner-link"><img alt="" src="images/ODFLOODS.png"></a>
+                    <a href="index.html" class="navbar-brand inner-link"><img alt="" src="images/ODFLOODS.png"></a>
                 </div>
                 <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse col-md-10">
                     <ul class="nav navbar-nav">
-                        <li><a class="inner-link" href="#about">About</a></li>
+                        <li><a class="inner-link" href="event.html">About</a></li>
                         <li><a class="inner-link" href="#speakers">Datasets</a></li>
                         <li><a class="inner-link" href="documentation.html">Documentation</a></li>
                         <li><a class="inner-link" href="#sponsors">Visualizations</a></li>
@@ -70,22 +82,14 @@
             </div>
         </div>
     </nav>
-    <!-- slider -->
-    <section id="home" class="no-padding parallax2 parallax-fix">
-        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt="" />
-        <div class="opacity-full bg-deep-blue2"></div>
-        <div class="container full-screen position-relative">
+    <section id="home" class="no-padding parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2;">
+        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;"/>
+        <div class="opacity-full bg-deep-blue2" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+        <div class="container smaller-banner-container position-relative" style="position:relative;z-index:3;">
             <div class="slider-typography text-center">
                 <div class="slider-text-middle-main">
-                    <div class="slider-text-middle slider-typography-option6">
-                        <span class="text-uppercase deep-green-text font-weight-600 alt-font">Brazil in Data: Disasters,
-                            Environment, and Society</span>
-                        <p
-                            class="alt-font text-uppercase white-text text-large light-gray-text margin-three no-margin-lr xs-margin-eleven xs-no-margin-top xs-no-margin-lr xs-text-small">
-                            How Rio Grande do Sul was submerse: April-May 2024</p>
-                        <a href="#register"
-                            class="highlight-button-white-border btn btn-medium button letter-spacing-1 inner-link margin-two no-margin-bottom no-margin-lr xs-margin-eleven xs-no-margin-top xs-no-margin-bottom xs-no-margin-lr">Learn
-                            More</a>
+                    <div class="slider-text-middle smaller-banner-text">
+                        <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title" style="color:#7ed957;">Datasets and RDF Assertion</h1>
                     </div>
                 </div>
             </div>
@@ -177,12 +181,10 @@
                     <span class="title-medium alt-font deep-green-text text-uppercase xs-title-small">All the information in available in Open Data Floods GitHub repository</span>
                     <span
                         class="title-extra-large-3 alt-font deep-green-text text-uppercase font-weight-600 margin-one no-margin-bottom no-margin-lr display-block xs-title-extra-large">Consult the documentation</span>
-                    <!-- time -->
                     <div id="counter-event" enddate="2016/12/25 12:00:00"
                         class="white-text alt-font center-col margin-eight no-margin-lr sm-margin-fifteen sm-no-margin-lr xs-no-border">
                     </div>
-                    <!-- end time -->
-                    <a href="#register"
+                    <a href="documentation.html"
                         class="highlight-button-blue btn btn-medium button letter-spacing-1 inner-link">Repository</a>
                 </div>
             </div>
@@ -263,15 +265,11 @@
                                 </div>
                             </div>
                             <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-                                <!-- accordion -->
                                 <section id="accordions" class=" no-padding wow fadeIn">
-                                    <!-- accordion style #1 -->
                                     <div id="accordion-style1">
                                         <div class="row">
                                             <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                                <!-- accordion -->
                                                 <div class="panel-group accordion-style3 no-margin-bottom" id="accordion-one">
-                                                    <!-- accordion item -->
                                                     <div class="panel panel-default no-border">
                                                         <div class="panel-heading padding-three no-padding-lr no-padding-top active-accordion">
                                                             <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link1"><h4 class="panel-title">Question 1<span class="pull-right"><i class="fa fa-minus"></i></span></h4></a>
@@ -282,20 +280,16 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- end accordion item -->
-                                                    <!-- accordion item -->
                                                     <div class="panel panel-default no-border no-margin-top">
                                                         <div class="panel-heading padding-three no-padding-lr no-padding-top ">
                                                             <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link2"><h4 class="panel-title"> Question 2<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
                                                         </div>
                                                         <div id="accordion-one-link2" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                What does the data reveal about local land use trends in the affected municipalities, and how do they compare to broader national patterns of deforestation and urban growth? 
+                                                                What does the data reveal about local land use trends in the affected municipalities, and how do they compare to broader national patterns of deforestation and urban growth?
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- end accordion item -->
-                                                    <!-- accordion item -->
                                                     <div class="panel panel-default no-border no-margin-top">
                                                         <div class="panel-heading padding-three no-padding-lr no-padding-top">
                                                             <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link3"><h4 class="panel-title">Question 3<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
@@ -306,20 +300,16 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- end accordion item -->
-                                                    <!-- accordion item -->
                                                     <div class="panel panel-default no-border no-margin-top">
                                                         <div class="panel-heading padding-three no-padding-lr no-padding-top">
                                                             <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link4"><h4 class="panel-title">Question 4<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
                                                         </div>
                                                         <div id="accordion-one-link4" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                Can open government data help anticipate future climate risks and guide more equitable and effective policies for disaster prevention and adaptation? 
+                                                                Can open government data help anticipate future climate risks and guide more equitable and effective policies for disaster prevention and adaptation?
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- end accordion item -->
-                                                    <!-- accordion item -->
                                                     <div class="panel panel-default no-border no-margin-top">
                                                         <div class="panel-heading padding-three no-padding-lr no-padding-top">
                                                             <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link5"><h4 class="panel-title">Question 5<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
@@ -330,14 +320,11 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- end accordion item -->
+                                                    </div>
                                                 </div>
-                                                <!-- end accordion -->
-                                            </div>
                                         </div>
                                     </div>
-                                    <!-- end accordion style #1 -->
-                            </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -357,7 +344,6 @@
                 </div>
             </div>
             <div class="row margin-seven">
-                <!-- 1 -->
                 <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
@@ -368,7 +354,6 @@
                         <span class="text-small white-text letter-spacing-1 margin-three">Including meteorological, land-use, demographic and disaster records supporting the analysis</span>
                     </div>
                 </div>
-                <!-- 2 -->
                 <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
@@ -379,7 +364,6 @@
                         <span class="text-small white-text letter-spacing-1 margin-three">Total affected people during the 2024 flood in Rio Grande do Sul, based on official S2ID data</span>
                     </div>
                 </div>
-                <!-- 3 -->
                 <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
@@ -391,7 +375,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Nueva fila -->
             <div class="row margin-seven no-padding-bottom">
                 <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -403,7 +386,6 @@
                         <span class="text-small white-text letter-spacing-1">Milimeters measured in several areas during May 2024, the highest in decades.</span>
                     </div>
                 </div>
-                <!-- 2 -->
                 <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
@@ -428,71 +410,34 @@
         </div>
     </section>
 
-    <!-- control this info  -->
-        <section class="border-top wow fadeIn padding-seven no-padding-lr">
+    <section class="border-top wow fadeIn padding-seven no-padding-lr">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 center-col text-center">
-                        <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left xs-margin-four no-margin-tb xs-no-padding"
-                            href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a><a
-                            class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left xs-margin-four no-margin-tb xs-no-padding"
-                            href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a><a
-                            class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left xs-margin-four no-margin-tb xs-no-padding"
-                            href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a><a
-                            class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left xs-margin-four no-margin-tb xs-no-padding"
-                            href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a><a
-                            class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left xs-margin-four no-margin-tb xs-no-padding"
-                            href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a><a
-                            class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left xs-margin-four no-margin-tb xs-no-padding"
-                            href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
-                    </div>
-                    <div class="col-md-12 col-sm-12 text-center">
-                        <span
-                            class="text-uppercase alt-font text-extra-small margin-two no-margin-lr no-margin-bottom display-block medium-gray-text">&COPY;
-                            2015 Brando is proudly powered by <a href="http://www.themezaa.com/"
-                                target="_blank">ThemeZaa.</a></span>
+                        <a class="btn social-icon button no-letter-spaci"><i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn social-icon button no-letter-spaci">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn social-icon button no-letter-spaci">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
                     </div>
                 </div>
             </div>
         </section>
 
-    </footer>
-    <!-- scroll to top -->
-    <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-    <!-- end scroll to top -->
-    <!-- javascript libraries -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <!-- menu navigation -->
     <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <!-- animation -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <!-- page scroll -->
-    <script type="text/javascript" src="js/page-scroll.js"></script>
-    <!-- owl carousel -->
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <!-- counter -->
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-    <!-- parallax -->
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <!-- magnific popup -->
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <!-- portfolio with shorting tab -->
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <!-- images loaded -->
-    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- pull menu -->
-    <script type="text/javascript" src="js/classie.js"></script>
-    <!-- counter  -->
-    <script type="text/javascript" src="js/counter.js"></script>
-    <!-- fit video  -->
-    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-    <!-- setting -->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
