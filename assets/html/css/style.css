@@ -119,6 +119,7 @@ h5 { font-size:20px; line-height:25px}
 h6 { font-size:18px; line-height:23px}
 .title-thick-underline {border-bottom:6px solid #000; padding: 0 0 15px 0}
 .title-underline {border-bottom:2px solid #fff; padding: 0 0 5px 0}
+.title-underline_two {border-bottom:2px solid #000000; padding: 0 0 5px 0}
 .title-sideline {padding:0;}
 .title-sideline:before { border-bottom: 4px solid #ef106e; content: ""; left: -15px; position: absolute; top: 15px; width: 12px; }
 
@@ -569,7 +570,7 @@ i { color: #9a9a9a; margin:0}
 .z-index-0 {z-index:0 !important;}
 .z-index-minus2 {z-index:-2 !important;}
 .no-transition *, .owl-carousel *, .mfp-container * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-section { padding: 100px 0; }
+section { padding: 50px 0; }
 .button-bg-area{padding: 80px 0;}
 
 /* ===================================
