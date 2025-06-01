@@ -1,10 +1,9 @@
 let map = L.map('map').setView([-30.0, -53.0], 6);
 
 // Base map layer
-L.tileLayer('https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}', {
-	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: '<your apikey>',
-	maxZoom: 22
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {More actions
+  maxZoom: 18,
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
 let currentLayer;
