@@ -1,6 +1,6 @@
 let map = L.map('map').setView([-30.0, -53.0], 6);
 
-// Base map layerMore actions
+// Base map layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 18,
   attribution: '&copy; OpenStreetMap contributors'
