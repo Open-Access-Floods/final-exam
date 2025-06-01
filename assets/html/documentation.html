@@ -81,7 +81,7 @@
                         <li><a class="inner-link" href="#sponsors">Visualizations</a></li>
                         <li><a class="inner-link" href="#gallery">Results</a></li>
                         <li><a class="inner-link" href="#register">License</a></li>
-                        <li><a class="inner-link" href="#contact">Team</a></li>
+                        <li><a class="inner-link" href="team.html">Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -105,7 +105,7 @@
     </section>
     <!-- end section #home -->
 
-    <section id="tabs-section" class="wow fadeIn" style="padding: 100px 0;">
+    <section id="data-processing" class="wow fadeIn" style="padding: 100px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center" style="padding: 0 100px; margin-bottom: 60px;">
@@ -116,31 +116,37 @@
                 </div>
             </div>
 
-            <div class="col-md-12 margin-te no-margin-lr">
-                <div class="row">
-                    <div class="col-md-6"> <span
-                            class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
-                            <p class="text-large">
-                                To ensure consistency and analytical value, all datasets underwent a standard preprocessing workflow involving cleaning, filtering, and harmonization. The five primary sources—S2ID, INMET, MapBiomas, IBGE, and geospatial shapefiles—were integrated at the municipality level.
-                            </p>
-                            <p>
-                                The S2ID disaster records were filtered for hydrological events in 2024, cleaned for encoding issues, and aggregated into a single impact indicator.
-                            </p>
-                        </span>
-                    </div>
-                    <div class="col-md-6"> <span
-                            class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
-                            <p class="text-large">
-                                INMET precipitation data from over 500 stations was standardized and joined with location metadata. Using MapBiomas, we calculated urban and forest cover change between 2013 and 2023, as well as exposure to urban flood risk zones. IBGE demographic data helped normalize indicators.
-                                All datasets were matched by municipality and state, producing an integrated file ready for visualization and analysis.
-                            </p>
-                        </span>
-                    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                        <p class="text-large">
+                            To ensure consistency and analytical value, all datasets underwent a standard
+                            preprocessing workflow involving cleaning, filtering, and harmonization. The five
+                            primary sources—S2ID, INMET, MapBiomas, IBGE, and geospatial shapefiles—were integrated
+                            at the municipality level.
+                        </p>
+                        <p>
+                            The S2ID disaster records were filtered for hydrological events in 2024, cleaned for
+                            encoding issues, and aggregated into a single impact indicator.
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                        <p class="text-large">
+                            INMET precipitation data from over 500 stations was standardized and joined with
+                            location metadata. Using MapBiomas, we calculated urban and forest cover change between
+                            2013 and 2023, as well as exposure to urban flood risk zones. IBGE demographic data
+                            helped normalize indicators.
+                            All datasets were matched by municipality and state, producing an integrated file ready
+                            for visualization and analysis.
+                        </p>
+                    </span>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 col-sm-12 text-center" style="padding: 50px 100px; margin-bottom: 60px;">
+                <div class="col-md-12 col-sm-12 text-center" style="padding: 70px 0px; margin-bottom: 0px;">
                     <span
                         class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
                         <span class="deep-green-text">—</span> KNIME Workflow Overview
@@ -148,352 +154,32 @@
                 </div>
             </div>
 
-            <div class="col-md-12 col-sm-12 margin-five">
-                <div class="tab-style8">
-                    <div class="row">
-                        <div class="tabs-left col-md-12 col-sm-12 col-xs-12">
-                            <ul
-                                class="nav nav-tabs nav-tabs-light pull-left text-uppercase xs-margin-five xs-no-margin-lr xs-no-margin-top">
-                                <li class="active xs-width-100 text-large">
-                                    <a href="#tab4_sec1" data-toggle="tab">Source Datasets</a>
-                                </li>
-                                <li class="xs-width-100 text-large">
-                                    <a href="#tab4_sec2" data-toggle="tab">Mashup Datasets</a>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content position-relative overflow-hidden">
-                                <div class="tab-pane fade in active" id="tab4_sec1">
-                                    <div class="row margin-seven">
-                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D1 - Disaster Records (S2ID)
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> D1_Disaster_and_Impact_Data</li>
-                                                <li><strong>Publisher: </strong>Ministry of Integration</li>
-                                                <li><strong>Format: </strong>CSV</li>
-                                                <li><strong>Metadata: </strong>Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://s2id.mi.gov.br/paginas/relatorios/"
-                                                        target="_blank">https://s2id.mi.gov.br/</a></li>
-                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D2 - Rainfall Data (INMET)
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> D2_Rainfall</li>
-                                                <li><strong>Publisher:</strong> INMET</li>
-                                                <li><strong>Format:</strong> CSV</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a href="https://bdmep.inmet.gov.br/"
-                                                        target="_blank">https://bdmep.inmet.gov.br</a></li>
-                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row margin-seven">
-                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D3 - Population Estimates (IBGE)
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> D3_Population_Risk</li>
-                                                <li><strong>Publisher:</strong> IBGE</li>
-                                                <li><strong>Format:</strong> CSV, SHP</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101589"
-                                                        target="_blank">https://biblioteca.ibge.gov.br</a></li>
-                                                <li><strong>License:</strong> CC BY 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D4 - Urban Expansion (MapBiomas)
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> D4_Urban_Expansion</li>
-                                                <li><strong>Publisher:</strong> MapBiomas</li>
-                                                <li><strong>Format:</strong> XLSX</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/2W2Z5M"
-                                                        target="_blank">https://data.mapbiomas.org</a></li>
-                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row margin-seven">
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D5 - Deforestation (MapBiomas)
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> D5_Deforestation</li>
-                                                <li><strong>Publisher:</strong> MapBiomas</li>
-                                                <li><strong>Format:</strong> CSV</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/7STHCP"
-                                                        target="_blank">https://data.mapbiomas.org/</a></li>
-                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D6 - Civil Defense (Transparency Portal)
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> D6_Civil_Defense</li>
-                                                <li><strong>Publisher:</strong> Controladoria-Geral da União</li>
-                                                <li><strong>Format:</strong> CSV</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://portaldatransparencia.gov.br/programas-e-acoes/acao/22BO-acoes-de-protecao-e-defesa-civil?ano=2025"
-                                                        target="_blank">https://portaldatransparencia.gov.br/</a></li>
-                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tab4_sec2">
-                                    <div class="row margin-seven">
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                MD1 - Affected Population
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> MD1_Affected_Population</li>
-                                                <li><strong>Publisher: </strong>Ministry of Integration</li>
-                                                <li><strong>Format: </strong>CSV</li>
-                                                <li><strong>Metadata: </strong>Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://s2id.mi.gov.br/paginas/relatorios/"
-                                                        target="_blank">https://s2id.mi.gov.br/</a></li>
-                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                MD2 - Rainfall per Municipality
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> MD2_Municipality_Rainfall</li>
-                                                <li><strong>Publisher:</strong> INMET</li>
-                                                <li><strong>Format:</strong> CSV</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a href="https://bdmep.inmet.gov.br/"
-                                                        target="_blank">https://bdmep.inmet.gov.br</a></li>
-                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row margin-seven">
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                MD3 - Deforestation Rio Grande de Sul
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> MD3_Deforestation_RS</li>
-                                                <li><strong>Title:</strong> Population Estimates (IBGE)</li>
-                                                <li><strong>Publisher:</strong> IBGE</li>
-                                                <li><strong>Format:</strong> CSV, SHP</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101589"
-                                                        target="_blank">https://biblioteca.ibge.gov.br</a></li>
-                                                <li><strong>License:</strong> CC BY 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D4 - Rain Precipitation per States
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> MD4_Rain_Precipitation_States</li>
-                                                <li><strong>Publisher:</strong> MapBiomas</li>
-                                                <li><strong>Format:</strong> XLSX</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/2W2Z5M"
-                                                        target="_blank">https://data.mapbiomas.org</a></li>
-                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row margin-seven">
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                D5 - Monthly Rainfall Stations RS
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> MD5_Monthly_Rainfall_Stations_RS</li>
-                                                <li><strong>Publisher:</strong> MapBiomas</li>
-                                                <li><strong>Format:</strong> CSV</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/7STHCP"
-                                                        target="_blank">https://data.mapbiomas.org/</a></li>
-                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
-                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
-                                            <span
-                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
-                                                MD7 - Urbanization Growth RS
-                                            </span>
-                                            <p class="text-medium center-col">
-                                            <ul class="text-medium">
-                                                <li><strong>ID:</strong> MD7_Urbanization_Growth_RS</li>
-                                                <li><strong>Publisher:</strong> Controladoria-Geral da União</li>
-                                                <li><strong>Format:</strong> CSV</li>
-                                                <li><strong>Metadata:</strong> Provided</li>
-                                                <li><strong>URI:</strong> <a
-                                                        href="https://portaldatransparencia.gov.br/programas-e-acoes/acao/22BO-acoes-de-protecao-e-defesa-civil?ano=2025"
-                                                        target="_blank">https://portaldatransparencia.gov.br/</a></li>
-                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end tab style #4 -->
-
-    <section id="event" class="wow fadeIn no-padding-bottom">
-        <div class="container">
             <div class="row">
-                <div class="margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
-                    <div class="col-md-5 col-sm-12">
-                        <span
-                            class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top"><strong>OpenDataFlood</strong>
-                            is a data-driven project aimed at exploring the structural, environmental, and
-                            policy-related conditions that contributed to the catastrophic flood in <strong>Rio
-                                Grande
-                                do Sul, Brazil</strong>, in 2024.</span>
-                        <p class="text-medium">In addition to focusing on Rio Grande do Sul, OpenDataFlood
-                            contextualizes the state within the broader national landscape, comparing rainfall
-                            intensity
-                            and public spending with other Brazilian states.</p>
-                        <p class="text-medium">The project utilizes a wide range of datasets, including
-                            meteorological
-                            data, public spending records, and environmental indicators, to analyze the factors that
-                            led
-                            to the flood. It also examines the role of public policies in disaster preparedness and
-                            response.</p>
-                        <p class="text-medium">By making this data accessible and visualizing it through interactive
-                            maps and charts, OpenDataFlood aims to raise awareness about the vulnerabilities of
-                            Brazilian states to climate change and the importance of effective public policies in
-                            mitigating such disasters.</p>
-                    </div>
-                    <div
-                        class="col-md-6 col-sm-12 col-md-offset-1 sm-padding-five sm-no-padding-lr sm-no-padding-bottom xs-margin-eleven xs-no-margin-lr xs-no-margin-bottom">
-                        <div class="col-md-12 no-padding">
-                            <div class="col-md-6 col-sm-6 xs-margin-nineteen xs-no-margin-lr xs-no-margin-top">
-                                <i
-                                    class="icon-cloud icon-medium margin-nine no-margin-lr no-margin-top xs-margin-five xs-no-margin-lr xs-no-margin-top"></i>
-                                <span
-                                    class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Climatic
-                                    conditions</span>
-                                <p class="text-medium width-90 xs-width-100">Using monthly precipitation records
-                                    from
-                                    meteorological stations across Brazil.</p>
-                            </div>
-                            <div class="col-md-6 col-sm-6 xs-margin-nineteen xs-no-margin-lr xs-no-margin-top">
-                                <i
-                                    class="icon-global icon-medium margin-nine no-margin-lr no-margin-top xs-margin-five xs-no-margin-lr xs-no-margin-top"></i>
-                                <span
-                                    class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Environmental
-                                    transformation</span>
-                                <p class="text-medium width-90 xs-width-100">through long-term data on urban
-                                    expansion
-                                    and deforestation at the municipal level.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-12 no-padding">
-                            <div
-                                class="col-md-6 col-sm-6 margin-seven no-margin-lr no-margin-bottom xs-margin-nineteen xs-no-margin-lr xs-no-margin-top">
-                                <i
-                                    class="icon-search icon-medium margin-nine no-margin-lr no-margin-top xs-margin-five xs-no-margin-lr xs-no-margin-top"></i>
-                                <span
-                                    class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Preparedness
-                                    and response</span>
-                                <p class="text-medium width-90 xs-width-100">by analyzing historical federal
-                                    investments
-                                    in civil defense actions (2014–2025).</p>
-                            </div>
-                            <div class="col-md-6 col-sm-6 margin-seven no-margin-lr no-margin-bottom ">
-                                <i
-                                    class="icon-bargraph icon-medium margin-nine no-margin-lr no-margin-top xs-margin-five xs-no-margin-lr xs-no-margin-top"></i>
-                                <span
-                                    class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Disaster
-                                    records</span>
-                                <p class="text-medium width-90 xs-width-100">based on the national system for
-                                    disaster
-                                    notifications (S2ID), showing patterns of climate-related emergencies across
-                                    municipalities.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                    <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                        <p class="text-large">
+                            The following image illustrates the KNIME workflow used for data cleaning, normalization,
+                            and
+                            integration processes. This visual representation helps clarify how datasets were
+                            harmonized,
+                            enriched, and prepared for analytical processing.
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <a class="image-zoom" href="images/knime_shot.png" title="Elaboration Process Details">
+                        <img src="images/knime_shot.png" class="img-fluid"
+                            style="max-width: 90%; height: auto; border-radius: 8px;">
+                    </a>
+                    <p class="text-small text-muted mt-3">Click on the image to zoom in and see the details of the
+                        elaboration process.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="wow fadeIn fix-background" style="background-image:url(images/flood-3.png);">
         <div class="opacity-full bg-deep-blue2"></div>
         <div class="container position-relative">
@@ -507,291 +193,410 @@
                     <div id="counter-event" enddate="2016/12/25 12:00:00"
                         class="white-text alt-font center-col margin-eight no-margin-lr sm-margin-fifteen sm-no-margin-lr xs-no-border">
                     </div>
-                    <a href="documentation.html"
+                    <a href="https://github.com/Open-Access-Floods/final-exam"
                         class="highlight-button-blue btn btn-medium button letter-spacing-1 inner-link">Repository</a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="speakers" class="wow fadeIn border-bottom no-padding-bottom">
+
+
+    <!-- TAB SECTION -->
+    <section id="tabs-section" class="wow fadeIn" style="margin-bottom: 0%;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
+                <div class="col-md-12 col-sm-12 text-center" style="padding: 1rem; margin-top: 3rem;">
                     <span
                         class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
-                        <span class="deep-green-text">—</span> Scenario
+                        <span class="deep-green-text">—</span> Datasets Catalog
                     </span>
                 </div>
             </div>
-            <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
-                <div class="col-sm-9 col-sm-9"><span
-                        class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
-                        <strong>What happen in 2024 in Rio Grande de Sul?</strong>
-                    </span></div>
-                <div class="col-md-6 col-sm-12">
-                    <p class="text-medium">
-                        The 2024 flood in Rio Grande do Sul was not an isolated event but the result of complex and
-                        interconnected factors. While the affected municipalities did not show sharp increases in urban
-                        sprawl or extensive deforestation at the local level, Brazil’s broader environmental and
-                        climatic systems reveal deeper structural vulnerabilities.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        Rio Grande do Sul is Brazil’s southernmost state, home to approximately 11 million people—around
-                        5% of the country's total population. It is one of Brazil's most economically developed regions,
-                        with a strong agricultural, industrial, and service-based economy. As such, a natural disaster
-                        in this region carries broad national consequences, affecting supply chains, food production,
-                        and infrastructure.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        In May 2024, the state experienced one of the worst floods in its history. According to official
-                        data, over 2.3 million people were directly affected, with more than 400 municipalities impacted
-                        by heavy rains, river overflows, landslides, and infrastructure collapse. Cities like Porto
-                        Alegre, the capital, faced record-breaking water levels and mass displacements.
-                    </p>
-                    <br>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <p class="text-medium">
-                        Scientific research shows that deforestation in key biomes like the Amazon and the Cerrado has
-                        far-reaching effects on rainfall distribution across the South American continent. These changes
-                        in the atmospheric water cycle can intensify extreme weather events even in regions
-                        geographically distant from the deforested areas.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        This project uses official open data from Brazilian institutions—such as INMET, IBGE, MapBiomas,
-                        and the Transparency Portal—to trace these connections. It integrates precipitation patterns,
-                        land use data, and public investment in disaster prevention to shed light on the systemic nature
-                        of climate risk in Brazil. Rio Grande do Sul is analyzed in detail, but always in the context of
-                        national patterns of environmental change and institutional preparedness.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        By revealing spatial and temporal patterns through data visualization, OpenDataFlood aims to
-                        inform climate governance, support evidence-based policy, and promote public engagement with
-                        environmental accountability.
-                    </p>
-                </div>
-            </div>
-            <div class="container padding-eight" style="max-width: 1200px;">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 text-center">
-                        <div>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 text-center">
-                                    <span
-                                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
-                                        <span class="deep-green-text">—</span> Research Questions
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-                                <section id="accordions" class=" no-padding wow fadeIn">
-                                    <div id="accordion-style1">
-                                        <div class="row">
-                                            <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                                <div class="panel-group accordion-style3 no-margin-bottom"
-                                                    id="accordion-one">
-                                                    <div class="panel panel-default no-border">
-                                                        <div
-                                                            class="panel-heading padding-three no-padding-lr no-padding-top active-accordion">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one"
-                                                                href="#accordion-one-link1">
-                                                                <h4 class="panel-title">Question 1<span
-                                                                        class="pull-right"><i
-                                                                            class="fa fa-minus"></i></span></h4>
-                                                            </a>
-                                                        </div>
-                                                        <div id="accordion-one-link1"
-                                                            class="panel-collapse collapse in">
-                                                            <div class="panel-body">
-                                                                How did long-term environmental changes across Brazil
-                                                                contribute to the conditions that made the 2024 flood in
-                                                                Rio Grande do Sul so severe?
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="panel panel-default no-border no-margin-top">
-                                                        <div
-                                                            class="panel-heading padding-three no-padding-lr no-padding-top ">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one"
-                                                                href="#accordion-one-link2">
-                                                                <h4 class="panel-title"> Question 2<span
-                                                                        class="pull-right"><i
-                                                                            class="fa fa-plus"></i></span></h4>
-                                                            </a>
-                                                        </div>
-                                                        <div id="accordion-one-link2" class="panel-collapse collapse">
-                                                            <div class="panel-body">
-                                                                What does the data reveal about local land use trends in
-                                                                the affected municipalities, and how do they compare to
-                                                                broader national patterns of deforestation and urban
-                                                                growth?
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="panel panel-default no-border no-margin-top">
-                                                        <div
-                                                            class="panel-heading padding-three no-padding-lr no-padding-top">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one"
-                                                                href="#accordion-one-link3">
-                                                                <h4 class="panel-title">Question 3<span
-                                                                        class="pull-right"><i
-                                                                            class="fa fa-plus"></i></span></h4>
-                                                            </a>
-                                                        </div>
-                                                        <div id="accordion-one-link3" class="panel-collapse collapse">
-                                                            <div class="panel-body">
-                                                                How do public investments in civil defense vary by
-                                                                region, and are they aligned with the intensity and
-                                                                frequency of climate-related events?
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="panel panel-default no-border no-margin-top">
-                                                        <div
-                                                            class="panel-heading padding-three no-padding-lr no-padding-top">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one"
-                                                                href="#accordion-one-link4">
-                                                                <h4 class="panel-title">Question 4<span
-                                                                        class="pull-right"><i
-                                                                            class="fa fa-plus"></i></span></h4>
-                                                            </a>
-                                                        </div>
-                                                        <div id="accordion-one-link4" class="panel-collapse collapse">
-                                                            <div class="panel-body">
-                                                                Can open government data help anticipate future climate
-                                                                risks and guide more equitable and effective policies
-                                                                for disaster prevention and adaptation?
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="panel panel-default no-border no-margin-top">
-                                                        <div
-                                                            class="panel-heading padding-three no-padding-lr no-padding-top">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one"
-                                                                href="#accordion-one-link5">
-                                                                <h4 class="panel-title">Question 5<span
-                                                                        class="pull-right"><i
-                                                                            class="fa fa-plus"></i></span></h4>
-                                                            </a>
-                                                        </div>
-                                                        <div id="accordion-one-link5" class="panel-collapse collapse">
-                                                            <div class="panel-body">
-                                                                What are the limits of local interventions when facing
-                                                                environmental changes driven by large-scale biome
-                                                                degradation?
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 margin-five">
+                    <div class="tab-style8">
+                        <div class="row">
+                            <div class="tabs-left col-md-12 col-sm-12 col-xs-12">
+                                <ul
+                                    class="nav nav-tabs nav-tabs-light pull-left text-uppercase xs-margin-five xs-no-margin-lr xs-no-margin-top">
+                                    <li class="active xs-width-100 text-large">
+                                        <a href="#tab4_sec1" data-toggle="tab">Source Datasets</a>
+                                    </li>
+                                    <li class="xs-width-100 text-large">
+                                        <a href="#tab4_sec2" data-toggle="tab">Mashup Datasets</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content position-relative overflow-hidden">
+                                    <div class="tab-pane fade in active" id="tab4_sec1">
+                                        <div class="row margin-seven">
+                                            <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D1 - Disaster Records (S2ID)
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> D1_Disaster_and_Impact_Data</li>
+                                                    <li><strong>Publisher: </strong>Ministry of Integration</li>
+                                                    <li><strong>Format: </strong>CSV</li>
+                                                    <li><strong>Metadata: </strong>Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://s2id.mi.gov.br/paginas/relatorios/"
+                                                            target="_blank">https://s2id.mi.gov.br/</a></li>
+                                                    <li><strong>License:</strong> Public Domain, Brazil Government
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D2 - Rainfall Data (INMET)
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> D2_Rainfall</li>
+                                                    <li><strong>Publisher:</strong> INMET</li>
+                                                    <li><strong>Format:</strong> CSV</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a href="https://bdmep.inmet.gov.br/"
+                                                            target="_blank">https://bdmep.inmet.gov.br</a></li>
+                                                    <li><strong>License:</strong> Public Domain, Brazil Government
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row margin-seven">
+                                            <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D3 - Population Estimates (IBGE)
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> D3_Population_Risk</li>
+                                                    <li><strong>Publisher:</strong> IBGE</li>
+                                                    <li><strong>Format:</strong> CSV, SHP</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101589"
+                                                            target="_blank">https://biblioteca.ibge.gov.br</a></li>
+                                                    <li><strong>License:</strong> CC BY 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D4 - Urban Expansion (MapBiomas)
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> D4_Urban_Expansion</li>
+                                                    <li><strong>Publisher:</strong> MapBiomas</li>
+                                                    <li><strong>Format:</strong> XLSX</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/2W2Z5M"
+                                                            target="_blank">https://data.mapbiomas.org</a></li>
+                                                    <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row margin-seven">
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D5 - Deforestation (MapBiomas)
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> D5_Deforestation</li>
+                                                    <li><strong>Publisher:</strong> MapBiomas</li>
+                                                    <li><strong>Format:</strong> CSV</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/7STHCP"
+                                                            target="_blank">https://data.mapbiomas.org/</a></li>
+                                                    <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D6 - Civil Defense (Transparency Portal)
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> D6_Civil_Defense</li>
+                                                    <li><strong>Publisher:</strong> Controladoria-Geral da União
+                                                    </li>
+                                                    <li><strong>Format:</strong> CSV</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://portaldatransparencia.gov.br/programas-e-acoes/acao/22BO-acoes-de-protecao-e-defesa-civil?ano=2025"
+                                                            target="_blank">https://portaldatransparencia.gov.br/</a>
+                                                    </li>
+                                                    <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                                </ul>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="tab-pane fade" id="tab4_sec2">
+                                        <div class="row margin-seven">
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    MD1 - Affected Population
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> MD1_Affected_Population</li>
+                                                    <li><strong>Publisher: </strong>Ministry of Integration</li>
+                                                    <li><strong>Format: </strong>CSV</li>
+                                                    <li><strong>Metadata: </strong>Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://s2id.mi.gov.br/paginas/relatorios/"
+                                                            target="_blank">https://s2id.mi.gov.br/</a></li>
+                                                    <li><strong>License:</strong> Public Domain, Brazil Government
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    MD2 - Rainfall per Municipality
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> MD2_Municipality_Rainfall</li>
+                                                    <li><strong>Publisher:</strong> INMET</li>
+                                                    <li><strong>Format:</strong> CSV</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a href="https://bdmep.inmet.gov.br/"
+                                                            target="_blank">https://bdmep.inmet.gov.br</a></li>
+                                                    <li><strong>License:</strong> Public Domain, Brazil Government
+                                                    </li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row margin-seven">
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    MD3 - Deforestation Rio Grande de Sul
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> MD3_Deforestation_RS</li>
+                                                    <li><strong>Title:</strong> Population Estimates (IBGE)</li>
+                                                    <li><strong>Publisher:</strong> IBGE</li>
+                                                    <li><strong>Format:</strong> CSV, SHP</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101589"
+                                                            target="_blank">https://biblioteca.ibge.gov.br</a></li>
+                                                    <li><strong>License:</strong> CC BY 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D4 - Rain Precipitation per States
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> MD4_Rain_Precipitation_States</li>
+                                                    <li><strong>Publisher:</strong> MapBiomas</li>
+                                                    <li><strong>Format:</strong> XLSX</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/2W2Z5M"
+                                                            target="_blank">https://data.mapbiomas.org</a></li>
+                                                    <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row margin-seven">
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    D5 - Monthly Rainfall Stations RS
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> MD5_Monthly_Rainfall_Stations_RS</li>
+                                                    <li><strong>Publisher:</strong> MapBiomas</li>
+                                                    <li><strong>Format:</strong> CSV</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/7STHCP"
+                                                            target="_blank">https://data.mapbiomas.org/</a></li>
+                                                    <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                                style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                                <span
+                                                    class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                    MD7 - Urbanization Growth RS
+                                                </span>
+                                                <p class="text-medium center-col">
+                                                <ul class="text-medium">
+                                                    <li><strong>ID:</strong> MD7_Urbanization_Growth_RS</li>
+                                                    <li><strong>Publisher:</strong> Controladoria-Geral da União
+                                                    </li>
+                                                    <li><strong>Format:</strong> CSV</li>
+                                                    <li><strong>Metadata:</strong> Provided</li>
+                                                    <li><strong>URI:</strong> <a
+                                                            href="https://portaldatransparencia.gov.br/programas-e-acoes/acao/22BO-acoes-de-protecao-e-defesa-civil?ano=2025"
+                                                            target="_blank">https://portaldatransparencia.gov.br/</a>
+                                                    </li>
+                                                    <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
+    <!-- end tab style #4 -->
 
-    <section id="sponsors" class="fix-background fix-background-webkit"
-        style="background-image:url('http://placehold.it/1920x1301');">
-        <div class="opacity-full bg-deep-blue2"></div>
-        <div class="container position-relative">
+    <section id="data-rdf" class="wow fadeIn" style="padding: 0px 0;">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
+                <div class="col-md-12 col-sm-12 text-center" style="padding: 0 100px; margin-bottom: 60px;">
                     <span
-                        class="title-medium alt-font font-weight-600 text-uppercase white-text display-block sm-title-large">
-                        <span class="deep-green-text">—</span> Results
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Metadata and RDF Assertion
                     </span>
-                    <br>
                 </div>
             </div>
-            <div class="row margin-seven">
-                <div
-                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
-                            data-to="12" data-speed="7000"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Datasets</span>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Including meteorological,
-                            land-use, demographic and disaster records supporting the analysis</span>
-                    </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                        <p class="text-large">
+                            To ensure consistency and analytical value, all datasets underwent a standard
+                            preprocessing workflow involving cleaning, filtering, and harmonization. The five
+                            primary sources—S2ID, INMET, MapBiomas, IBGE, and geospatial shapefiles—were integrated
+                            at the municipality level.
+                        </p>
+                        <p>
+                            The S2ID disaster records were filtered for hydrological events in 2024, cleaned for
+                            encoding issues, and aggregated into a single impact indicator.
+                        </p>
+                    </span>
                 </div>
-                <div
-                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
-                            data-to="2300000" data-speed="7000" data-decimals="1"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Affected
-                            people</span>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Total affected people during
-                            the 2024 flood in Rio Grande do Sul, based on official S2ID data</span>
-                    </div>
-                </div>
-                <div
-                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
-                            data-to="431" data-speed="7000"></span>
-                        <span
-                            class="text-uppercase alt-font text-medium white-text letter-spacing-1">Municipalities</span>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Officially impacted by the
-                            event, nearly 90% of the entire state.</span>
-                    </div>
+                <div class="col-md-6">
+                    <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                        <p class="text-large">
+                            INMET precipitation data from over 500 stations was standardized and joined with
+                            location metadata. Using MapBiomas, we calculated urban and forest cover change between
+                            2013 and 2023, as well as exposure to urban flood risk zones. IBGE demographic data
+                            helped normalize indicators.
+                            All datasets were matched by municipality and state, producing an integrated file ready
+                            for visualization and analysis.
+                        </p>
+                    </span>
                 </div>
             </div>
-            <div class="row margin-seven no-padding-bottom">
-                <div
-                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
-                            data-to="400" data-speed="7000"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Extreme
-                            rainfall</span>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-three">
-                        <span class="text-small white-text letter-spacing-1">Milimeters measured in several areas during
-                            May 2024, the highest in decades.</span>
-                    </div>
-                </div>
-                <div
-                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
-                            data-to="12" data-speed="7000" data-decimals="0" data-suffix="%"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Urbanization
-                            growth</span>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Average urbanization growth
-                            across RS municipalities between 2013 and 2023.</span>
-                    </div>
-                </div>
-                <div
-                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
-                            data-to="2100000000" data-speed="7000" data-decimals="1"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Investments</span>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Allocated to Civil Defense
-                            nationwide (2014–2024), based on Transparency Portal data (Reais Currency).</span>
-                    </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center" style="padding: 70px 0px; margin-bottom: 0px;">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Dataset Catalog Serialization
+                    </span>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-large">
+                        To improve interoperability and semantic accessibility, all datasets used in this project
+                        were described using RDF (Resource Description Framework). We followed W3C standards such as
+                        DCAT and Dublin Core to create machine-readable metadata for each dataset and catalog.
+                    </p>
+                    <p class="text-large">
+                        <strong>Two Turtle (.ttl) files were created:</strong>
+                    </p>
+                    <ul class="text-large" style="list-style-type: disc; padding-left: 4em;">
+                        <li style="margin-bottom: 1em;">
+                            <strong>serialization_catalog.ttl</strong> – describes the overall dataset catalog,
+                            including title, publisher, license, and theme.
+                        </li>
+                        <li style="margin-bottom: 1em;">
+                            <strong>serialization_datasets.ttl</strong> – provides metadata for individual datasets
+                            (S2ID, INMET, IBGE, MapBiomas, etc.), including distribution URLs, formats, and
+                            temporal/spatial coverage.
+                        </li>
+                    </ul>
+                    <p class="text-large">
+                        These serializations enable integration into open data portals, support for SPARQL queries,
+                        and visualization using RDF tools.
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            
+            <!-- Importação do RDF2h via CDN -->
+            <script src="https://gist.github.com/CarlaMenegat/3f8b8b42244a9a43f395c2b6753f888e.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/rdf2h@1.0.0/build/rdf2h.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $.get("rdf_serialization/serialization_catalog.ttl", function (data) {
+                        const parser = new N3.Parser();
+                        const triples = [];
+
+                        parser.parse(data, (error, triple, prefixes) => {
+                            if (triple) {
+                                triples.push(triple);
+                            } else {
+                                // Visualization setup
+                                const store = new N3.Store(triples);
+                                const visualizer = new RDF2h(store);
+                                $('#rdf-viewer').html(visualizer.render());
+                            }
+                        });
+                    }).fail(function () {
+                        $('#rdf-viewer').html("<p>Error loading RDF file.</p>");
+                    });
+                });
+            </script>
         </div>
     </section>
+
+
+
 
     <section class="border-top wow fadeIn padding-seven no-padding-lr">
         <div class="container">
@@ -810,6 +615,26 @@
         </div>
     </section>
 
+    <script>
+        // ... (Tu código JavaScript existente para las tarjetas de análisis) ...
+
+        $(document).ready(function () {
+            // Inicializa Magnific Popup para la clase 'image-zoom'
+            $('.image-zoom').magnificPopup({
+                type: 'image', // Define el tipo de contenido como imagen
+                closeOnContentClick: true, // Cierra el popup al hacer clic en la imagen
+                mainClass: 'mfp-img-mobile', // Clases CSS para estilos móviles
+                image: {
+                    verticalFit: true // Ajusta la imagen verticalmente en la ventana
+                },
+                zoom: {
+                    enabled: true, // Habilita el efecto de zoom
+                    duration: 300 // Duración de la animación en milisegundos
+                }
+            });
+        });
+    </script>
+    <!-- end section -->
     <!-- scroll to top -->
     <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!-- end scroll to top -->
