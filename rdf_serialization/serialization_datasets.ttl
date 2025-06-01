@@ -356,7 +356,7 @@ brasil:MD7_Urbanization_Growth_RS a dcat:Dataset ;
 <https://www.gov.br/cemaden/pt-br> a foaf:Agent ;
     foaf:name "Centro Nacional de Monitoramento e Alertas de Desastres Naturais (CEMADEN)" .
 
-<https://www.gov.br/cgu> a foaf:Agent ;
+<https://www.gov.br/cgu> a foaf:Agent ; 
     foaf:name "Controladoria-Geral da União" .
 
 <https://www.gov.br/midr> a foaf:Agent ;

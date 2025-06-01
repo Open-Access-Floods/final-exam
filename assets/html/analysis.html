@@ -24,15 +24,18 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <style>
         .smaller-banner {
-            height: 60vh; /* Reduced height, adjust as needed */
-            min-height: 400px; /* Minimum height for smaller screens */
+            height: 60vh;
+            /* Reduced height, adjust as needed */
+            min-height: 400px;
+            /* Minimum height for smaller screens */
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .smaller-banner-container {
-            width: 60%; /* Adjust as needed */
+            width: 60%;
+            /* Adjust as needed */
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -44,21 +47,25 @@
         }
 
         .smaller-banner-title {
-            font-size: 2em; /* Smaller title */
+            font-size: 2em;
+            /* Smaller title */
         }
 
         .smaller-banner-subtitle {
-            font-size: 1em; /* Smaller subtitle */
+            font-size: 1em;
+            /* Smaller subtitle */
         }
+
         .analysis-article {
             display: none;
             margin-top: 2rem;
         }
+
         table {
-            font-size: 1.1rem; 
+            font-size: 1.1rem;
         }
     </style>
-    </head>
+</head>
 
 <body>
     <nav class="navbar no-margin-bottom alt-font without-button">
@@ -89,13 +96,16 @@
         </div>
     </nav>
     <section id="home" class="no-padding parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2;">
-        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;"/>
-        <div class="opacity-full bg-deep-blue2" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt=""
+            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;" />
+        <div class="opacity-full bg-deep-blue2"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
         <div class="container smaller-banner-container position-relative" style="position:relative;z-index:3;">
             <div class="slider-typography text-center">
                 <div class="slider-text-middle-main">
                     <div class="slider-text-middle smaller-banner-text">
-                        <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title" style="color:#7ed957;">Analysis</h1>
+                        <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title"
+                            style="color:#7ed957;">Analysis</h1>
                     </div>
                 </div>
             </div>
@@ -105,65 +115,69 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
-                    <span class="deep-green-text">—</span> Key Dimensions of Analysis
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Key Dimensions of Analysis
                     </span>
                 </div>
             </div>
 
             <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
 
-            <!-- Data Quality -->
-            <div class="col-md-3 col-sm-6 mb-3">
-                <div class="card h-100 shadow-sm border-0 text-center analysis-card"
-                    data-target="data-quality"
-                    style="background-color: #6A738D; color: white; min-height: 250px; padding: 2rem; cursor: pointer;">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2782/2782058.png" alt="Data Quality Icon" style="width: 64px; height: 64px;" class="mb-3">
-                        <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">Data Quality</h5>
-                        <p class="text-medium mt-3">Accuracy, coherence and reliability of datasets.</p>
+                <!-- Data Quality -->
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card h-100 shadow-sm border-0 text-center analysis-card active"
+                        data-target="data-quality"
+                        style="background-color: #2283d4; color: white; min-height: 250px; padding: 2rem; cursor: pointer;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class=" icon-presentation icon-extra-large white-text margin-twelve no-margin-lr"></i>
+                            <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">
+                                Data Quality</h5>
+                            <p class="text-medium mt-3">Accuracy, coherence and reliability of datasets.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Legal -->
-            <div class="col-md-3 col-sm-6 mb-3">
-                <div class="card h-100 shadow-sm border-0 text-center analysis-card"
-                    data-target="legal-analysis"
-                    style="background-color: #888C99; color: white; min-height: 250px; padding: 2rem; cursor: pointer;">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/994/994414.png" alt="Legal Icon" style="width: 64px; height: 64px;" class="mb-3">
-                        <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">Legal</h5>
-                        <p class="text-medium mt-3">Open data laws and reuse rights in Brazil.</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Ethical -->
-            <div class="col-md-3 col-sm-6 mb-3">
-                <div class="card h-100 shadow-sm border-0 text-center analysis-card"
-                    data-target="ethical-analysis"
-                    style="background-color: #9CE7C8; color: black; min-height: 250px; padding: 2rem; cursor: pointer;">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/10162/10162805.png" alt="Ethical Icon" style="width: 64px; height: 64px;" class="mb-3">
-                        <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">Ethical</h5>
-                        <p class="text-medium mt-3">Respect for privacy, equity and transparency.</p>
+                <!-- Legal -->
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card h-100 shadow-sm border-0 text-center analysis-card" data-target="legal-analysis"
+                        style="background-color: #d66e4a; color: white; min-height: 250px; padding: 2rem; cursor: pointer;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class="icon-target icon-extra-large white-text margin-twelve no-margin-lr"></i>
+                            <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">
+                                Legal</h5>
+                            <p class="text-medium mt-3">Open data laws and reuse rights in Brazil.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Technical -->
-            <div class="col-md-3 col-sm-6 mb-3">
-                <div class="card h-100 shadow-sm border-0 text-center analysis-card"
-                    data-target="technical-analysis"
-                    style="background-color: #A3D3EF; color: black; min-height: 250px; padding: 2rem; cursor: pointer;">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/16684/16684073.png" alt="Technical Icon" style="width: 64px; height: 64px;" class="mb-3">
-                        <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">Technical</h5>
-                        <p class="text-medium mt-3">Metadata structure and FAIR principles compliance.</p>
+                <!-- Ethical -->
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card h-100 shadow-sm border-0 text-center analysis-card" data-target="ethical-analysis"
+                        style="background-color: #1acd7b; color: black; min-height: 250px; padding: 2rem; cursor: pointer;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class="icon-happy icon-extra-large white-text margin-twelve no-margin-lr"></i>
+                            <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">
+                                Ethical</h5>
+                            <p class="text-medium mt-3">Respect for privacy, equity and transparency.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Technical -->
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card h-100 shadow-sm border-0 text-center analysis-card"
+                        data-target="technical-analysis"
+                        style="background-color: #c8a64b; color: black; min-height: 250px; padding: 2rem; cursor: pointer;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class="icon-gears icon-extra-large white-text margin-twelve no-margin-lr"></i>
+                            <h5 class="card-title text-uppercase alt-font font-weight-600" style="margin-bottom: 2rem;">
+                                Technical</h5>
+                            <p class="text-medium mt-3">Metadata structure and FAIR principles compliance.</p>
+                        </div>
+                    </div>
+                </div>
     </section>
     <section class="wow fadeIn border-bottom no-padding-top">
         <div class="container no-padding">
@@ -171,479 +185,642 @@
                 <!-- Add a custom class for extra right padding on large screens -->
                 <div class="col-md-12 col-sm-12 blog-listing content-padding-right">
                     <article id="data-quality" class="analysis-article margin-seven">
-                        <div class= "col-sm-12 text-left mt-0">
-                            <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large" style="margin-bottom: 4rem;">
-                            <span class="deep-green-text">—</span>Data Quality Analysis
+                        <div class="col-sm-12 text-left mt-0">
+                            <span
+                                class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"
+                                style="margin-bottom: 4rem;">
+                                <span class="deep-green-text">—</span>Data Quality Analysis
                             </span>
                         </div>
                         <div class="margin-te no-margin-lr">
                             <!-- text Data Quality -->
-                                <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">In accordance with Brazil’s Open Data Policy (Decree No. 8.777/2016) and the reuse principles described in the national open data platform 
-                                <a href="https://dados.gov.br/" target="_blank">dados.gov.br</a>, we conducted a comprehensive quality assessment of all datasets used in this study. 
-                                This evaluation ensures that our analysis of urbanization, deforestation, and flood-related disasters in Brazil is grounded in reliable and ethically reusable public data.</span>
+                            <span
+                                class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">In
+                                accordance with Brazil’s Open Data Policy (Decree No. 8.777/2016) and the reuse
+                                principles described in the national open data platform
+                                <a href="https://dados.gov.br/" target="_blank">dados.gov.br</a>, we conducted a
+                                comprehensive quality assessment of all datasets used in this study.
+                                This evaluation ensures that our analysis of urbanization, deforestation, and
+                                flood-related disasters in Brazil is grounded in reliable and ethically reusable public
+                                data.</span>
 
-                                <div class="col-md-12 no-padding">
-                                    <div class="blog-image">
-                                        <blockquote class="bg-gray alt-font"> 
-                                            <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">The quality assessment was conducted using four key dimensions: <strong>Accuracy</strong>, <strong>Coherence</strong>, <strong>Completeness</strong>, and <strong>Timeliness</strong>.
-                                            </p> 
-                                        </blockquote>
-                                    </div>
-                                </div>
-                                <h6>
-                                    <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1. Accuracy (Syntactic and Semantic)</span>
-                                </h6>
-                                <p class="text-large">
-                                    <ul class="text-large">
-                                        <li><strong>S2ID (D1):</strong> Data is self-reported by municipalities, which introduces variability in accuracy due to local reporting capabilities and technical standards.</li>
-                                        <li><strong>INMET (D2):</strong> Rainfall data is collected from calibrated meteorological stations, ensuring a high degree of measurement reliability.</li>
-                                        <li><strong>IBGE (D3):</strong> Official demographic statistics from the 2018 census; syntactically and semantically consistent.</li>
-                                        <li><strong>MapBiomas Urban Expansion (D4):</strong> Derived from satellite imagery with validated classification processes. Urban land cover classes were extracted consistently.</li>
-                                        <li><strong>MapBiomas Deforestation (D5):</strong> Follows the same rigorous image classification process as D4, with a strong accuracy track record across Brazilian biomes.</li>
-                                    </ul>
-                                </p>
-                                <br>
-                                <h6>
-                                    <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2. Coherence</span>
-                                </h6>
-                                <p class="text-large">
-                                    <ul class="text-large">
-                                        <li>Municipality names and state identifiers were standardized to ensure interoperability between datasets.</li>
-                                        <li>Rainfall (INMET) and disaster records (S2ID) were temporally and spatially aligned and showed expected patterns in high-risk regions.</li>
-                                        <li>Urban expansion and forest loss trends (MapBiomas) complemented each other and reflected known environmental transitions.</li>
-                                    </ul></p><br>
-
-                                <h6><span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">3. Completeness</span></h6>
-                                <p class="text-large"><ul class="text-large">
-                                        <li><strong>S2ID:</strong> Underreporting is a known issue in certain municipalities. The dataset required cleaning to handle encoding issues and numeric inconsistencies.</li>
-                                        <li><strong>INMET:</strong> Complete for 2024, though metadata extraction for each weather station required manual merging.</li>
-                                        <li><strong>IBGE:</strong> Fully complete for 2018. No updated census values are available at the municipal level for more recent years.</li>
-                                        <li><strong>MapBiomas (D4 & D5):</strong> Complete and consistent at the national level, covering 1985–2022 with annual updates and no missing years.</li>
-                                    </ul></p><br>
-                                <p class="text-large">
-                                    Some inconsistencies were noted during the validation of demographic and disaster data. In a few municipalities, the sum of people affected by multiple disaster events slightly exceeded the total projected population. This could be explained by:
-                                </p>
-                                <ul class="text-large">
-                                <li><strong>Duplicate representation:</strong> Individuals may be counted more than once if affected by multiple events throughout the year.</li>
-                                <li><strong>Rounding and approximation:</strong> Reported figures like "10,000" or "6,000" suggest estimates rather than exact counts.</li>
-                                <li><strong>Population projections:</strong> IBGE estimates may not be fully up-to-date or precise, especially in smaller municipalities. In some cases, percentages exceed 100% due to these discrepancies.</li>
-                                </ul>
-                                <p class="text-large">
-                                Despite these challenges, using official sources like IBGE remains preferable to assuming unknown values, as it ensures transparency and consistency in comparative analysis.
-                                </p>
-                                <br>
-                                <h6><span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">4. Timeliness</span></h6>
-                                <p class="text-large">
-                                        <ul class="text-large">
-                                            <li><strong>S2ID:</strong> Includes records up to 2024. Reporting delays may limit visibility of recent disaster impacts.</li>
-                                            <li><strong>INMET:</strong> Fully up-to-date with daily records through 2024.</li>
-                                            <li><strong>IBGE:</strong> Timeliness is limited by the date of the last census (2018), affecting population-based indicators.</li>
-                                            <li><strong>MapBiomas:</strong> Last available version is 2022 (Collection 9), with annual updates generally released mid-year.</li>
-                                        </ul></p><br>
-                                <h6><span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">5. Summary Table – Data Quality Dimensions</span></h6>
-                                    <div class="table-responsive text-large">
-                                        <table class="table table-bordered table-striped align-middle">
-                                            <thead class="table-light">
-                                            <tr class="text-large">
-                                                <th>ID</th>
-                                                <th>Dataset</th>
-                                                <th>Accuracy</th>
-                                                <th>Coherence</th>
-                                                <th>Completeness</th>
-                                                <th>Timeliness</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr class="text-medium">
-                                                <td>D1</td>
-                                                <td>S2ID – Disaster Records</td>
-                                                <td>Medium</td>
-                                                <td>Medium</td>
-                                                <td>Medium</td>
-                                                <td>Medium</td>
-                                            </tr>
-                                            <tr class="text-medium">
-                                                <td>D2</td>
-                                                <td>INMET – Rainfall Data</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                            </tr>
-                                            <tr class="text-medium">
-                                                <td>D3</td>
-                                                <td>IBGE – Population Data (2018)</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>Low</td>
-                                            </tr>
-                                            <tr class="text-medium">
-                                                <td>D4</td>
-                                                <td>MapBiomas – Urban Expansion</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>Medium</td>
-                                            </tr>
-                                            <tr class="text-medium">
-                                                <td>D5</td>
-                                                <td>MapBiomas – Deforestation</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>High</td>
-                                                <td>Medium</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        <br>
-                                        <p class="text-large">All datasets were obtained through official Brazilian open data platforms and are used in accordance with the country's open data reuse policy. 
-                                        Any pre-processing performed preserved the datasets' original structure, and all transformations are documented to support reproducibility and transparency.
+                            <div class="col-md-12 no-padding">
+                                <div class="blog-image">
+                                    <blockquote class="bg-gray alt-font">
+                                        <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">The
+                                            quality assessment was conducted using four key dimensions:
+                                            <strong>Accuracy</strong>, <strong>Coherence</strong>,
+                                            <strong>Completeness</strong>, and <strong>Timeliness</strong>.
                                         </p>
-                                    </div>
+                                    </blockquote>
+                                </div>
                             </div>
-                        </article>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1.
+                                    Accuracy (Syntactic and Semantic)</span>
+                            </h6>
+                            <p class="text-large">
+                            <ul class="text-large">
+                                <li><strong>S2ID (D1):</strong> Data is self-reported by municipalities, which
+                                    introduces variability in accuracy due to local reporting capabilities and technical
+                                    standards.</li>
+                                <li><strong>INMET (D2):</strong> Rainfall data is collected from calibrated
+                                    meteorological stations, ensuring a high degree of measurement reliability.</li>
+                                <li><strong>IBGE (D3):</strong> Official demographic statistics from the 2018 census;
+                                    syntactically and semantically consistent.</li>
+                                <li><strong>MapBiomas Urban Expansion (D4):</strong> Derived from satellite imagery with
+                                    validated classification processes. Urban land cover classes were extracted
+                                    consistently.</li>
+                                <li><strong>MapBiomas Deforestation (D5):</strong> Follows the same rigorous image
+                                    classification process as D4, with a strong accuracy track record across Brazilian
+                                    biomes.</li>
+                            </ul>
+                            </p>
+                            <br>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2.
+                                    Coherence</span>
+                            </h6>
+                            <p class="text-large">
+                            <ul class="text-large">
+                                <li>Municipality names and state identifiers were standardized to ensure
+                                    interoperability between datasets.</li>
+                                <li>Rainfall (INMET) and disaster records (S2ID) were temporally and spatially aligned
+                                    and showed expected patterns in high-risk regions.</li>
+                                <li>Urban expansion and forest loss trends (MapBiomas) complemented each other and
+                                    reflected known environmental transitions.</li>
+                            </ul>
+                            </p><br>
 
-                        <article id="legal-analysis" class="analysis-article margin-seven">
-                            <div class="col-md-12 col-sm-12 mt-0">
-                                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large" style="margin-bottom: 4rem;">
-                                <span class="deep-green-text">—</span>Legal Analysis
-                                </span>
-                            </div>
-                            <div class="margin-ten no-margin-lr">
-                                <!-- text Legal Analysis -->
-                                <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block"> 
-                                    The assessment is grounded in Brazilian open data regulation, especially the 
-                                    <em>Política de Dados Abertos</em> (Decree No. 8.777/2016), the 
-                                    <em>Lei de Acesso à Informação (LAI)</em>, and reuse principles from the national platform 
-                                    <a href="https://dados.gov.br/" target="_blank">dados.gov.br</a>.</span>
-                                
-                                    <div class="col-md-12 no-padding">
-                                        <div class="blog-image">
-                                            <blockquote class="bg-gray alt-font"> 
-                                                <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">This legal analysis evaluates the permissibility and sustainability of using and publishing the datasets incorporated into this project.
-                                                </p> 
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                <h6>
-                                    <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1. Privacy Issues</span>
-                                </h6>
-                                <p class="text-large">
-                                All datasets used are classified as <strong>non-personal data</strong> under the 
-                                <em>Lei Geral de Proteção de Dados (LGPD – Law No. 13.709/2018)</em>. None of the datasets 
-                                (<a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a>, 
-                                <a href="https://portal.inmet.gov.br/" target="_blank">INMET</a>, 
-                                <a href="https://www.ibge.gov.br/" target="_blank">IBGE</a>, 
-                                <a href="https://mapbiomas.org/" target="_blank">MapBiomas</a>) 
-                                contain names, document numbers, biometric data, or any attribute that could identify individuals. 
-                                S2ID includes aggregated figures on population affected by disasters, but these are fully anonymized 
-                                and reported at the municipal level, presenting no risk of deanonymization.
-                                </p><br>
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2. Intellectual Property Rights</span>
-                                </h6>
-                                <p class="text-large">
-                                All datasets originate from official Brazilian public agencies and are released under public or open terms:
-                                </p>
-                                <ul class="text-large">
-                                    <li><strong><a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a></strong> – Ministério da Integração e do Desenvolvimento Regional</li>
-                                    <li><strong><a href="https://portal.inmet.gov.br/" target="_blank">INMET</a></strong> – Instituto Nacional de Meteorologia</li>
-                                    <li><strong><a href="https://www.ibge.gov.br/" target="_blank">IBGE</a></strong> – Instituto Brasileiro de Geografia e Estatística</li>
-                                    <li><strong><a href="https://mapbiomas.org/" target="_blank">MapBiomas</a></strong> – Scientific and civic coalition with open data policies</li>
-                                </ul>
+                            <h6><span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">3.
+                                    Completeness</span></h6>
+                            <p class="text-large">
+                            <ul class="text-large">
+                                <li><strong>S2ID:</strong> Underreporting is a known issue in certain municipalities.
+                                    The dataset required cleaning to handle encoding issues and numeric inconsistencies.
+                                </li>
+                                <li><strong>INMET:</strong> Complete for 2024, though metadata extraction for each
+                                    weather station required manual merging.</li>
+                                <li><strong>IBGE:</strong> Fully complete for 2018. No updated census values are
+                                    available at the municipal level for more recent years.</li>
+                                <li><strong>MapBiomas (D4 & D5):</strong> Complete and consistent at the national level,
+                                    covering 1985–2022 with annual updates and no missing years.</li>
+                            </ul>
+                            </p><br>
+                            <p class="text-large">
+                                Some inconsistencies were noted during the validation of demographic and disaster data.
+                                In a few municipalities, the sum of people affected by multiple disaster events slightly
+                                exceeded the total projected population. This could be explained by:
+                            </p>
+                            <ul class="text-large">
+                                <li><strong>Duplicate representation:</strong> Individuals may be counted more than once
+                                    if affected by multiple events throughout the year.</li>
+                                <li><strong>Rounding and approximation:</strong> Reported figures like "10,000" or
+                                    "6,000" suggest estimates rather than exact counts.</li>
+                                <li><strong>Population projections:</strong> IBGE estimates may not be fully up-to-date
+                                    or precise, especially in smaller municipalities. In some cases, percentages exceed
+                                    100% due to these discrepancies.</li>
+                            </ul>
+                            <p class="text-large">
+                                Despite these challenges, using official sources like IBGE remains preferable to
+                                assuming unknown values, as it ensures transparency and consistency in comparative
+                                analysis.
+                            </p>
+                            <br>
+                            <h6><span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">4.
+                                    Timeliness</span></h6>
+                            <p class="text-large">
+                            <ul class="text-large">
+                                <li><strong>S2ID:</strong> Includes records up to 2024. Reporting delays may limit
+                                    visibility of recent disaster impacts.</li>
+                                <li><strong>INMET:</strong> Fully up-to-date with daily records through 2024.</li>
+                                <li><strong>IBGE:</strong> Timeliness is limited by the date of the last census (2018),
+                                    affecting population-based indicators.</li>
+                                <li><strong>MapBiomas:</strong> Last available version is 2022 (Collection 9), with
+                                    annual updates generally released mid-year.</li>
+                            </ul>
+                            </p><br>
+                            <h6><span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">5.
+                                    Summary Table – Data Quality Dimensions</span></h6>
+                            <div class="table-responsive text-large">
+                                <table class="table table-bordered table-striped align-middle">
+                                    <thead class="table-light">
+                                        <tr class="text-large">
+                                            <th>ID</th>
+                                            <th>Dataset</th>
+                                            <th>Accuracy</th>
+                                            <th>Coherence</th>
+                                            <th>Completeness</th>
+                                            <th>Timeliness</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-medium">
+                                            <td>D1</td>
+                                            <td>S2ID – Disaster Records</td>
+                                            <td>Medium</td>
+                                            <td>Medium</td>
+                                            <td>Medium</td>
+                                            <td>Medium</td>
+                                        </tr>
+                                        <tr class="text-medium">
+                                            <td>D2</td>
+                                            <td>INMET – Rainfall Data</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                        </tr>
+                                        <tr class="text-medium">
+                                            <td>D3</td>
+                                            <td>IBGE – Population Data (2018)</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>Low</td>
+                                        </tr>
+                                        <tr class="text-medium">
+                                            <td>D4</td>
+                                            <td>MapBiomas – Urban Expansion</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>Medium</td>
+                                        </tr>
+                                        <tr class="text-medium">
+                                            <td>D5</td>
+                                            <td>MapBiomas – Deforestation</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>Medium</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                 <br>
-                                <p class="text-large">These sources do not impose restrictions on reuse, as long as proper attribution is ensured.</p><br>
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">3. Licensing and Reuse</span>
-                                </h6>
-                                <p class="text-large">Datasets are licensed as follows:</p>
-                                <ul class="text-large">
-                                    <li><strong>IBGE</strong>: CC BY 4.0</li>
-                                    <li><strong>MapBiomas</strong>: CC BY-SA 4.0</li>
-                                    <li><strong>S2ID and INMET</strong>: Public domain or institutional open terms</li>
-                                </ul>
-                                <p class="text-large">The final mashup datasets produced in this project are published under the <strong>CC BY 4.0</strong> license to ensure compatibility and openness.</p><br>
-
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">4. Access Limitations</span>
-                                </h6>
-                                    <p class="text-large">
-                                        All datasets are openly available without registration or access restrictions. 
-                                        No sensitive data is included. There are no diplomatic, military, or classified elements requiring 
-                                        special handling, in accordance with Art. 7 of the <em>Lei de Acesso à Informação</em>.
-                                    </p><br>
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">5. Economic Conditions</span>
-                                </h6>
-                                    <p class="text-large">
-                                    All data was accessed free of charge from public repositories. The reuse complies with the principles 
-                                    of non-commercial restriction and respects the original platforms’ terms of service. 
-                                    No resale or licensing fees are involved.
-                                    </p><br>
-
-                                <h6>
-                                    <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">6. Temporal Aspects</span>
-                                </h6>
-                                    <p class="text-large">Datasets vary in update frequency:</p>
-
-                                        <ul class="text-large">
-                                            <li><strong>INMET</strong>: Updated daily (2024 complete)</li>
-                                            <li><strong>S2ID</strong>: Updated by local governments, may have delays</li>
-                                            <li><strong>IBGE</strong>: Latest complete data from 2018 census</li>
-                                            <li><strong>MapBiomas</strong>: Updated annually, most recent version is from 2022</li>
-                                        </ul>
-                                        <br>
-                                    <p class="text-large">
-                                        Documentation includes date references to avoid misinterpretation and ensure transparent temporal alignment.
-                                    </p>
-                                    <br>
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">7. Final Note on Publication</span>
-                                </h6>
-                                    <p class="text-large">
-                                    This project adopts <strong>best practices in open data reuse</strong> as recommended by 
-                                    <a href="https://dados.gov.br/dados/conteudo/saiba-como-publicar-um-reuso" target="_blank">dados.gov.br</a>, including:
-                                    </p>
-                                    <ul class="text-large">
-                                        <li>Attributing all original sources</li>
-                                        <li>Documenting transformations and derived variables</li>
-                                        <li>Maintaining transparency in all methodological choices</li>
-                                    </ul>
-                                    <p class="text-large">
-                                    Furthermore, Brazil’s Open Data Policy aligns with international standards such as:
-                                    </p>
-                                    <ul class="text-large">
-                                        <li>The <strong>International Open Data Charter</strong>, promoting open-by-default public data</li>
-                                        <li>The <strong>Open Government Partnership (OGP)</strong>, of which Brazil is a founding member</li>
-                                        <li>The <strong>UNESCO Open Science Recommendation</strong> and <strong>UN SDGs</strong>, emphasizing open data in disaster resilience</li>
-                                        <li>The <strong>Digital Public Goods Alliance</strong>, which recognizes open geospatial and environmental data as infrastructure</li>
-                                    </ul>
-                                    <p class="text-large">
-                                    Publishing these integrated datasets under the <strong>CC BY 4.0 license</strong> ensures alignment with national and global open access principles.
-                                    </p><br>
-                            </div>
-                        </article>
-
-                        <article id="ethical-analysis" class="analysis-article margin-seven">
-                            <div class="col-md-12 col-sm-12 text-left mt-0">
-                                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large" style="margin-bottom: 4rem;">
-                                <span class="deep-green-text">—</span>Ethical Analysis
-                                </span>
-                            </div>
-                            <div class="margin-ten no-margin-lr">
-                                <!-- text Data Quality -->
-                                <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block"> 
-                                    The ethical analysis of this project follows the principles of the 
-                                    <a href="https://dataethics.eu/data-ethics-principles/" target="_blank">Data Ethics EU Guidelines</a> 
-                                    and the 
-                                    <a href="https://theodi.org/article/the-data-ethics-canvas-2021" target="_blank">Open Data Institute’s Ethics Canvas</a>. 
-                                    Given the project’s focus on climate-related disasters (e.g., floods) and their impact on human populations and ecosystems, 
-                                    we ensured an ethical handling of public data from acquisition to interpretation.</span>
-
-
-                                    <div class="col-md-12 no-padding">
-                                        <div class="blog-image">
-                                            <blockquote class="bg-gray alt-font"> 
-                                                <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">TOur datasets include information aggregated at both the <strong>municipality</strong> and <strong>state (UF)</strong> levels, which required specific attention to <strong>regional equity</strong>, <strong>data granularity</strong>, and <strong>avoiding misinterpretation of territorial vulnerabilities</strong>.
-                                                </p> 
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1. Data Ethics Principles</span>
-                                </h6>
-                                <ul class="text-large" style="list-style-type: disc; padding-left: 2em;">
-                                    <li style="margin-bottom: 0.8em;"><strong>Human-Centric Design:</strong> 
-                                        The analysis aims to understand how urbanization, forest loss, and climate dynamics contribute to disaster exposure—particularly among vulnerable communities. 
-                                        The use of demographic indicators and disaster impact data seeks to inform equitable urban and environmental policies centered on human resilience.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Fairness and Equity:</strong> 
-                                        Aggregated indicators were used to avoid identifying individuals or small groups. In comparing municipalities and states, 
-                                        we were careful not to stigmatize certain regions with higher reported disasters or exposure. Instead, we emphasized structural and historical factors 
-                                        (e.g., infrastructure, land use) to explain disparities.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Transparency:</strong> 
-                                        The data sources—S2ID, INMET, MapBiomas, and IBGE—are publicly accessible and cited throughout the project. 
-                                        All transformations, filtering methods, and indicators (e.g., urban growth, deforestation rate, precipitation volume) 
-                                        are documented in a reproducible workflow.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Accountability:</strong> 
-                                        The project adheres to the 
-                                        <a href="https://dados.gov.br/dados/conteudo/politica-de-dados-abertos" target="_blank">Brazilian Open Data Policy</a>, 
-                                        and metadata were respected for each reused dataset. Data reuse policies were checked through the 
-                                        <a href="https://dados.gov.br/dados/conteudo/saiba-como-publicar-um-reuso" target="_blank">Reuso de Dados</a> guidelines. 
-                                        The team also ensured internal responsibility for every data-cleaning or aggregation operation.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Privacy and Respect for Affected Populations:</strong> 
-                                        No microdata or personally identifiable information was used. When handling sensitive metrics 
-                                        (e.g., number of people affected or displaced), we ensured these were aggregated at the municipal or state level. 
-                                        Regional summaries are framed to inform risk reduction—not to judge the effectiveness of local responses.
-                                    </li>
-                                </ul><br>
-
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2. Ethical Concerns and Mitigation</span>
-                                </h6>
-                                <ul class="text-large" style="list-style-type: disc; padding-left: 2em;">
-                                    <li style="margin-bottom: 0.8em;"><strong>Avoiding Sensationalism:</strong> 
-                                        While 2024 saw historic flooding in southern Brazil, the project refrains from spotlighting dramatic figures without proper context. 
-                                        Instead, it contextualizes flood patterns within national trends and regional vulnerabilities.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Geographical Sensitivity:</strong> 
-                                        Because data are available at both <strong>municipal and state level</strong>, 
-                                        we took care to ensure that analyses do not reinforce existing inequalities between wealthier and poorer regions. 
-                                        Disparities in data reporting across states were acknowledged and mitigated with proportional indicators.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Responsibility in Interpretation:</strong> 
-                                        Visualizations and analyses are explicitly marked as non-causal. 
-                                        Correlation between urbanization and flood frequency, for example, is interpreted as a signal—not proof—of systemic risk.
-                                    </li>
-                                    <li style="margin-bottom: 0.8em;"><strong>Public Engagement and Literacy:</strong> 
-                                        The project includes simplified graphs and charts to communicate findings to broader audiences, 
-                                        particularly civil society, educators, and local administrators. Technical notebooks and a GitHub repository are 
-                                        provided for specialists who wish to audit or extend the methodology.
-                                    </li>
-                                </ul><br>
-
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">3. Final Note</span>
-                                </h6>
-                                
-                                    <p class="text-large">
-                                        The ethical safeguards adopted in this project reflect both 
-                                        <strong>Brazilian public data governance standards</strong> and 
-                                        <strong>international ethical frameworks</strong>. 
-                                        By treating both <strong>individual and regional vulnerabilities</strong> with respect and care, 
-                                        the project promotes the ethical reuse of public data to support resilience-building and informed policymaking.
-                                    </p><br>
-                            </div>
-                        </article>
-
-                        <article id="technical-analysis" class="analysis-article margin-seven">
-                            <div class="col-md-12 col-sm-12 text-left mt-0">
-                                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large" style="margin-bottom: 4rem;">
-                                <span class="deep-green-text">—</span>Technical Analysis
-                                </span>
-                            </div>
-                            <div class="margin-ten no-margin-lr">
-                                <!-- text Data Quality -->
-                                <span class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block"> 
-                                    This technical analysis provides a comprehensive overview of the source datasets used in our project on hydrological disasters and climate vulnerability in Brazil. 
-                                    All datasets were evaluated in light of the <strong>Brazilian Open Data Policy</strong> and metadata expectations published on 
-                                    <a href="https://dados.gov.br" target="_blank">dados.gov.br</a>. Additionally, we applied the <strong>FAIR principles</strong> 
-                                    (Findable, Accessible, Interoperable, Reusable) to assess their potential for long-term reuse and integration.</span>
-
-                                <div class="col-md-12 no-padding">
-                                        <div class="blog-image">
-                                            <blockquote class="bg-gray alt-font"> 
-                                                <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">We classified metadata quality using the AGID-inspired model based on syntactic and semantic correctness, completeness, and consistency of documentation.
-                                                </p> 
-                                            </blockquote>
-                                        </div>
-                                    </div>
-
-                                <h6>
-                                    <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1. Metadata Assessment</span>
-                                </h6>
-                                <p class="text-large">
-                                    We classified metadata quality using the AGID-inspired model based on syntactic and semantic correctness, completeness, and consistency of documentation.
+                                <p class="text-large">All datasets were obtained through official Brazilian open data
+                                    platforms and are used in accordance with the country's open data reuse policy.
+                                    Any pre-processing performed preserved the datasets' original structure, and all
+                                    transformations are documented to support reproducibility and transparency.
                                 </p>
+                            </div>
+                        </div>
+                    </article>
 
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-bordered align-middle">
-                                        <thead class="table-light">
-                                            <tr class="text-large">
+                    <article id="legal-analysis" class="analysis-article margin-seven">
+                        <div class="col-md-12 col-sm-12 mt-0">
+                            <span
+                                class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"
+                                style="margin-bottom: 4rem;">
+                                <span class="deep-green-text">—</span>Legal Analysis
+                            </span>
+                        </div>
+                        <div class="margin-ten no-margin-lr">
+                            <!-- text Legal Analysis -->
+                            <span
+                                class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                                The assessment is grounded in Brazilian open data regulation, especially the
+                                <em>Política de Dados Abertos</em> (Decree No. 8.777/2016), the
+                                <em>Lei de Acesso à Informação (LAI)</em>, and reuse principles from the national
+                                platform
+                                <a href="https://dados.gov.br/" target="_blank">dados.gov.br</a>.</span>
+
+                            <div class="col-md-12 no-padding">
+                                <div class="blog-image">
+                                    <blockquote class="bg-gray alt-font">
+                                        <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">
+                                            This legal analysis evaluates the permissibility and sustainability of using
+                                            and publishing the datasets incorporated into this project.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1.
+                                    Privacy Issues</span>
+                            </h6>
+                            <p class="text-large">
+                                All datasets used are classified as <strong>non-personal data</strong> under the
+                                <em>Lei Geral de Proteção de Dados (LGPD – Law No. 13.709/2018)</em>. None of the
+                                datasets
+                                (<a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a>,
+                                <a href="https://portal.inmet.gov.br/" target="_blank">INMET</a>,
+                                <a href="https://www.ibge.gov.br/" target="_blank">IBGE</a>,
+                                <a href="https://mapbiomas.org/" target="_blank">MapBiomas</a>)
+                                contain names, document numbers, biometric data, or any attribute that could identify
+                                individuals.
+                                S2ID includes aggregated figures on population affected by disasters, but these are
+                                fully anonymized
+                                and reported at the municipal level, presenting no risk of deanonymization.
+                            </p><br>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2.
+                                    Intellectual Property Rights</span>
+                            </h6>
+                            <p class="text-large">
+                                All datasets originate from official Brazilian public agencies and are released under
+                                public or open terms:
+                            </p>
+                            <ul class="text-large">
+                                <li><strong><a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a></strong> –
+                                    Ministério da Integração e do Desenvolvimento Regional</li>
+                                <li><strong><a href="https://portal.inmet.gov.br/" target="_blank">INMET</a></strong> –
+                                    Instituto Nacional de Meteorologia</li>
+                                <li><strong><a href="https://www.ibge.gov.br/" target="_blank">IBGE</a></strong> –
+                                    Instituto Brasileiro de Geografia e Estatística</li>
+                                <li><strong><a href="https://mapbiomas.org/" target="_blank">MapBiomas</a></strong> –
+                                    Scientific and civic coalition with open data policies</li>
+                            </ul>
+                            <br>
+                            <p class="text-large">These sources do not impose restrictions on reuse, as long as proper
+                                attribution is ensured.</p><br>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">3.
+                                    Licensing and Reuse</span>
+                            </h6>
+                            <p class="text-large">Datasets are licensed as follows:</p>
+                            <ul class="text-large">
+                                <li><strong>IBGE</strong>: CC BY 4.0</li>
+                                <li><strong>MapBiomas</strong>: CC BY-SA 4.0</li>
+                                <li><strong>S2ID and INMET</strong>: Public domain or institutional open terms</li>
+                            </ul>
+                            <p class="text-large">The final mashup datasets produced in this project are published under
+                                the <strong>CC BY 4.0</strong> license to ensure compatibility and openness.</p><br>
+
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">4.
+                                    Access Limitations</span>
+                            </h6>
+                            <p class="text-large">
+                                All datasets are openly available without registration or access restrictions.
+                                No sensitive data is included. There are no diplomatic, military, or classified elements
+                                requiring
+                                special handling, in accordance with Art. 7 of the <em>Lei de Acesso à Informação</em>.
+                            </p><br>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">5.
+                                    Economic Conditions</span>
+                            </h6>
+                            <p class="text-large">
+                                All data was accessed free of charge from public repositories. The reuse complies with
+                                the principles
+                                of non-commercial restriction and respects the original platforms’ terms of service.
+                                No resale or licensing fees are involved.
+                            </p><br>
+
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">6.
+                                    Temporal Aspects</span>
+                            </h6>
+                            <p class="text-large">Datasets vary in update frequency:</p>
+
+                            <ul class="text-large">
+                                <li><strong>INMET</strong>: Updated daily (2024 complete)</li>
+                                <li><strong>S2ID</strong>: Updated by local governments, may have delays</li>
+                                <li><strong>IBGE</strong>: Latest complete data from 2018 census</li>
+                                <li><strong>MapBiomas</strong>: Updated annually, most recent version is from 2022</li>
+                            </ul>
+                            <br>
+                            <p class="text-large">
+                                Documentation includes date references to avoid misinterpretation and ensure transparent
+                                temporal alignment.
+                            </p>
+                            <br>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">7.
+                                    Final Note on Publication</span>
+                            </h6>
+                            <p class="text-large">
+                                This project adopts <strong>best practices in open data reuse</strong> as recommended by
+                                <a href="https://dados.gov.br/dados/conteudo/saiba-como-publicar-um-reuso"
+                                    target="_blank">dados.gov.br</a>, including:
+                            </p>
+                            <ul class="text-large">
+                                <li>Attributing all original sources</li>
+                                <li>Documenting transformations and derived variables</li>
+                                <li>Maintaining transparency in all methodological choices</li>
+                            </ul>
+                            <p class="text-large">
+                                Furthermore, Brazil’s Open Data Policy aligns with international standards such as:
+                            </p>
+                            <ul class="text-large">
+                                <li>The <strong>International Open Data Charter</strong>, promoting open-by-default
+                                    public data</li>
+                                <li>The <strong>Open Government Partnership (OGP)</strong>, of which Brazil is a
+                                    founding member</li>
+                                <li>The <strong>UNESCO Open Science Recommendation</strong> and <strong>UN
+                                        SDGs</strong>, emphasizing open data in disaster resilience</li>
+                                <li>The <strong>Digital Public Goods Alliance</strong>, which recognizes open geospatial
+                                    and environmental data as infrastructure</li>
+                            </ul>
+                            <p class="text-large">
+                                Publishing these integrated datasets under the <strong>CC BY 4.0 license</strong>
+                                ensures alignment with national and global open access principles.
+                            </p><br>
+                        </div>
+                    </article>
+
+                    <article id="ethical-analysis" class="analysis-article margin-seven">
+                        <div class="col-md-12 col-sm-12 text-left mt-0">
+                            <span
+                                class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"
+                                style="margin-bottom: 4rem;">
+                                <span class="deep-green-text">—</span>Ethical Analysis
+                            </span>
+                        </div>
+                        <div class="margin-ten no-margin-lr">
+                            <!-- text Data Quality -->
+                            <span
+                                class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                                The ethical analysis of this project follows the principles of the
+                                <a href="https://dataethics.eu/data-ethics-principles/" target="_blank">Data Ethics EU
+                                    Guidelines</a>
+                                and the
+                                <a href="https://theodi.org/article/the-data-ethics-canvas-2021" target="_blank">Open
+                                    Data Institute’s Ethics Canvas</a>.
+                                Given the project’s focus on climate-related disasters (e.g., floods) and their impact
+                                on human populations and ecosystems,
+                                we ensured an ethical handling of public data from acquisition to interpretation.</span>
+
+
+                            <div class="col-md-12 no-padding">
+                                <div class="blog-image">
+                                    <blockquote class="bg-gray alt-font">
+                                        <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">
+                                            TOur datasets include information aggregated at both the
+                                            <strong>municipality</strong> and <strong>state (UF)</strong> levels, which
+                                            required specific attention to <strong>regional equity</strong>,
+                                            <strong>data granularity</strong>, and <strong>avoiding misinterpretation of
+                                                territorial vulnerabilities</strong>.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1.
+                                    Data Ethics Principles</span>
+                            </h6>
+                            <ul class="text-large" style="list-style-type: disc; padding-left: 2em;">
+                                <li style="margin-bottom: 0.8em;"><strong>Human-Centric Design:</strong>
+                                    The analysis aims to understand how urbanization, forest loss, and climate dynamics
+                                    contribute to disaster exposure—particularly among vulnerable communities.
+                                    The use of demographic indicators and disaster impact data seeks to inform equitable
+                                    urban and environmental policies centered on human resilience.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Fairness and Equity:</strong>
+                                    Aggregated indicators were used to avoid identifying individuals or small groups. In
+                                    comparing municipalities and states,
+                                    we were careful not to stigmatize certain regions with higher reported disasters or
+                                    exposure. Instead, we emphasized structural and historical factors
+                                    (e.g., infrastructure, land use) to explain disparities.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Transparency:</strong>
+                                    The data sources—S2ID, INMET, MapBiomas, and IBGE—are publicly accessible and cited
+                                    throughout the project.
+                                    All transformations, filtering methods, and indicators (e.g., urban growth,
+                                    deforestation rate, precipitation volume)
+                                    are documented in a reproducible workflow.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Accountability:</strong>
+                                    The project adheres to the
+                                    <a href="https://dados.gov.br/dados/conteudo/politica-de-dados-abertos"
+                                        target="_blank">Brazilian Open Data Policy</a>,
+                                    and metadata were respected for each reused dataset. Data reuse policies were
+                                    checked through the
+                                    <a href="https://dados.gov.br/dados/conteudo/saiba-como-publicar-um-reuso"
+                                        target="_blank">Reuso de Dados</a> guidelines.
+                                    The team also ensured internal responsibility for every data-cleaning or aggregation
+                                    operation.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Privacy and Respect for Affected
+                                        Populations:</strong>
+                                    No microdata or personally identifiable information was used. When handling
+                                    sensitive metrics
+                                    (e.g., number of people affected or displaced), we ensured these were aggregated at
+                                    the municipal or state level.
+                                    Regional summaries are framed to inform risk reduction—not to judge the
+                                    effectiveness of local responses.
+                                </li>
+                            </ul><br>
+
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2.
+                                    Ethical Concerns and Mitigation</span>
+                            </h6>
+                            <ul class="text-large" style="list-style-type: disc; padding-left: 2em;">
+                                <li style="margin-bottom: 0.8em;"><strong>Avoiding Sensationalism:</strong>
+                                    While 2024 saw historic flooding in southern Brazil, the project refrains from
+                                    spotlighting dramatic figures without proper context.
+                                    Instead, it contextualizes flood patterns within national trends and regional
+                                    vulnerabilities.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Geographical Sensitivity:</strong>
+                                    Because data are available at both <strong>municipal and state level</strong>,
+                                    we took care to ensure that analyses do not reinforce existing inequalities between
+                                    wealthier and poorer regions.
+                                    Disparities in data reporting across states were acknowledged and mitigated with
+                                    proportional indicators.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Responsibility in Interpretation:</strong>
+                                    Visualizations and analyses are explicitly marked as non-causal.
+                                    Correlation between urbanization and flood frequency, for example, is interpreted as
+                                    a signal—not proof—of systemic risk.
+                                </li>
+                                <li style="margin-bottom: 0.8em;"><strong>Public Engagement and Literacy:</strong>
+                                    The project includes simplified graphs and charts to communicate findings to broader
+                                    audiences,
+                                    particularly civil society, educators, and local administrators. Technical notebooks
+                                    and a GitHub repository are
+                                    provided for specialists who wish to audit or extend the methodology.
+                                </li>
+                            </ul><br>
+
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">3.
+                                    Final Note</span>
+                            </h6>
+
+                            <p class="text-large">
+                                The ethical safeguards adopted in this project reflect both
+                                <strong>Brazilian public data governance standards</strong> and
+                                <strong>international ethical frameworks</strong>.
+                                By treating both <strong>individual and regional vulnerabilities</strong> with respect
+                                and care,
+                                the project promotes the ethical reuse of public data to support resilience-building and
+                                informed policymaking.
+                            </p><br>
+                        </div>
+                    </article>
+
+                    <article id="technical-analysis" class="analysis-article margin-seven">
+                        <div class="col-md-12 col-sm-12 text-left mt-0">
+                            <span
+                                class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"
+                                style="margin-bottom: 4rem;">
+                                <span class="deep-green-text">—</span>Technical Analysis
+                            </span>
+                        </div>
+                        <div class="margin-ten no-margin-lr">
+                            <!-- text Data Quality -->
+                            <span
+                                class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                                This technical analysis provides a comprehensive overview of the source datasets used in
+                                our project on hydrological disasters and climate vulnerability in Brazil.
+                                All datasets were evaluated in light of the <strong>Brazilian Open Data Policy</strong>
+                                and metadata expectations published on
+                                <a href="https://dados.gov.br" target="_blank">dados.gov.br</a>. Additionally, we
+                                applied the <strong>FAIR principles</strong>
+                                (Findable, Accessible, Interoperable, Reusable) to assess their potential for long-term
+                                reuse and integration.</span>
+
+                            <div class="col-md-12 no-padding">
+                                <div class="blog-image">
+                                    <blockquote class="bg-gray alt-font">
+                                        <p class="text-large margin-ten no-margin-lr no-margin-top no-margin-bottom">We
+                                            classified metadata quality using the AGID-inspired model based on syntactic
+                                            and semantic correctness, completeness, and consistency of documentation.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1.
+                                    Metadata Assessment</span>
+                            </h6>
+                            <p class="text-large">
+                                We classified metadata quality using the AGID-inspired model based on syntactic and
+                                semantic correctness, completeness, and consistency of documentation.
+                            </p>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover table-bordered align-middle">
+                                    <thead class="table-light">
+                                        <tr class="text-large">
                                             <th>ID</th>
                                             <th>Source</th>
                                             <th>Format</th>
                                             <th>Metadata</th>
                                             <th>License</th>
                                             <th>URI</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="text-medium">
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-medium">
                                             <td>D1</td>
                                             <td>S2ID (MDR)</td>
                                             <td>.csv</td>
-                                            <td>Level 2: Basic metadata and COBRADE classifications included; no persistent URI. Data structure requires cleaning.</td>
+                                            <td>Level 2: Basic metadata and COBRADE classifications included; no
+                                                persistent URI. Data structure requires cleaning.</td>
                                             <td>Open access, no explicit license</td>
                                             <td><a href="https://s2id.mi.gov.br" target="_blank">s2id.mi.gov.br</a></td>
-                                            </tr>
-                                            <tr class="text-medium">
+                                        </tr>
+                                        <tr class="text-medium">
                                             <td>D2</td>
                                             <td>IBGE</td>
                                             <td>.csv, .shp</td>
-                                            <td>Level 4: Fully documented, standardized geocodes, shapefiles and API endpoints provided.</td>
+                                            <td>Level 4: Fully documented, standardized geocodes, shapefiles and API
+                                                endpoints provided.</td>
                                             <td>CC BY 4.0</td>
                                             <td><a href="https://www.ibge.gov.br/" target="_blank">ibge.gov.br</a></td>
-                                            </tr>
-                                            <tr class="text-medium">
+                                        </tr>
+                                        <tr class="text-medium">
                                             <td>D3</td>
                                             <td>MapBiomas</td>
                                             <td>.csv, .xlsx</td>
-                                            <td>Level 4: Rich metadata, class hierarchies and long-term collections (Collection 9). Clear documentation and schema.</td>
+                                            <td>Level 4: Rich metadata, class hierarchies and long-term collections
+                                                (Collection 9). Clear documentation and schema.</td>
                                             <td>CC BY-SA 4.0</td>
                                             <td><a href="https://mapbiomas.org" target="_blank">mapbiomas.org</a></td>
-                                            </tr>
-                                            <tr class="text-medium">
+                                        </tr>
+                                        <tr class="text-medium">
                                             <td>D4</td>
                                             <td>INMET</td>
                                             <td>.csv</td>
-                                            <td>Level 1: Minimal metadata; station names in filenames; no unique identifiers or descriptors.</td>
+                                            <td>Level 1: Minimal metadata; station names in filenames; no unique
+                                                identifiers or descriptors.</td>
                                             <td>Unclear</td>
-                                            <td><a href="https://bdmep.inmet.gov.br" target="_blank">bdmep.inmet.gov.br</a></td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
-                                    </div><br>
-                                
-                                <h6>
-                                <span class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2. FAIR Principles Evaluation</span>
-                                </h6>
-                                <p class="text-large">
-                                    We also evaluated each dataset according to the <strong>FAIR data principles</strong> to assess their reuse potential:
-                                </p>
+                                            <td><a href="https://bdmep.inmet.gov.br"
+                                                    target="_blank">bdmep.inmet.gov.br</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><br>
 
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-bordered align-middle">
-                                        <thead class="table-light">
-                                            <tr class="text-large">
+                            <h6>
+                                <span
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2.
+                                    FAIR Principles Evaluation</span>
+                            </h6>
+                            <p class="text-large">
+                                We also evaluated each dataset according to the <strong>FAIR data principles</strong> to
+                                assess their reuse potential:
+                            </p>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover table-bordered align-middle">
+                                    <thead class="table-light">
+                                        <tr class="text-large">
                                             <th>FAIR Principle</th>
                                             <th>Description</th>
                                             <th>Assessment</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="text-medium">
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-medium">
                                             <td><strong>Findable</strong></td>
-                                            <td>Data should have globally unique, persistent identifiers and searchable metadata.</td>
-                                            <td>IBGE and MapBiomas datasets are fully findable via <a href="https://dados.gov.br" target="_blank">dados.gov.br</a>. INMET and S2ID lack persistent identifiers.</td>
-                                            </tr>
-                                            <tr class="text-medium">
+                                            <td>Data should have globally unique, persistent identifiers and searchable
+                                                metadata.</td>
+                                            <td>IBGE and MapBiomas datasets are fully findable via <a
+                                                    href="https://dados.gov.br" target="_blank">dados.gov.br</a>. INMET
+                                                and S2ID lack persistent identifiers.</td>
+                                        </tr>
+                                        <tr class="text-medium">
                                             <td><strong>Accessible</strong></td>
                                             <td>Data and metadata should be retrievable using open protocols.</td>
-                                            <td>All datasets are downloadable via open protocols. IBGE and MapBiomas are most robust. INMET provides access via a portal but with minimal documentation.</td>
-                                            </tr>
-                                            <tr class="text-medium">
+                                            <td>All datasets are downloadable via open protocols. IBGE and MapBiomas are
+                                                most robust. INMET provides access via a portal but with minimal
+                                                documentation.</td>
+                                        </tr>
+                                        <tr class="text-medium">
                                             <td><strong>Interoperable</strong></td>
                                             <td>Data should use formal standards and shared vocabularies.</td>
-                                            <td>MapBiomas uses standard land classification codes. IBGE relies on official geographic codes. S2ID uses COBRADE, while INMET lacks standard structure.</td>
-                                            </tr>
-                                            <tr class="text-medium">
+                                            <td>MapBiomas uses standard land classification codes. IBGE relies on
+                                                official geographic codes. S2ID uses COBRADE, while INMET lacks standard
+                                                structure.</td>
+                                        </tr>
+                                        <tr class="text-medium">
                                             <td><strong>Reusable</strong></td>
-                                            <td>Data should include clear licenses, provenance, and rich documentation.</td>
-                                            <td>IBGE and MapBiomas provide complete licensing and documentation. S2ID is open but lacks formal reuse policy. INMET does not specify license terms.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div><br>
-                            </div>
-                        </article>
-                    </div>
+                                            <td>Data should include clear licenses, provenance, and rich documentation.
+                                            </td>
+                                            <td>IBGE and MapBiomas provide complete licensing and documentation. S2ID is
+                                                open but lacks formal reuse policy. INMET does not specify license
+                                                terms.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><br>
+                        </div>
+                    </article>
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="sponsors" class="fix-background fix-background-webkit"
@@ -652,73 +829,90 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <span class="title-medium alt-font font-weight-600 text-uppercase white-text display-block sm-title-large">
-                    <span class="deep-green-text">—</span> Results
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase white-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Results
                     </span>
                     <br>
                 </div>
             </div>
             <div class="row margin-seven">
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="12" data-speed="7000">12</span>
                         <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Datasets</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Including meteorological, land-use, demographic and disaster records supporting the analysis</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Including meteorological,
+                            land-use, demographic and disaster records supporting the analysis</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="2300000" data-speed="7000" data-decimals="1">2.3M+</span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Affected people</span>
+                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Affected
+                            people</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Total affected people during the 2024 flood in Rio Grande do Sul, based on official S2ID data</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Total affected people during
+                            the 2024 flood in Rio Grande do Sul, based on official S2ID data</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="431" data-speed="7000">431</span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Municipalities</span>
+                        <span
+                            class="text-uppercase alt-font text-medium white-text letter-spacing-1">Municipalities</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Officially impacted by the event, nearly 90% of the entire state.</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Officially impacted by the
+                            event, nearly 90% of the entire state.</span>
                     </div>
                 </div>
             </div>
             <div class="row margin-seven no-padding-bottom">
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="400" data-speed="7000">400mm+</span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Extreme rainfall</span>
+                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Extreme
+                            rainfall</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-three">
-                        <span class="text-small white-text letter-spacing-1">Milimeters measured in several areas during May 2024, the highest in decades.</span>
+                        <span class="text-small white-text letter-spacing-1">Milimeters measured in several areas during
+                            May 2024, the highest in decades.</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="12" data-speed="7000" data-decimals="0" data-suffix="%">+12%</span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Urbanization growth</span>
+                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Urbanization
+                            growth</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Average urbanization growth across RS municipalities between 2013 and 2023.</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Average urbanization growth
+                            across RS municipalities between 2013 and 2023.</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="2100000000" data-speed="7000" data-decimals="1">R$ 2.1B</span>
                         <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Investments</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Allocated to Civil Defense nationwide (2014–2024), based on Transparency Portal data (Reais Currency).</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Allocated to Civil Defense
+                            nationwide (2014–2024), based on Transparency Portal data (Reais Currency).</span>
                     </div>
                 </div>
             </div>
@@ -726,10 +920,10 @@
     </section>
 
     <section class="border-top wow fadeIn padding-seven no-padding-lr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 center-col text-center">
-                        <a class="btn social-icon button no-letter-spaci"><i class="fa fa-facebook"></i>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 center-col text-center">
+                    <a class="btn social-icon button no-letter-spaci"><i class="fa fa-facebook"></i>
                     </a>
                     <a class="btn social-icon button no-letter-spaci">
                         <i class="fa fa-twitter"></i>
@@ -737,41 +931,86 @@
                     <a class="btn social-icon button no-letter-spaci">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <script>
-        document.querySelectorAll('.analysis-card').forEach(card => {
-        card.addEventListener('click', function () {
-            const targetId = this.getAttribute('data-target');
-            const targetArticle = document.getElementById(targetId);
+        document.addEventListener('DOMContentLoaded', function () {
+            // Función para manejar el clic en las tarjetas de análisis
+            function handleAnalysisCardClick() {
+                const targetId = this.getAttribute('data-target');
+                const targetArticle = document.getElementById(targetId);
 
-            // Esconde todos
-            document.querySelectorAll('.analysis-article').forEach(article => {
-            article.style.display = 'none';
+                // Esconde todos los artículos
+                document.querySelectorAll('.analysis-article').forEach(article => {
+                    article.style.display = 'none';
+                });
+
+                // Muestra el artículo clicado
+                if (targetArticle) {
+                    targetArticle.style.display = 'block';
+                }
+
+                // Remueve la clase 'active' de todas las tarjetas
+                document.querySelectorAll('.analysis-card').forEach(card => {
+                    card.classList.remove('active');
+                });
+                // Añade la clase 'active' a la tarjeta clicada
+                this.classList.add('active');
+            }
+
+            // Asigna el evento de clic a todas las tarjetas de análisis
+            document.querySelectorAll('.analysis-card').forEach(card => {
+                card.addEventListener('click', handleAnalysisCardClick);
             });
 
-            // Mostra o clicado
-            if (targetArticle) {
-            targetArticle.style.display = 'block';
+            // Simula un clic en la tarjeta "Data Quality" al cargar la página
+            // Esto asegura que su contenido se muestre por defecto
+            const dataQualityCard = document.querySelector('.analysis-card[data-target="data-quality"]');
+            if (dataQualityCard) {
+                dataQualityCard.click(); // Dispara el evento de clic programáticamente
             }
         });
-        });
     </script>
+    <!-- scroll to top -->
+    <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!-- end scroll to top -->
+    <!-- javascript libraries -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <!-- menu navigation -->
     <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <!-- animation -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- page scroll -->
+    <script type="text/javascript" src="js/page-scroll.js"></script>
+    <!-- owl carousel -->
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- counter -->
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <!-- parallax -->
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- magnific popup -->
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <!-- portfolio with shorting tab -->
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <!-- images loaded -->
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- pull menu -->
+    <script type="text/javascript" src="js/classie.js"></script>
+    <!-- counter  -->
+    <script type="text/javascript" src="js/counter.js"></script>
+    <!-- fit video  -->
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- setting -->
     <script type="text/javascript" src="js/main.js"></script>
-    
+
 </body>
 
 </html>

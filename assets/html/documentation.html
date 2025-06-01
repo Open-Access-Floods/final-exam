@@ -25,15 +25,18 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <style>
         .smaller-banner {
-            height: 60vh; /* Reduced height, adjust as needed */
-            min-height: 400px; /* Minimum height for smaller screens */
+            height: 60vh;
+            /* Reduced height, adjust as needed */
+            min-height: 400px;
+            /* Minimum height for smaller screens */
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .smaller-banner-container {
-            width: 60%; /* Adjust as needed */
+            width: 60%;
+            /* Adjust as needed */
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -45,14 +48,16 @@
         }
 
         .smaller-banner-title {
-            font-size: 2em; /* Smaller title */
+            font-size: 2em;
+            /* Smaller title */
         }
 
         .smaller-banner-subtitle {
-            font-size: 1em; /* Smaller subtitle */
+            font-size: 1em;
+            /* Smaller subtitle */
         }
     </style>
-    </head>
+</head>
 
 <body>
     <nav class="navbar no-margin-bottom alt-font without-button">
@@ -71,7 +76,7 @@
                 <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse col-md-10">
                     <ul class="nav navbar-nav">
                         <li><a class="inner-link" href="event.html">About</a></li>
-                        <li><a class="inner-link" href="#speakers">Datasets</a></li>
+                        <li><a class="inner-link" href="analysis.html">Analysis</a></li>
                         <li><a class="inner-link" href="documentation.html">Documentation</a></li>
                         <li><a class="inner-link" href="#sponsors">Visualizations</a></li>
                         <li><a class="inner-link" href="#gallery">Results</a></li>
@@ -83,40 +88,352 @@
         </div>
     </nav>
     <section id="home" class="no-padding parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2;">
-        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;"/>
-        <div class="opacity-full bg-deep-blue2" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt=""
+            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;" />
+        <div class="opacity-full bg-deep-blue2"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
         <div class="container smaller-banner-container position-relative" style="position:relative;z-index:3;">
             <div class="slider-typography text-center">
                 <div class="slider-text-middle-main">
                     <div class="slider-text-middle smaller-banner-text">
-                        <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title" style="color:#7ed957;">Datasets and RDF Assertion</h1>
+                        <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title"
+                            style="color:#7ed957;">Datasets and RDF Assertion</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about" class="wow fadeIn">
+    <!-- end section #home -->
+
+    <section id="tabs-section" class="wow fadeIn" style="padding: 100px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
+                <div class="col-md-12 col-sm-12 text-center" style="padding: 0 100px; margin-bottom: 60px;">
                     <span
-                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
-                            class="deep-green-text">—</span> About</span>
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Data Preprocessing
+                    </span>
                 </div>
             </div>
+
+            <div class="col-md-12 margin-te no-margin-lr">
+                <div class="row">
+                    <div class="col-md-6"> <span
+                            class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                            <p class="text-large">
+                                To ensure consistency and analytical value, all datasets underwent a standard preprocessing workflow involving cleaning, filtering, and harmonization. The five primary sources—S2ID, INMET, MapBiomas, IBGE, and geospatial shapefiles—were integrated at the municipality level.
+                            </p>
+                            <p>
+                                The S2ID disaster records were filtered for hydrological events in 2024, cleaned for encoding issues, and aggregated into a single impact indicator.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="col-md-6"> <span
+                            class="text-large dark-gray-text margin-five no-margin-lr no-margin-top display-block">
+                            <p class="text-large">
+                                INMET precipitation data from over 500 stations was standardized and joined with location metadata. Using MapBiomas, we calculated urban and forest cover change between 2013 and 2023, as well as exposure to urban flood risk zones. IBGE demographic data helped normalize indicators.
+                                All datasets were matched by municipality and state, producing an integrated file ready for visualization and analysis.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center" style="padding: 50px 100px; margin-bottom: 60px;">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> KNIME Workflow Overview
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 margin-five">
+                <div class="tab-style8">
+                    <div class="row">
+                        <div class="tabs-left col-md-12 col-sm-12 col-xs-12">
+                            <ul
+                                class="nav nav-tabs nav-tabs-light pull-left text-uppercase xs-margin-five xs-no-margin-lr xs-no-margin-top">
+                                <li class="active xs-width-100 text-large">
+                                    <a href="#tab4_sec1" data-toggle="tab">Source Datasets</a>
+                                </li>
+                                <li class="xs-width-100 text-large">
+                                    <a href="#tab4_sec2" data-toggle="tab">Mashup Datasets</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content position-relative overflow-hidden">
+                                <div class="tab-pane fade in active" id="tab4_sec1">
+                                    <div class="row margin-seven">
+                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D1 - Disaster Records (S2ID)
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> D1_Disaster_and_Impact_Data</li>
+                                                <li><strong>Publisher: </strong>Ministry of Integration</li>
+                                                <li><strong>Format: </strong>CSV</li>
+                                                <li><strong>Metadata: </strong>Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://s2id.mi.gov.br/paginas/relatorios/"
+                                                        target="_blank">https://s2id.mi.gov.br/</a></li>
+                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D2 - Rainfall Data (INMET)
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> D2_Rainfall</li>
+                                                <li><strong>Publisher:</strong> INMET</li>
+                                                <li><strong>Format:</strong> CSV</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a href="https://bdmep.inmet.gov.br/"
+                                                        target="_blank">https://bdmep.inmet.gov.br</a></li>
+                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-seven">
+                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D3 - Population Estimates (IBGE)
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> D3_Population_Risk</li>
+                                                <li><strong>Publisher:</strong> IBGE</li>
+                                                <li><strong>Format:</strong> CSV, SHP</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101589"
+                                                        target="_blank">https://biblioteca.ibge.gov.br</a></li>
+                                                <li><strong>License:</strong> CC BY 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D4 - Urban Expansion (MapBiomas)
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> D4_Urban_Expansion</li>
+                                                <li><strong>Publisher:</strong> MapBiomas</li>
+                                                <li><strong>Format:</strong> XLSX</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/2W2Z5M"
+                                                        target="_blank">https://data.mapbiomas.org</a></li>
+                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-seven">
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D5 - Deforestation (MapBiomas)
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> D5_Deforestation</li>
+                                                <li><strong>Publisher:</strong> MapBiomas</li>
+                                                <li><strong>Format:</strong> CSV</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/7STHCP"
+                                                        target="_blank">https://data.mapbiomas.org/</a></li>
+                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D6 - Civil Defense (Transparency Portal)
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> D6_Civil_Defense</li>
+                                                <li><strong>Publisher:</strong> Controladoria-Geral da União</li>
+                                                <li><strong>Format:</strong> CSV</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://portaldatransparencia.gov.br/programas-e-acoes/acao/22BO-acoes-de-protecao-e-defesa-civil?ano=2025"
+                                                        target="_blank">https://portaldatransparencia.gov.br/</a></li>
+                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab4_sec2">
+                                    <div class="row margin-seven">
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                MD1 - Affected Population
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> MD1_Affected_Population</li>
+                                                <li><strong>Publisher: </strong>Ministry of Integration</li>
+                                                <li><strong>Format: </strong>CSV</li>
+                                                <li><strong>Metadata: </strong>Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://s2id.mi.gov.br/paginas/relatorios/"
+                                                        target="_blank">https://s2id.mi.gov.br/</a></li>
+                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                MD2 - Rainfall per Municipality
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> MD2_Municipality_Rainfall</li>
+                                                <li><strong>Publisher:</strong> INMET</li>
+                                                <li><strong>Format:</strong> CSV</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a href="https://bdmep.inmet.gov.br/"
+                                                        target="_blank">https://bdmep.inmet.gov.br</a></li>
+                                                <li><strong>License:</strong> Public Domain, Brazil Government</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-seven">
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                MD3 - Deforestation Rio Grande de Sul
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> MD3_Deforestation_RS</li>
+                                                <li><strong>Title:</strong> Population Estimates (IBGE)</li>
+                                                <li><strong>Publisher:</strong> IBGE</li>
+                                                <li><strong>Format:</strong> CSV, SHP</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101589"
+                                                        target="_blank">https://biblioteca.ibge.gov.br</a></li>
+                                                <li><strong>License:</strong> CC BY 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="margin-two col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D4 - Rain Precipitation per States
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> MD4_Rain_Precipitation_States</li>
+                                                <li><strong>Publisher:</strong> MapBiomas</li>
+                                                <li><strong>Format:</strong> XLSX</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/2W2Z5M"
+                                                        target="_blank">https://data.mapbiomas.org</a></li>
+                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-seven">
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-tb"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                D5 - Monthly Rainfall Stations RS
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> MD5_Monthly_Rainfall_Stations_RS</li>
+                                                <li><strong>Publisher:</strong> MapBiomas</li>
+                                                <li><strong>Format:</strong> CSV</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://data.mapbiomas.org/dataset.xhtml?persistentId=doi:10.58053/MapBiomas/7STHCP"
+                                                        target="_blank">https://data.mapbiomas.org/</a></li>
+                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="margin-two col-md-5 col-sm-5 service-sub text-center xs-margin-five xs-no-margin-top"
+                                            style="background-color: #6ad5a73b; padding: 2rem; border-radius: 8px;">
+                                            <span
+                                                class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">
+                                                MD7 - Urbanization Growth RS
+                                            </span>
+                                            <p class="text-medium center-col">
+                                            <ul class="text-medium">
+                                                <li><strong>ID:</strong> MD7_Urbanization_Growth_RS</li>
+                                                <li><strong>Publisher:</strong> Controladoria-Geral da União</li>
+                                                <li><strong>Format:</strong> CSV</li>
+                                                <li><strong>Metadata:</strong> Provided</li>
+                                                <li><strong>URI:</strong> <a
+                                                        href="https://portaldatransparencia.gov.br/programas-e-acoes/acao/22BO-acoes-de-protecao-e-defesa-civil?ano=2025"
+                                                        target="_blank">https://portaldatransparencia.gov.br/</a></li>
+                                                <li><strong>License:</strong> CC BY-SA 4.0</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end tab style #4 -->
+
+    <section id="event" class="wow fadeIn no-padding-bottom">
+        <div class="container">
             <div class="row">
                 <div class="margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
                     <div class="col-md-5 col-sm-12">
                         <span
                             class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top"><strong>OpenDataFlood</strong>
                             is a data-driven project aimed at exploring the structural, environmental, and
-                            policy-related conditions that contributed to the catastrophic flood in <strong>Rio Grande
+                            policy-related conditions that contributed to the catastrophic flood in <strong>Rio
+                                Grande
                                 do Sul, Brazil</strong>, in 2024.</span>
                         <p class="text-medium">In addition to focusing on Rio Grande do Sul, OpenDataFlood
-                            contextualizes the state within the broader national landscape, comparing rainfall intensity
+                            contextualizes the state within the broader national landscape, comparing rainfall
+                            intensity
                             and public spending with other Brazilian states.</p>
-                        <p class="text-medium">The project utilizes a wide range of datasets, including meteorological
-                            data, public spending records, and environmental indicators, to analyze the factors that led
+                        <p class="text-medium">The project utilizes a wide range of datasets, including
+                            meteorological
+                            data, public spending records, and environmental indicators, to analyze the factors that
+                            led
                             to the flood. It also examines the role of public policies in disaster preparedness and
                             response.</p>
                         <p class="text-medium">By making this data accessible and visualizing it through interactive
@@ -133,7 +450,8 @@
                                 <span
                                     class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Climatic
                                     conditions</span>
-                                <p class="text-medium width-90 xs-width-100">Using monthly precipitation records from
+                                <p class="text-medium width-90 xs-width-100">Using monthly precipitation records
+                                    from
                                     meteorological stations across Brazil.</p>
                             </div>
                             <div class="col-md-6 col-sm-6 xs-margin-nineteen xs-no-margin-lr xs-no-margin-top">
@@ -142,7 +460,8 @@
                                 <span
                                     class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Environmental
                                     transformation</span>
-                                <p class="text-medium width-90 xs-width-100">through long-term data on urban expansion
+                                <p class="text-medium width-90 xs-width-100">through long-term data on urban
+                                    expansion
                                     and deforestation at the municipal level.</p>
                             </div>
                         </div>
@@ -154,7 +473,8 @@
                                 <span
                                     class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Preparedness
                                     and response</span>
-                                <p class="text-medium width-90 xs-width-100">by analyzing historical federal investments
+                                <p class="text-medium width-90 xs-width-100">by analyzing historical federal
+                                    investments
                                     in civil defense actions (2014–2025).</p>
                             </div>
                             <div class="col-md-6 col-sm-6 margin-seven no-margin-lr no-margin-bottom ">
@@ -163,7 +483,8 @@
                                 <span
                                     class="font-weight-600 letter-spacing-1 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">Disaster
                                     records</span>
-                                <p class="text-medium width-90 xs-width-100">based on the national system for disaster
+                                <p class="text-medium width-90 xs-width-100">based on the national system for
+                                    disaster
                                     notifications (S2ID), showing patterns of climate-related emergencies across
                                     municipalities.</p>
                             </div>
@@ -178,9 +499,11 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <span class="title-medium alt-font deep-green-text text-uppercase xs-title-small">All the information in available in Open Data Floods GitHub repository</span>
+                    <span class="title-medium alt-font deep-green-text text-uppercase xs-title-small">All the
+                        information in available in Open Data Floods GitHub repository</span>
                     <span
-                        class="title-extra-large-3 alt-font deep-green-text text-uppercase font-weight-600 margin-one no-margin-bottom no-margin-lr display-block xs-title-extra-large">Consult the documentation</span>
+                        class="title-extra-large-3 alt-font deep-green-text text-uppercase font-weight-600 margin-one no-margin-bottom no-margin-lr display-block xs-title-extra-large">Consult
+                        the documentation</span>
                     <div id="counter-event" enddate="2016/12/25 12:00:00"
                         class="white-text alt-font center-col margin-eight no-margin-lr sm-margin-fifteen sm-no-margin-lr xs-no-border">
                     </div>
@@ -269,62 +592,105 @@
                                     <div id="accordion-style1">
                                         <div class="row">
                                             <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                                <div class="panel-group accordion-style3 no-margin-bottom" id="accordion-one">
+                                                <div class="panel-group accordion-style3 no-margin-bottom"
+                                                    id="accordion-one">
                                                     <div class="panel panel-default no-border">
-                                                        <div class="panel-heading padding-three no-padding-lr no-padding-top active-accordion">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link1"><h4 class="panel-title">Question 1<span class="pull-right"><i class="fa fa-minus"></i></span></h4></a>
+                                                        <div
+                                                            class="panel-heading padding-three no-padding-lr no-padding-top active-accordion">
+                                                            <a data-toggle="collapse" data-parent="#accordion-one"
+                                                                href="#accordion-one-link1">
+                                                                <h4 class="panel-title">Question 1<span
+                                                                        class="pull-right"><i
+                                                                            class="fa fa-minus"></i></span></h4>
+                                                            </a>
                                                         </div>
-                                                        <div id="accordion-one-link1" class="panel-collapse collapse in">
+                                                        <div id="accordion-one-link1"
+                                                            class="panel-collapse collapse in">
                                                             <div class="panel-body">
-                                                                How did long-term environmental changes across Brazil contribute to the conditions that made the 2024 flood in Rio Grande do Sul so severe?
+                                                                How did long-term environmental changes across Brazil
+                                                                contribute to the conditions that made the 2024 flood in
+                                                                Rio Grande do Sul so severe?
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default no-border no-margin-top">
-                                                        <div class="panel-heading padding-three no-padding-lr no-padding-top ">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link2"><h4 class="panel-title"> Question 2<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                                        <div
+                                                            class="panel-heading padding-three no-padding-lr no-padding-top ">
+                                                            <a data-toggle="collapse" data-parent="#accordion-one"
+                                                                href="#accordion-one-link2">
+                                                                <h4 class="panel-title"> Question 2<span
+                                                                        class="pull-right"><i
+                                                                            class="fa fa-plus"></i></span></h4>
+                                                            </a>
                                                         </div>
                                                         <div id="accordion-one-link2" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                What does the data reveal about local land use trends in the affected municipalities, and how do they compare to broader national patterns of deforestation and urban growth?
+                                                                What does the data reveal about local land use trends in
+                                                                the affected municipalities, and how do they compare to
+                                                                broader national patterns of deforestation and urban
+                                                                growth?
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default no-border no-margin-top">
-                                                        <div class="panel-heading padding-three no-padding-lr no-padding-top">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link3"><h4 class="panel-title">Question 3<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                                        <div
+                                                            class="panel-heading padding-three no-padding-lr no-padding-top">
+                                                            <a data-toggle="collapse" data-parent="#accordion-one"
+                                                                href="#accordion-one-link3">
+                                                                <h4 class="panel-title">Question 3<span
+                                                                        class="pull-right"><i
+                                                                            class="fa fa-plus"></i></span></h4>
+                                                            </a>
                                                         </div>
                                                         <div id="accordion-one-link3" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                How do public investments in civil defense vary by region, and are they aligned with the intensity and frequency of climate-related events?
+                                                                How do public investments in civil defense vary by
+                                                                region, and are they aligned with the intensity and
+                                                                frequency of climate-related events?
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default no-border no-margin-top">
-                                                        <div class="panel-heading padding-three no-padding-lr no-padding-top">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link4"><h4 class="panel-title">Question 4<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                                        <div
+                                                            class="panel-heading padding-three no-padding-lr no-padding-top">
+                                                            <a data-toggle="collapse" data-parent="#accordion-one"
+                                                                href="#accordion-one-link4">
+                                                                <h4 class="panel-title">Question 4<span
+                                                                        class="pull-right"><i
+                                                                            class="fa fa-plus"></i></span></h4>
+                                                            </a>
                                                         </div>
                                                         <div id="accordion-one-link4" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                Can open government data help anticipate future climate risks and guide more equitable and effective policies for disaster prevention and adaptation?
+                                                                Can open government data help anticipate future climate
+                                                                risks and guide more equitable and effective policies
+                                                                for disaster prevention and adaptation?
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default no-border no-margin-top">
-                                                        <div class="panel-heading padding-three no-padding-lr no-padding-top">
-                                                            <a data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-link5"><h4 class="panel-title">Question 5<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                                        <div
+                                                            class="panel-heading padding-three no-padding-lr no-padding-top">
+                                                            <a data-toggle="collapse" data-parent="#accordion-one"
+                                                                href="#accordion-one-link5">
+                                                                <h4 class="panel-title">Question 5<span
+                                                                        class="pull-right"><i
+                                                                            class="fa fa-plus"></i></span></h4>
+                                                            </a>
                                                         </div>
                                                         <div id="accordion-one-link5" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                What are the limits of local interventions when facing environmental changes driven by large-scale biome degradation?
+                                                                What are the limits of local interventions when facing
+                                                                environmental changes driven by large-scale biome
+                                                                degradation?
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -337,73 +703,90 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <span class="title-medium alt-font font-weight-600 text-uppercase white-text display-block sm-title-large">
-                    <span class="deep-green-text">—</span> Results
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase white-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Results
                     </span>
                     <br>
                 </div>
             </div>
             <div class="row margin-seven">
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="12" data-speed="7000"></span>
                         <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Datasets</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Including meteorological, land-use, demographic and disaster records supporting the analysis</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Including meteorological,
+                            land-use, demographic and disaster records supporting the analysis</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="2300000" data-speed="7000" data-decimals="1"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Affected people</span>
+                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Affected
+                            people</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Total affected people during the 2024 flood in Rio Grande do Sul, based on official S2ID data</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Total affected people during
+                            the 2024 flood in Rio Grande do Sul, based on official S2ID data</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="431" data-speed="7000"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Municipalities</span>
+                        <span
+                            class="text-uppercase alt-font text-medium white-text letter-spacing-1">Municipalities</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Officially impacted by the event, nearly 90% of the entire state.</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Officially impacted by the
+                            event, nearly 90% of the entire state.</span>
                     </div>
                 </div>
             </div>
             <div class="row margin-seven no-padding-bottom">
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="400" data-speed="7000"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Extreme rainfall</span>
+                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Extreme
+                            rainfall</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-three">
-                        <span class="text-small white-text letter-spacing-1">Milimeters measured in several areas during May 2024, the highest in decades.</span>
+                        <span class="text-small white-text letter-spacing-1">Milimeters measured in several areas during
+                            May 2024, the highest in decades.</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="12" data-speed="7000" data-decimals="0" data-suffix="%"></span>
-                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Urbanization growth</span>
+                        <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Urbanization
+                            growth</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Average urbanization growth across RS municipalities between 2013 and 2023.</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Average urbanization growth
+                            across RS municipalities between 2013 and 2023.</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
+                <div
+                    class="col-md-4 col-sm-4 col-xs-12 xs-text-center text-center xs-margin-fifteen xs-no-margin-lr xs-no-margin-top">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <span class="timer alt-font font-weight-600 white-text title-extra-large display-block"
                             data-to="2100000000" data-speed="7000" data-decimals="1"></span>
                         <span class="text-uppercase alt-font text-medium white-text letter-spacing-1">Investments</span>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <span class="text-small white-text letter-spacing-1 margin-three">Allocated to Civil Defense nationwide (2014–2024), based on Transparency Portal data (Reais Currency).</span>
+                        <span class="text-small white-text letter-spacing-1 margin-three">Allocated to Civil Defense
+                            nationwide (2014–2024), based on Transparency Portal data (Reais Currency).</span>
                     </div>
                 </div>
             </div>
@@ -411,10 +794,10 @@
     </section>
 
     <section class="border-top wow fadeIn padding-seven no-padding-lr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 center-col text-center">
-                        <a class="btn social-icon button no-letter-spaci"><i class="fa fa-facebook"></i>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 center-col text-center">
+                    <a class="btn social-icon button no-letter-spaci"><i class="fa fa-facebook"></i>
                     </a>
                     <a class="btn social-icon button no-letter-spaci">
                         <i class="fa fa-twitter"></i>
@@ -422,22 +805,47 @@
                     <a class="btn social-icon button no-letter-spaci">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- scroll to top -->
+    <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!-- end scroll to top -->
+    <!-- javascript libraries -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <!-- menu navigation -->
     <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <!-- animation -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- page scroll -->
+    <script type="text/javascript" src="js/page-scroll.js"></script>
+    <!-- owl carousel -->
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- counter -->
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <!-- parallax -->
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- magnific popup -->
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <!-- portfolio with shorting tab -->
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <!-- images loaded -->
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- pull menu -->
+    <script type="text/javascript" src="js/classie.js"></script>
+    <!-- counter  -->
+    <script type="text/javascript" src="js/counter.js"></script>
+    <!-- fit video  -->
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- setting -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
