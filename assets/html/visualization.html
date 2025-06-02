@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Open Data Floods</title>
+    <meta name="description"
+        content="A great collection of creative, responsive, elegant onepage templates for different industries.">
+    <meta name="keywords"
+        content="creative, css3, html5, onepage, multipurpose, bootstrap, responsive, agency, architecture, resume, blog, photography, restaurant, portfolio, spa, travel, wedding, coming soon">
+    <meta charset="utf-8">
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/et-line-icons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+        .smaller-banner {
+            height: 60vh;
+            /* Reduced height, adjust as needed */
+            min-height: 400px;
+            /* Minimum height for smaller screens */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .smaller-banner-container {
+            width: 60%;
+            /* Adjust as needed */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .smaller-banner-text {
+            /* Reduced font sizes */
+            font-size: 1.2em;
+            padding: 20px;
+        }
+
+        .smaller-banner-title {
+            font-size: 2em;
+            /* Smaller title */
+        }
+
+        .smaller-banner-subtitle {
+            font-size: 1em;
+            /* Smaller subtitle */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar no-margin-bottom alt-font without-button">
+        <div class="container navigation-menu">
+            <div class="row">
+                <div class="col-md-2 navbar-header">
+                    <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse"
+                        class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand inner-link"><img alt="" src="images/ODFLOODS.png"></a>
+                </div>
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse col-md-10">
+                    <ul class="nav navbar-nav">
+                        <li><a class="inner-link" href="index.html">About</a></li>
+                        <li><a class="inner-link" href="datasets.html">Datasets</a></li>
+                        <li><a class="inner-link" href="analysis.html">Analysis</a></li>
+                        <li><a class="inner-link" href="rdf-assertion.html">RDF Assertion</a></li>
+                        <li><a class="inner-link" href="#gallery">Visualizations</a></li>
+                        <li><a class="inner-link" href="team.html">Transparency</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="no-padding parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2;">
+        <img class="parallax-background-img" src="images/aerial-view-of-flooded.jpg" alt=""
+            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;" />
+        <div class="opacity-full bg-deep-blue2"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+        <div class="container smaller-banner-container position-relative" style="position:relative;z-index:3;">
+            <div class="slider-typography text-center">
+                <div class="slider-text-middle-main">
+                    <div class="slider-text-middle smaller-banner-text">
+                        <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title"
+                            style="color:#7ed957;">Visualization</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section #home -->
+
+     <!-- MAP -->
+
+    <section id="speakers" class="wow fadeIn border-bottom no-padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Having information is only as valuable as the ability to interpret it.
+                    </span>
+                </div>
+            </div>
+            <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
+                <div class="col-md-12 col-sm-12 text-center"><span
+                        class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
+                        <strong>The following maps and charts illustrate the impact of the floods that struck Rio Grande do Sul, Brazil, in April and May, 2024.</strong></span>
+                </div>
+    </section>
+
+    <div class="row">
+        <div class="container text-center mt-3">
+            <h3>Rio Grande do Sul floods</h3>
+        </div>
+      
+      <!-- LEAFLET MAP -->
+        <div class="col-sm-8">
+            <div id="container-map" class="container-map mt-5">
+              <div class="map" id="map"></div>
+            </div>
+        </div>
+
+        <!-- SELECT FOR MAP DS -->
+        <div class="col-sm-4">
+          <div class="container mt-5">
+            <div class="bootstrap-select-wrapper">
+              <label class="text-center"for="dataset" style="color:#21BF75;"><b>Select dataset:</b></label>
+              <select name="data" id="selectData" class="form-select text-center" onchange="updateMap(this.value)">
+                <option value="general">General Information</option>
+                <option value="percentageAffected">Event Impact (%)</option>
+                <option value="deaths">Deaths</option>
+                <option value="injured">Injured</option>
+                <option value="sick">Sick</option>
+                <option value="missing">Missing</option>
+                <option value="evacuated">Evacuated</option>
+                <option value="displaced">Displaced</option>
+                <option value="otherAffected">Other Affected</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+     <!--Rainfall by states-->
+  <div class="section2">
+    <div class="pt-5 px-5 text-center">
+    <h2>Rainfall Trends by State – Brazil, 2024</h2>
+    <p>
+      The line chart below shows the monthly rainfall across Brazilian states in 2024. It highlights a remarkable anomaly in the state of <strong>Rio Grande do Sul</strong>, where rainfall levels were dramatically higher than in other states.
+      Historically, the region experiences two main rainy seasons: <strong>April–May</strong> and <strong>August–September</strong>, typically with comparable levels of precipitation. In 2024, while September rainfall aligned with historical norms, the <strong>May rainfall more than doubled the expected volume</strong>, contributing significantly to the flood disasters.
+    </p>
+
+    <div class="flourish-embed flourish-chart" data-src="visualisation/23399059">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/23399059/thumbnail" width="80%" alt="chart visualization" />
+      </noscript>
+    </div>
+    </div>
+  </div>
+
+  
+
+    <!--Vegetation Cover and deforestation -->
+  <div class="section3">
+    <div class="container mt-5 p-5 text-justify">
+      <h2>Vegetation Cover and deforestation (2004–2023)</h2>
+
+      <p>
+        The line chart below shows vegetation cover and deforestation trends across Rio Grande do Sul from 2004 to 2023.
+      </p>
+      <p> 
+        The chart reveals an <strong>inverse relationship</strong> between the<strong> growth of anthropized areas </strong>(Human-Altered), largely due to agriculture, and the <strong>decline of native vegetation</strong> (Primary Vegetation).
+      </p>
+      <p>
+        Other forms of land use, such as areas under recovery, have remained relatively stable over time.
+      </p>
+
+      <!-- Flourish Chart Embed -->
+      <div class="flourish-embed flourish-chart" data-src="visualisation/23515617">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript><img src="https://public.flourish.studio/visualisation/23515617/thumbnail" width="100%" alt="chart visualization" /></noscript>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-5 p-4">
+    <h2 class="mb-4">Urbanization vs Forest Cover</h2>
+    <p class="mb-4">
+      While the data does not reveal dramatic changes in forest cover or urban growth across municipalities in Rio Grande do Sul between 2013 and 2023, it highlights the importance of mitigation efforts. Expanding green areas within cities can improve water runoff, reduce the risk of landslides, and enhance soil stability. Additionally, considering South America's rainfall system is highly interconnected — a phenomenon known as the "flying rivers" — effective disaster prevention depends on coordinated national policies and regional cooperation. Such strategies are vital to prevent future tragedies like the devastating 2024 floods in southern Brazil.
+    </p>
+
+    <iframe src="../../plots/urban_vs_deforest.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ccc;"></iframe>
+  </div>
+
+  <!--Civil Defense investiments-->
+  <div class="section3">
+    <div class="container mt-5 p-5 text-justify">
+      <h2>Investments in Civil Defense (2014–2024)</h2>
+
+      <p>
+        The line chart below presents the historical trend of federal expenditures in Brazil's Civil Defense system, specifically under Action 22BO (“Protection and Civil Defense Actions”). The data shows a significant drop in investments between 2017 and 2021—not due to fewer disasters, but as a result of reduced government spending.
+      </p>
+      <p>
+        A moderate increase is observed in 2022, an election year, followed by a sharp rise starting in 2023. In 2024, investments spike dramatically in response to the catastrophic floods in Rio Grande do Sul. This pattern highlights how disaster response funding has been reactive rather than proactive, raising concerns about long-term resilience and preparedness.
+      </p>
+
+      <!-- Flourish Chart Embed -->
+      <div class="flourish-embed flourish-chart" data-src="visualisation/23480294">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/23480294/thumbnail" width="100%" alt="Investment chart" />
+        </noscript>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../VisualizationFiles/main.js"></script>
+</body>
+</html>
