@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         .smaller-banner {
             height: 60vh;
@@ -55,6 +56,11 @@
         .smaller-banner-subtitle {
             font-size: 1em;
             /* Smaller subtitle */
+        }
+        .equal-height {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
     </style>
 </head>
@@ -96,7 +102,7 @@
                 <div class="slider-text-middle-main">
                     <div class="slider-text-middle smaller-banner-text">
                         <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title"
-                            style="color:#7ed957;">Team</h1>
+                            style="color:#7ed957;">Transparency: credits, licency and team</h1>
                     </div>
                 </div>
             </div>
@@ -104,70 +110,64 @@
     </section>
     <!-- end section #home -->
 
-    <section id="speakers" class="wow fadeIn border-bottom no-padding-bottom">
+    <section id="licenses" class="wow fadeIn border-bottom no-padding-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <span
-                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
-                        <span class="deep-green-text">—</span> Scenario
-                    </span>
-                </div>
+            <div class="col-md-12 col-sm-12 text-center">
+                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                <span class="deep-green-text">—</span> Licenses & Credits
+                </span>
             </div>
-            <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
-                <div class="col-sm-9 col-sm-9"><span
-                        class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
-                        <strong>What happen in 2024 in Rio Grande de Sul?</strong>
-                    </span></div>
-                <div class="col-md-6 col-sm-12">
-                    <p class="text-medium">
-                        The 2024 flood in Rio Grande do Sul was not an isolated event but the result of complex and
-                        interconnected factors. While the affected municipalities did not show sharp increases in urban
-                        sprawl or extensive deforestation at the local level, Brazil’s broader environmental and
-                        climatic systems reveal deeper structural vulnerabilities.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        Rio Grande do Sul is Brazil’s southernmost state, home to approximately 11 million people—around
-                        5% of the country's total population. It is one of Brazil's most economically developed regions,
-                        with a strong agricultural, industrial, and service-based economy. As such, a natural disaster
-                        in this region carries broad national consequences, affecting supply chains, food production,
-                        and infrastructure.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        In May 2024, the state experienced one of the worst floods in its history. According to official
-                        data, over 2.3 million people were directly affected, with more than 400 municipalities impacted
-                        by heavy rains, river overflows, landslides, and infrastructure collapse. Cities like Porto
-                        Alegre, the capital, faced record-breaking water levels and mass displacements.
-                    </p>
-                    <br>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <p class="text-medium">
-                        Scientific research shows that deforestation in key biomes like the Amazon and the Cerrado has
-                        far-reaching effects on rainfall distribution across the South American continent. These changes
-                        in the atmospheric water cycle can intensify extreme weather events even in regions
-                        geographically distant from the deforested areas.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        This project uses official open data from Brazilian institutions—such as INMET, IBGE, MapBiomas,
-                        and the Transparency Portal—to trace these connections. It integrates precipitation patterns,
-                        land use data, and public investment in disaster prevention to shed light on the systemic nature
-                        of climate risk in Brazil. Rio Grande do Sul is analyzed in detail, but always in the context of
-                        national patterns of environmental change and institutional preparedness.
-                    </p>
-                    <br>
-                    <p class="text-medium">
-                        By revealing spatial and temporal patterns through data visualization, OpenDataFlood aims to
-                        inform climate governance, support evidence-based policy, and promote public engagement with
-                        environmental accountability.
-                    </p>
-                </div>
             </div>
-    </section>
 
+            <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
+            <div class="col-md-6 col-sm-12">
+                <p class="text-medium">
+                This project uses official open datasets and free tools under public licenses to support reproducible, ethical, and open-source analysis of environmental and infrastructural risk in Brazil.
+                </p>
+                <br>
+                <p class="text-medium">
+                <strong>Source datasets</strong> from institutions like INMET, IBGE, MapBiomas, the Transparency Portal, and S2ID are governed by <strong>Creative Commons Attribution 3.0 Unported (CC BY 3.0)</strong>.
+                </p>
+                <p class="text-medium">
+                All processed data and visual mashups produced within the OpenDataFlood project are shared under the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.
+                </p>
+                <br>
+                <p class="text-medium">
+                <strong>Banner images</strong> and other visuals are sourced from <strong>Wikimedia Commons</strong> under open licenses, with proper attribution where required.
+                </p>
+                <p class="text-medium">
+                Icons are from the <strong>ET-Line</strong> collection included in the Brando template package and used under its standard licensing terms.
+                </p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <p class="text-medium">
+                The site uses the <strong>Brando HTML5 template</strong> by ThemeZaa, originally distributed under commercial license.
+                </p>
+                <p class="text-medium">
+                Interactive data visualizations were created using:
+                <ul class="text-medium">
+                    <li>Leaflet.js – <em>BSD 2-Clause License</em></li>
+                    <li>Plotly.js and Plotly Express – <em>MIT License</em></li>
+                    <li>Flourish – <em>proprietary online platform, free academic use</em></li>
+                </ul>
+                </p>
+                <p class="text-medium">
+                Data processing and analysis relied on open-source Python libraries such as:
+                <ul class="text-medium">
+                    <li>pandas, geopandas, shapely, pathlib, os – <em>BSD/MIT Licenses</em></li>
+                    <li>networkX – <em>BSD License</em></li>
+                    <li>KNIME – <em>GNU General Public License (GPL v3)</em></li>
+                </ul>
+                </p>
+                <p class="text-medium">
+                All preprocessing and transformations are documented in the project repository to ensure transparency and reusability.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
 
     <section class="wow fadeIn fix-background" style="background-image:url(images/flood-3.png);">
         <div class="opacity-full bg-deep-blue2"></div>
@@ -189,340 +189,86 @@
         </div>
     </section>
 
-    <!-- features box -->
-                        <section id="features-box" class="wow fadeIn margin-seven no-margin-lr no-margin-bottom">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <span class="alt-font text-uppercase title-medium black-text element-title">Features Box</span>
-                                    <div class="bg-fast-yellow separator-line-thick center-col no-margin-top"></div>
-                                </div>
-                            </div>
-                            <div class="margin-eight button-bg-area clearfix xs-no-padding no-padding-top">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #1</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #1 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 xs-margin-ten xs-no-margin-top xs-no-margin-lr">
-                                        <span class="text-uppercase text-large alt-font font-weight-600 deep-gray-text"><span class="crimson-red-text">01.</span>&nbsp;&nbsp;Architecture</span>
-                                        <img src="http://placehold.it/800x435" alt="" class="margin-ten no-margin-lr sm-margin-eleven sm-no-margin-lr"/>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                                        <div class="separator-line-thick bg-crimson-red margin-twenty no-margin-lr no-margin-bottom"></div>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6">
-                                        <span class="text-uppercase text-large alt-font font-weight-600 deep-gray-text"><span class="crimson-red-text">02.</span>&nbsp;&nbsp;Civil & Structural</span>
-                                        <img src="http://placehold.it/800x435" alt="" class="margin-ten no-margin-lr sm-margin-eleven sm-no-margin-lr"/>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                                        <div class="separator-line-thick bg-crimson-red margin-twenty no-margin-lr no-margin-bottom"></div>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #1 -->
-                            </div>
-                            <div class="button-bg-area clearfix xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #2</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #2 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 service-sub text-center xs-margin-five xs-no-margin-tb">
-                                        <i class="icon-target icon-extra-large fast-yellow-text margin-seven no-margin-lr no-margin-top"></i>
-                                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">Branding</span>
-                                        <p class="text-medium center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.</p>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 service-sub text-center xs-margin-five xs-no-margin-top">
-                                        <i class="icon-desktop icon-extra-large fast-yellow-text margin-seven no-margin-lr no-margin-top"></i>
-                                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-one no-margin-lr no-margin-top display-block alt-font">Web Design</span>
-                                        <p class="text-medium center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.</p>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #2 -->
-                            </div>
-                            <div class="bg-dark-blue button-bg-area clearfix">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr no-padding-top text-center">
-                                        <span class="alt-font text-uppercase white-text">Features Box Style #3</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #3 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-xs-12 col-sm-6 text-center  xs-margin-ten xs-no-margin-top xs-no-margin-lr">
-                                        <div class="features-box-style1 center-col">
-                                            <div class="features-box-style1-sub">
-                                                <i class="icon-ribbon icon-medium medium-gray-text"></i>
-                                                <h5 class="text-large text-uppercase letter-spacing-2 light-gray-text alt-font">Best Price<br> Guarantee</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end features box-->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-xs-12 col-sm-6 text-center">
-                                        <div class="features-box-style1 center-col">
-                                            <div class="features-box-style1-sub">
-                                                <i class="icon-hotairballoon icon-medium medium-gray-text"></i>
-                                                <h5 class="text-large text-uppercase letter-spacing-2 light-gray-text alt-font">Trust and<br> Safety</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #3 -->
-                            </div>
-                            <div class="bg-white button-bg-area clearfix xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #4</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #4 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 testimonial-style1 text-center xs-margin-ten xs-no-margin-top xs-no-margin-lr">
-                                        <img alt="" src="http://placehold.it/300x300">
-                                        <p class="center-col width-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                                        <span class="name black-text">Alexander Smith - Google</span>
-                                        <i class="fa fa-quote-left icon-small yellow-text display-block margin-fifteen no-margin-bottom xs-margin-two xs-no-margin-bottom"></i>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 testimonial-style1 text-center">
-                                        <img alt="" src="http://placehold.it/300x300">
-                                        <p class="center-col width-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                                        <span class="name black-text">Herman Miller - Apple</span>
-                                        <i class="fa fa-quote-left icon-small yellow-text display-block margin-fifteen no-margin-bottom xs-margin-two xs-no-margin-bottom"></i>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #4 -->
-                            </div>
-                            <div class="button-bg-area clearfix xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #5</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #5 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 xs-margin-ten xs-no-margin-lr xs-no-margin-top xs-text-center">
-                                        <i class="icon-flag icon-medium margin-nine no-margin-lr no-margin-top xs-margin-three xs-no-margin-lr xs-no-margin-top"></i>
-                                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">We're Creative</span>
-                                        <div class="separator-line bg-yellow no-margin-lr margin-ten xs-center-col"></div>
-                                        <p class="text-medium width-90 xs-width-100 no-margin-bottom">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 xs-text-center">
-                                        <i class="icon-clock icon-medium margin-nine no-margin-lr no-margin-top xs-margin-three xs-no-margin-lr xs-no-margin-top"></i>
-                                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-five no-margin-lr no-margin-top display-block alt-font xs-margin-five xs-no-margin-lr xs-no-margin-top">We're Punctual</span>
-                                        <div class="separator-line bg-yellow no-margin-lr margin-ten xs-center-col"></div>
-                                        <p class="text-medium width-90 xs-width-100 no-margin-bottom">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #5 -->
-                            </div>
-                            <div class="button-bg-area clearfix xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #6</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #6 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 text-center team-style2 xs-margin-nineteen xs-no-margin-lr xs-no-margin-top">
-                                        <div class="position-relative margin-twenty no-margin-lr no-margin-top team-image">
-                                            <img src="http://placehold.it/800x889" alt=""/>
-                                            <div class="img-border-medium border-transperent-white"></div>
-                                        </div>
-                                        <div class="team-social"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook icon-extra-small black-text"></i></a><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter icon-extra-small black-text"></i></a><a 
-                                                href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus icon-extra-small black-text"></i></a></div>
-                                        <span class="alt-font text-uppercase black-text margin-twelve display-block no-margin-lr no-margin-bottom">Alexander Harvard</span>
-                                        <span class="alt-font text-small text-uppercase">Co Founder / CEO</span>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 text-center team-style2">
-                                        <div class="position-relative margin-twenty no-margin-lr no-margin-top team-image">
-                                            <img src="http://placehold.it/800x889" alt=""/>
-                                            <div class="img-border-medium border-transperent-white"></div>
-                                        </div>
-                                        <div class="team-social"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook icon-extra-small black-text"></i></a><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter icon-extra-small black-text"></i></a><a 
-                                                href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus icon-extra-small black-text"></i></a></div>
-                                        <span class="alt-font text-uppercase black-text margin-twelve display-block no-margin-lr no-margin-bottom">Alexander Harvard</span>
-                                        <span class="alt-font text-small text-uppercase">Co Founder / CEO</span>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #6 -->
-                            </div>
-                            <div class="button-bg-area clearfix xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #7</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #7 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 xs-text-center xs-margin-ten xs-no-margin-top xs-no-margin-lr">
-                                        <div class="col-md-3 col-sm-3 no-padding">
-                                            <i class="icon-desktop icon-medium"></i>
-                                        </div>
-                                        <div class="col-md-9 col-sm-9">
-                                            <span class="margin-three display-block no-margin-top alt-font no-margin-lr text-uppercase letter-spacing-1 black-text">Photoshop</span>
-                                            <p class="width-90 no-margin-bottom xs-center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 xs-text-center xs-margin-ten xs-no-margin-top xs-no-margin-lr">
-                                        <div class="col-md-3 col-sm-3 no-padding">
-                                            <i class="icon-trophy icon-medium"></i>
-                                        </div>
-                                        <div class="col-md-9 col-sm-9">
-                                            <span class="margin-three display-block no-margin-top alt-font no-margin-lr text-uppercase letter-spacing-1 black-text">Illustrator</span>
-                                            <p class="width-90 no-margin-bottom xs-center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #7 -->
-                            </div>
-                            <div class="bg-black button-bg-area clearfix">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr no-padding-top text-center">
-                                        <span class="alt-font text-uppercase white-text">Features Box Style #8</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #8 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 text-center position-relative special-dishes xs-margin-ten xs-no-margin-lr xs-no-margin-top">
-                                        <img src="http://placehold.it/289x289" alt=""/>
-                                        <div class="text-uppercase alt-font margin-fifteen no-margin-lr no-margin-bottom text-extra-large white-text letter-spacing-2 xs-margin-seven xs-no-margin-lr xs-no-margin-bottom sm-text-large">Perfect Kentucky</div>
-                                        <div class="text-uppercase text-small light-gray-text alt-font margin-one-half no-margin-lr no-margin-bottom sm-padding-three sm-no-margin-lr sm-no-margin-bottom">Tomatoes  /  Parmesan  /  Basil</div>
-                                        <div class="bg-deep-red round-border special-dishes-price text-center text-uppercase alt-font white-text position-absolute"><span class="text-small">Only</span><br><span class="text-extra-large line-height-unset">$15.00</span></div>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 text-center position-relative special-dishes">
-                                        <img src="http://placehold.it/289x289" alt=""/>
-                                        <div class="text-uppercase alt-font margin-fifteen no-margin-lr no-margin-bottom text-extra-large white-text letter-spacing-2 xs-margin-seven xs-no-margin-lr xs-no-margin-bottom sm-text-large">Hot Chicken Breast</div>
-                                        <div class="text-uppercase text-small light-gray-text alt-font margin-one-half no-margin-lr no-margin-bottom sm-padding-three sm-no-margin-lr sm-no-margin-bottom">Tomatoes  /  Parmesan  /  Basil</div>
-                                        <div class="bg-deep-red round-border special-dishes-price text-center text-uppercase alt-font white-text position-absolute"><span class="text-small">Only</span><br><span class="text-extra-large line-height-unset">$11.99</span></div>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #8 -->
-                            </div>
-                            <div class="button-bg-area clearfix xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #9</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #9 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 text-center xs-margin-ten xs-no-margin-lr xs-no-margin-top">
-                                        <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen">
-                                            <i class="icon-wine turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
-                                            <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Cocktail Party</span>
-                                            <div class="divider-line margin-seventeen no-margin-lr"></div>
-                                            <span class="alt-font text-uppercase medium-gray-text margin-twenty no-margin-lr no-margin-top">September 19th, 2015<br>11:00 PM - 01:00 PM</span>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 text-center">
-                                        <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen">
-                                            <i class="icon-heart turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
-                                            <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Wedding Ceremony</span>
-                                            <div class="divider-line margin-seventeen no-margin-lr"></div>
-                                            <span class="alt-font text-uppercase medium-gray-text margin-twenty no-margin-lr no-margin-top">September 20th, 2015<br>12:00 PM - 16:00 PM</span>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #9 -->
-                            </div>
-                            <div class="button-bg-area clearfix no-padding-bottom xs-no-padding">
-                                <div class="row">
-                                    <div class="col-md-12 padding-fifteen no-padding-lr text-center">
-                                        <span class="alt-font text-uppercase">Features Box Style #10</span>
-                                    </div>
-                                </div>
-                                <!-- features box style #10 -->
-                                <div class="row">
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6 xs-margin-ten xs-no-margin-lr xs-no-margin-top">
-                                        <!-- features box image -->
-                                        <div class="post-thumbnail overflow-hidden">
-                                            <a href="blog-details.html"><img src="http://placehold.it/800x549" alt=""/></a>
-                                        </div>
-                                        <!-- end features box image -->
-                                        <div class="post-details margin-ten no-margin-lr no-margin-bottom">
-                                            <span class="text-large text-uppercase display-block alt-font margin-seven no-margin-lr sm-text-medium xs-text-medium"><a href="blog-details.html" class="black-text sm-br-display-none xs-br-display-none">A beautiful woman should<br> break her mirror early.</a></span>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                                            <div class="separator-line-full bg-mid-gray3 margin-thirteen no-margin-lr xs-margin-seven xs-no-margin-lr"></div>
-                                            <span class="text-small text-uppercase alt-font light-gray-text"><a href="blog.html" class="light-gray-text">15 September 2015</a>   /   Posted by <a href="blog.html" class="light-gray-text">Nathan Ford</a></span>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                    <!-- features box -->
-                                    <div class="col-md-6 col-sm-6">
-                                        <!-- features box image -->
-                                        <div class="post-thumbnail overflow-hidden">
-                                            <a href="blog-details.html"><img src="http://placehold.it/800x549" alt=""/></a>
-                                        </div>
-                                        <!-- end features box image -->
-                                        <div class="post-details margin-ten no-margin-lr no-margin-bottom">
-                                            <span class="text-large text-uppercase display-block alt-font margin-seven no-margin-lr sm-text-medium xs-text-medium"><a href="blog-details.html" class="black-text sm-br-display-none xs-br-display-none">The time to relax is when<br> you don't have time for 
-                                                    it.</a></span>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                                            <div class="separator-line-full bg-mid-gray3 margin-thirteen no-margin-lr xs-margin-seven xs-no-margin-lr"></div>
-                                            <span class="text-small text-uppercase alt-font light-gray-text"><a href="blog.html" class="light-gray-text">12 September 2015</a>   /   Posted by <a href="blog.html" class="light-gray-text">Jeremy Girard</a></span>
-                                        </div>
-                                    </div>
-                                    <!-- end features box -->
-                                </div>
-                                <!-- end features box style #10 -->
-                            </div>
-                        </section>
-                        <!-- end features box -->
 
-    
-    <section class="border-top wow fadeIn padding-seven no-padding-lr">
+    <section id="team" class="padding-fifty no-padding-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 center-col text-center">
-                    <a class="btn social-icon button no-letter-spaci"><i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="btn social-icon button no-letter-spaci">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a class="btn social-icon button no-letter-spaci">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
+            <div class="col-md-12 col-sm-12 text-center">
+                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                <span class="deep-green-text">—</span> Team
+                </span>
+            </div>
+            </div>
+            <br><br><br>
+            <!-- Carla Menegat -->
+            <div class="col-md-4 col-sm-6 text-center">
+                <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen equal-height">
+                <i class="icon-hourglass turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
+                <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Carla Menegat</span>
+                <div class="divider-line margin-seventeen no-margin-lr"></div>
+                <span class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
+                    Carla has a PhD in History and is persuing a Master Degree in Digital Humanities and Digital Knowledge at Unibo and Professor at Instituto Federal Sul-Riograndense. She works with Digital History and Human Rights projects and, she's from Rio Grande do Sul.
+                </span>
+                <div class="margin-ten no-margin-lr">
+                    <a href="mailto:carla.menegat@studio.unibo.it"><i class="icon-envelope medium-gray-text"></i></a>
                 </div>
+                </div>
+            </div>
+
+            <!-- Catalina Salguero -->
+            <div class="col-md-4 col-sm-6 text-center">
+                <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen equal-height">
+                <i class="icon-happy turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
+                <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Catalina Salguero</span>
+                <div class="divider-line margin-seventeen no-margin-lr"></div>
+                <span class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
+                    Catalina is an art historian and cultural manager. A UX/UI design specialist, she is pursuing a master’s in Digital Humanities, exploring how technology can be used to preserve, research, and share cultural heritage in an accessible way.
+                </span>
+                <div class="margin-ten no-margin-lr">
+                    <a href="mailto:catalina.salguero@studio.unibo.it"><i class="icon-envelope medium-gray-text"></i></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rubens Fernandes Jr -->
+            <div class="col-md-4 col-sm-6 text-center">
+                <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen equal-height">
+                <i class="icon-map turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
+                <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Rubens Fernandes Jr</span>
+                <div class="divider-line margin-seventeen no-margin-lr"></div>
+                <span class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut quam a neque volutpat fermentum. Cras non velit in leo facilisis pulvinar ac vitae metus vel. blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla. 
+                </span>
+                <div class="margin-ten no-margin-lr">
+                    <a href="mailto:rubens.fernandes@studio.unibo.it"><i class="icon-envelope medium-gray-text"></i></a>
+                </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
+    <br><br><br>
+    <section class="parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2; height: 100px; overflow: hidden;">
+        <img class="parallax-background-img" src="images/flood-3.png" alt=""
+            style="position:absolute;top:0;left:0;width:100%;height:150%;object-fit:cover;transform:translateY(-20%);z-index:1;" />
+        
+        <div class="opacity-full bg-deep-blue2"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
 
+        <div class="container position-relative" style="position: relative; z-index: 3; height: 100%;">
+            <div class="d-flex justify-content-center align-items-end" style="height: 100%; padding-bottom: 10px;">
+                <p class="deep-green-text text-center" style="font-size: 15px; line-height: 1.4; margin: 0; color: #7ed957;">
+                    This project was produced as the final exam for the
+                    <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/424645" style="text-decoration: underline; color: inherit;">
+                        Open Data and Digital Ethics Course
+                    </a>, part of the
+                    <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" style="text-decoration: underline; color: inherit;">
+                        Master's Degree in Digital Humanities and Digital Knowledge
+                    </a> at the University of Bologna.
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- scroll to top -->
     <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!-- end scroll to top -->
