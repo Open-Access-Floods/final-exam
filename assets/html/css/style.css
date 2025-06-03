@@ -170,7 +170,7 @@ h1.page-title { margin:95px auto 0; width: 100%; }
 .dark-blue-text {color: #1e2126 !important}
 .fast-pink-text { color:#ff1a56 !important}
 .fast-pink-text-dark { color:#ef106e !important}
-.transparent-blue-text{ color: rgba(0,239,255,.5) !important}
+.transparent-blue-text{ color: #00efff80 !important}
 .transparent-green-text{ color: rgba(0,255,151,.5) !important}
 .fast-green-text{ color: #85eea5 !important}
 .crimson-red-text { color: #e31d3b !important}
@@ -339,7 +339,7 @@ i { color: #9a9a9a; margin:0}
 .bg-light-gray { background: #f7f7f7 !important; }
 .bg-brown {background: #614c45 !important}
 .bg-deep-orange {background: #d66e4a !important}
-.bg-transparent-blue { background: rgba(0,239,255,.5) !important}
+.bg-transparent-blue { background: #00efff80 !important}
 .bg-transparent-green{ background: rgba(0,255,151,.5) !important}
 .bg-fast-green{ background: #00ff97 !important}
 .bg-fast-blue { background: #00efff !important}
