@@ -127,17 +127,13 @@
         <div class="container text-center mt-3">
             <h3>Rio Grande do Sul floods</h3>
         </div>
-      
-      <!-- LEAFLET MAP -->
         <div class="col-sm-8">
             <div id="container-map" class="container-map mt-5">
               <div class="map" id="map"></div>
             </div>
         </div>
-
-        <!-- SELECT FOR MAP DS -->
         <div class="col-sm-4">
-          <div class="container mt-5">
+          <div class="ml-5">
             <div class="bootstrap-select-wrapper">
               <label class="text-center"for="dataset" style="color:#21BF75;"><b>Select dataset:</b></label>
               <select name="data" id="selectData" class="form-select text-center" onchange="updateMap(this.value)">
@@ -155,12 +151,11 @@
           </div>
         </div>
     </div>
-  </div>
-
+  <br>
      <!--Rainfall by states-->
   <div class="section2">
-    <div class="pt-5 px-5 text-center">
-    <h2>Rainfall Trends by State – Brazil, 2024</h2>
+    <div class="container mt-5 p-5 text-justify">
+    <h2>Rainfall Trends by State – Brazil, 2024</h2><br>
     <p>
       The line chart below shows the monthly rainfall across Brazilian states in 2024. It highlights a remarkable anomaly in the state of <strong>Rio Grande do Sul</strong>, where rainfall levels were dramatically higher than in other states.
       Historically, the region experiences two main rainy seasons: <strong>April–May</strong> and <strong>August–September</strong>, typically with comparable levels of precipitation. In 2024, while September rainfall aligned with historical norms, the <strong>May rainfall more than doubled the expected volume</strong>, contributing significantly to the flood disasters.
@@ -174,13 +169,11 @@
     </div>
     </div>
   </div>
-
-  
-
-    <!--Vegetation Cover and deforestation -->
+  <br>
+  <!--Vegetation Cover and deforestation -->
   <div class="section3">
     <div class="container mt-5 p-5 text-justify">
-      <h2>Vegetation Cover and deforestation (2004–2023)</h2>
+      <h2>Vegetation Cover and deforestation (2004–2023)</h2><br>
 
       <p>
         The line chart below shows vegetation cover and deforestation trends across Rio Grande do Sul from 2004 to 2023.
@@ -199,20 +192,20 @@
       </div>
     </div>
   </div>
-  
+  <br>
   <div class="container mt-5 p-4">
-    <h2 class="mb-4">Urbanization vs Forest Cover</h2>
+    <h2 class="mb-4">Urbanization vs Forest Cover</h2><br>
     <p class="mb-4">
       While the data does not reveal dramatic changes in forest cover or urban growth across municipalities in Rio Grande do Sul between 2013 and 2023, it highlights the importance of mitigation efforts. Expanding green areas within cities can improve water runoff, reduce the risk of landslides, and enhance soil stability. Additionally, considering South America's rainfall system is highly interconnected — a phenomenon known as the "flying rivers" — effective disaster prevention depends on coordinated national policies and regional cooperation. Such strategies are vital to prevent future tragedies like the devastating 2024 floods in southern Brazil.
     </p>
 
     <iframe src="../../plots/urban_vs_deforest.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ccc;"></iframe>
   </div>
-
+  <br>
   <!--Civil Defense investiments-->
   <div class="section3">
     <div class="container mt-5 p-5 text-justify">
-      <h2>Investments in Civil Defense (2014–2024)</h2>
+      <h2>Investments in Civil Defense (2014–2024)</h2><br>
 
       <p>
         The line chart below presents the historical trend of federal expenditures in Brazil's Civil Defense system, specifically under Action 22BO (“Protection and Civil Defense Actions”). The data shows a significant drop in investments between 2017 and 2021—not due to fewer disasters, but as a result of reduced government spending.
@@ -230,6 +223,64 @@
       </div>
     </div>
   </div>
+
+  <section class="parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2; height: 100px; overflow: hidden;">
+        <img class="parallax-background-img" src="images/flood-3.png" alt=""
+            style="position:absolute;top:0;left:0;width:100%;height:150%;object-fit:cover;transform:translateY(-20%);z-index:1;" />
+        
+        <div class="opacity-full bg-deep-blue2"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+
+        <div class="container position-relative" style="position: relative; z-index: 3; height: 100%;">
+            <div class="d-flex justify-content-center align-items-end" style="height: 100%; padding-bottom: 10px;">
+                <p class="deep-green-text text-center" style="font-size: 15px; line-height: 1.4; margin: 0; color: #7ed957;">
+                    This project was produced as the final exam for the
+                    <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/424645" style="text-decoration: underline; color: inherit;">
+                        Open Data and Digital Ethics Course
+                    </a>, part of the
+                    <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" style="text-decoration: underline; color: inherit;">
+                        Master's Degree in Digital Humanities and Digital Knowledge
+                    </a> at the University of Bologna.
+                </p>
+            </div>
+        </div>
+  </section>
+
+  <!-- scroll to top -->
+  <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+  <!-- end scroll to top -->
+  <!-- javascript libraries -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <!-- menu navigation -->
+  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <!-- animation -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <!-- page scroll -->
+  <script type="text/javascript" src="js/page-scroll.js"></script>
+  <!-- owl carousel -->
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <!-- counter -->
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <!-- parallax -->
+  <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+  <!-- magnific popup -->
+  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+  <!-- portfolio with shorting tab -->
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+  <!-- images loaded -->
+  <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+  <!-- pull menu -->
+  <script type="text/javascript" src="js/classie.js"></script>
+  <!-- counter  -->
+  <script type="text/javascript" src="js/counter.js"></script>
+  <!-- fit video  -->
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="../VisualizationFiles/main.js"></script>
