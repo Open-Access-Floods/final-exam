@@ -2,28 +2,42 @@
 <html class="no-js" lang="en">
 
 <head>
+    <!-- title -->
     <title>Open Data Floods</title>
+    <!-- description -->
     <meta name="description"
         content="A great collection of creative, responsive, elegant onepage templates for different industries.">
+    <!-- keywords -->
     <meta name="keywords"
         content="creative, css3, html5, onepage, multipurpose, bootstrap, responsive, agency, architecture, resume, blog, photography, restaurant, portfolio, spa, travel, wedding, coming soon">
     <meta charset="utf-8">
     <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- animation -->
     <link rel="stylesheet" href="css/animate.css" />
+    <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- et line icon -->
     <link rel="stylesheet" href="css/et-line-icons.css" />
+    <!-- font-awesome icon -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- owl carousel -->
     <link rel="stylesheet" href="css/owl.transitions.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
+    <!-- magnific popup -->
     <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- style -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--[if IE]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
     <style>
         .smaller-banner {
             height: 60vh;
@@ -57,6 +71,7 @@
             font-size: 1em;
             /* Smaller subtitle */
         }
+
         .equal-height {
             display: flex;
             flex-direction: column;
@@ -85,7 +100,7 @@
                         <li><a class="inner-link" href="datasets.html">Datasets</a></li>
                         <li><a class="inner-link" href="analysis.html">Analysis</a></li>
                         <li><a class="inner-link" href="rdf-assertion.html">RDF Assertion</a></li>
-                        <li><a class="inner-link" href="#gallery">Visualizations</a></li>
+                        <li><a class="inner-link" href="visualization.html">Visualizations</a></li>
                         <li><a class="inner-link" href="team.html">Transparency</a></li>
                     </ul>
                 </div>
@@ -110,61 +125,69 @@
     </section>
     <!-- end section #home -->
 
-    <section id="licenses" class="wow fadeIn border-bottom no-padding-bottom">
+    <section id="licenses" class="wow fadeIn border-bottom">
         <div class="container">
             <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
-                <span class="deep-green-text">—</span> Licenses & Credits
-                </span>
-            </div>
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Licenses & Credits
+                    </span>
+                </div>
             </div>
 
             <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
-            <div class="col-md-6 col-sm-12">
-                <p class="text-medium">
-                This project uses official open datasets and free tools under public licenses to support reproducible, ethical, and open-source analysis of environmental and infrastructural risk in Brazil.
-                </p>
-                <br>
-                <p class="text-medium">
-                <strong>Source datasets</strong> from institutions like INMET, IBGE, MapBiomas, the Transparency Portal, and S2ID are governed by <strong>Creative Commons Attribution 3.0 Unported (CC BY 3.0)</strong>.
-                </p>
-                <p class="text-medium">
-                All processed data and visual mashups produced within the OpenDataFlood project are shared under the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.
-                </p>
-                <br>
-                <p class="text-medium">
-                <strong>Banner images</strong> and other visuals are sourced from <strong>Wikimedia Commons</strong> under open licenses, with proper attribution where required.
-                </p>
-                <p class="text-medium">
-                Icons are from the <strong>ET-Line</strong> collection included in the Brando template package and used under its standard licensing terms.
-                </p>
-            </div>
+                <div class="col-md-6 col-sm-12">
+                    <p class="text-medium">
+                        This project uses official open datasets and free tools under public licenses to support
+                        reproducible, ethical, and open-source analysis of environmental and infrastructural risk in
+                        Brazil.
+                    </p>
+                    <p class="text-medium">
+                        <strong>Source datasets</strong> from institutions like INMET, IBGE, MapBiomas, the Transparency
+                        Portal, and S2ID are governed by <strong>Creative Commons Attribution 3.0 Unported (CC BY
+                            3.0)</strong>.
+                    </p>
+                    <p class="text-medium">
+                        All processed data and visual mashups produced within the OpenDataFlood project are shared under
+                        the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.
+                    </p>
+                    <p class="text-medium">
+                        <strong>Banner images</strong> and other visuals are sourced from <strong>Wikimedia
+                            Commons</strong> under open licenses, with proper attribution where required.
+                    </p>
+                    <p class="text-medium">
+                        Icons are from the <strong>ET-Line</strong> collection included in the Brando template package
+                        and used under its standard licensing terms.
+                    </p>
+                </div>
 
-            <div class="col-md-6 col-sm-12">
-                <p class="text-medium">
-                The site uses the <strong>Brando HTML5 template</strong> by ThemeZaa, originally distributed under commercial license.
-                </p>
-                <p class="text-medium">
-                Interactive data visualizations were created using:
-                <ul class="text-medium">
-                    <li>Leaflet.js – <em>BSD 2-Clause License</em></li>
-                    <li>Plotly.js and Plotly Express – <em>MIT License</em></li>
-                    <li>Flourish – <em>proprietary online platform, free academic use</em></li>
-                </ul>
-                </p>
-                <p class="text-medium">
-                Data processing and analysis relied on open-source Python libraries such as:
-                <ul class="text-medium">
-                    <li>pandas, geopandas, shapely, pathlib, os – <em>BSD/MIT Licenses</em></li>
-                    <li>networkX – <em>BSD License</em></li>
-                    <li>KNIME – <em>GNU General Public License (GPL v3)</em></li>
-                </ul>
-                </p>
-                <p class="text-medium">
-                All preprocessing and transformations are documented in the project repository to ensure transparency and reusability.
-                </p>
-            </div>
+                <div class="col-md-6 col-sm-12">
+                    <p class="text-medium">
+                        The site uses the <strong>Brando HTML5 template</strong> by ThemeZaa, originally distributed
+                        under commercial license.
+                    </p>
+                    <p class="text-medium">
+                        Interactive data visualizations were created using:
+                    <ul class="text-medium" style="list-style-type: disc; padding-left: 2em;">
+                        <li>Leaflet.js – <em>BSD 2-Clause License</em></li>
+                        <li>Plotly.js and Plotly Express – <em>MIT License</em></li>
+                        <li>Flourish – <em>proprietary online platform, free academic use</em></li>
+                    </ul>
+                    </p>
+                    <p class="text-medium">
+                        Data processing and analysis relied on open-source Python libraries such as:
+                    <ul class="text-medium" style="list-style-type: disc; padding-left: 2em;">
+                        <li>pandas, geopandas, shapely, pathlib, os – <em>BSD/MIT Licenses</em></li>
+                        <li>networkX – <em>BSD License</em></li>
+                        <li>KNIME – <em>GNU General Public License (GPL v3)</em></li>
+                    </ul>
+                    </p>
+                    <p class="text-medium">
+                        All preprocessing and transformations are documented in the project repository to ensure
+                        transparency and reusability.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -193,82 +216,139 @@
     <section id="team" class="padding-fifty no-padding-bottom">
         <div class="container">
             <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-                <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
-                <span class="deep-green-text">—</span> Team
-                </span>
-            </div>
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large">
+                        <span class="deep-green-text">—</span> Team
+                    </span>
+                </div>
             </div>
             <br><br><br>
             <!-- Carla Menegat -->
             <div class="col-md-4 col-sm-6 text-center">
                 <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen equal-height">
-                <i class="icon-hourglass turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
-                <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Carla Menegat</span>
-                <div class="divider-line margin-seventeen no-margin-lr"></div>
-                <span class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
-                    Carla has a PhD in History and is persuing a Master Degree in Digital Humanities and Digital Knowledge at Unibo and Professor at Instituto Federal Sul-Riograndense. She works with Digital History and Human Rights projects and, she's from Rio Grande do Sul.
-                </span>
-                <div class="margin-ten no-margin-lr">
-                    <a href="mailto:carla.menegat@studio.unibo.it"><i class="icon-envelope medium-gray-text"></i></a>
-                </div>
+                    <i
+                        class="icon-hourglass turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
+                    <span
+                        class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Carla
+                        Menegat</span>
+                    <div class="divider-line margin-seventeen no-margin-lr"></div>
+                    <span
+                        class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
+                        Carla has a PhD in History and is persuing a Master Degree in Digital Humanities and Digital
+                        Knowledge at Unibo and Professor at Instituto Federal Sul-Riograndense. She works with Digital
+                        History and Human Rights projects and, she's from Rio Grande do Sul.
+                    </span>
+                    <div class="margin-ten no-margin-lr">
+                        <a href="mailto:carla.menegat@studio.unibo.it"><i
+                                class="icon-envelope medium-gray-text"></i></a>
+                    </div>
                 </div>
             </div>
 
             <!-- Catalina Salguero -->
             <div class="col-md-4 col-sm-6 text-center">
                 <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen equal-height">
-                <i class="icon-happy turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
-                <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Catalina Salguero</span>
-                <div class="divider-line margin-seventeen no-margin-lr"></div>
-                <span class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
-                    Catalina is an art historian and cultural manager. A UX/UI design specialist, she is pursuing a master’s in Digital Humanities, exploring how technology can be used to preserve, research, and share cultural heritage in an accessible way.
-                </span>
-                <div class="margin-ten no-margin-lr">
-                    <a href="mailto:catalina.salguero@studio.unibo.it"><i class="icon-envelope medium-gray-text"></i></a>
-                </div>
+                    <i
+                        class="icon-happy turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
+                    <span
+                        class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Catalina
+                        Salguero</span>
+                    <div class="divider-line margin-seventeen no-margin-lr"></div>
+                    <span
+                        class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
+                        Catalina is an art historian and cultural manager. A UX/UI design specialist, she is pursuing a
+                        master’s in Digital Humanities, exploring how technology can be used to preserve, research, and
+                        share cultural heritage in an accessible way.
+                    </span>
+                    <div class="margin-ten no-margin-lr">
+                        <a href="mailto:catalina.salguero@studio.unibo.it"><i
+                                class="icon-envelope medium-gray-text"></i></a>
+                    </div>
                 </div>
             </div>
 
             <!-- Rubens Fernandes Jr -->
             <div class="col-md-4 col-sm-6 text-center">
                 <div class="wedding-event-box padding-twenty-nine sm-padding-fifteen equal-height">
-                <i class="icon-map turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
-                <span class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Rubens Fernandes Jr</span>
-                <div class="divider-line margin-seventeen no-margin-lr"></div>
-                <span class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut quam a neque volutpat fermentum. Cras non velit in leo facilisis pulvinar ac vitae metus vel. blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla. 
-                </span>
-                <div class="margin-ten no-margin-lr">
-                    <a href="mailto:rubens.fernandes@studio.unibo.it"><i class="icon-envelope medium-gray-text"></i></a>
+                    <i
+                        class="icon-map turquoise-blue-text icon-extra-large margin-twenty no-margin-lr no-margin-bottom"></i>
+                    <span
+                        class="text-uppercase alt-font text-large display-block font-weight-600 margin-ten no-margin-lr">Rubens
+                        Fernandes Jr</span>
+                    <div class="divider-line margin-seventeen no-margin-lr"></div>
+                    <span
+                        class="alt-font text-medium medium-gray-text margin-twenty no-margin-lr no-margin-top d-block">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut quam a neque volutpat
+                        fermentum. Cras non velit in leo facilisis pulvinar ac vitae metus vel. blablabla blablabla
+                        blablabla blablabla blablabla blablabla blablabla blablabla blablabla.
+                    </span>
+                    <div class="margin-ten no-margin-lr">
+                        <a href="mailto:rubens.fernandes@studio.unibo.it"><i
+                                class="icon-envelope medium-gray-text"></i></a>
+                    </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
-    </section>
-    <br><br><br>
-    <section class="parallax2 parallax-fix smaller-banner" style="position: relative; z-index: 2; height: 100px; overflow: hidden;">
-        <img class="parallax-background-img" src="images/flood-3.png" alt=""
-            style="position:absolute;top:0;left:0;width:100%;height:150%;object-fit:cover;transform:translateY(-20%);z-index:1;" />
-        
-        <div class="opacity-full bg-deep-blue2"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+        </div>
 
-        <div class="container position-relative" style="position: relative; z-index: 3; height: 100%;">
-            <div class="d-flex justify-content-center align-items-end" style="height: 100%; padding-bottom: 10px;">
-                <p class="deep-green-text text-center" style="font-size: 15px; line-height: 1.4; margin: 0; color: #7ed957;">
-                    This project was produced as the final exam for the
-                    <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/424645" style="text-decoration: underline; color: inherit;">
-                        Open Data and Digital Ethics Course
-                    </a>, part of the
-                    <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" style="text-decoration: underline; color: inherit;">
-                        Master's Degree in Digital Humanities and Digital Knowledge
-                    </a> at the University of Bologna.
-                </p>
+    <!-- footer -->
+    <footer class="wow fadeIn bg-white border-top">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- footer logo -->
+                    <div class="col-md-12 col-sm-10 col text-center" style="padding-left: 4rem; padding-right: 4rem;">
+                        <div class="text-center"><a class="inner-link" href="#home"><img src="images/ODFLOODS_NEGRO.png"
+                                    alt="" /></a></div>
+                        <span
+                            class="text-small alt-font text-uppercase margin-seven margin-lr-auto display-block letter-spacing-1 black-text">
+                            <p class="black-text text-center ">
+                                This project was produced as the final exam for the
+                                <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/424645"
+                                    style="text-decoration: underline; color: inherit;">
+                                    Open Data and Digital Ethics Course, </a>
+                                    <br>
+                                    part of the
+                                <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge"
+                                    style="text-decoration: underline; color: inherit;">
+                                    Master's Degree in Digital Humanities and Digital Knowledge
+                                </a> at the University of Bologna.
+                                
+
+                            </p>
+                        </span>
+                    </div>
+                    <!-- end footer logo -->
+                    <!-- social media link -->
+                    <div
+                        class="col-md-12 col-sm-12 text-center margin-four no-margin-lr no-margin-bottom xs-margin-fifteen xs-no-margin-lr xs-no-margin-bottom">
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!-- end social media link -->
+                </div>
             </div>
         </div>
-    </section>
+        <div class="footer-bottom bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-small text-uppercase letter-spacing-1">&COPY; 2025 This website is powered
+                            by <a href="http://www.themezaa.com/" target="_blank">OpenDataFLoods</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
     <!-- scroll to top -->
     <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!-- end scroll to top -->
@@ -309,5 +389,3 @@
 </body>
 
 </html>
-
-

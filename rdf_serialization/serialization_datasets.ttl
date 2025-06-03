@@ -16,7 +16,7 @@ brasil:catalog dcat:dataset brasil:D1_Disasters_and_Impact_Data,
         brasil:MD3_Deforestation_RS,
         brasil:MD4_Rain_Precipitation_States,
         brasil:MD5_Monthly_Rainfall_Stations_RS,
-        brasil:MD7_Urbanization_Growth_RS .
+        brasil:MD6_Urbanization_Growth_RS .
 
 <http://publications.europa.eu/resource/authority/data-theme/REGI> a skos:Concept ;
     skos:prefLabel "Regions and Cities"@en .
@@ -325,7 +325,7 @@ brasil:MD5_Monthly_Rainfall_Stations_RS a dcat:Dataset ;
         "Rainfall"@en,
         "Rio Grande do Sul"@en .
 
-brasil:MD7_Urbanization_Growth_RS a dcat:Dataset ;
+brasil:MD6_Urbanization_Growth_RS a dcat:Dataset ;
     dct:description "This dataset presents the percentage growth in urbanized land area for each municipality in Rio Grande do Sul, Brazil, between 2013 and 2023. The data is derived from MapBiomas and supports analysis of land use changes related to climate vulnerability and disaster risk."@en ;
     dct:issued "2025-05-27"^^xsd:date ;
     dct:language <http://lexvo.org/id/iso639-1/en> ;
@@ -356,7 +356,7 @@ brasil:MD7_Urbanization_Growth_RS a dcat:Dataset ;
 <https://www.gov.br/cemaden/pt-br> a foaf:Agent ;
     foaf:name "Centro Nacional de Monitoramento e Alertas de Desastres Naturais (CEMADEN)" .
 
-<https://www.gov.br/cgu> a foaf:Agent ; 
+<https://www.gov.br/cgu> a foaf:Agent ;
     foaf:name "Controladoria-Geral da União" .
 
 <https://www.gov.br/midr> a foaf:Agent ;

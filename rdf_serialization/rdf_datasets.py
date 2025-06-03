@@ -354,8 +354,8 @@ datasets_list = [
         "publisher_uri": "https://github.com/Open-Access-Floods/", # Example URI for the project team
         "publisher_name": "Open Access Floods Project Team",
     },
-    { # MD7_Urbanization_Growth_RS
-        "id": "MD7_Urbanization_Growth_RS",
+    { # MD6_Urbanization_Growth_RS
+        "id": "MD6_Urbanization_Growth_RS",
         "uri": BRASIL["MD7_Urbanization_Growth_RS"], # Construct URI using BRASIL namespace
         "title": "Urbanization Growth by Municipality – Rio Grande do Sul (2013–2023)",
         "description": "This dataset presents the percentage growth in urbanized land area for each municipality in Rio Grande do Sul, Brazil, between 2013 and 2023. The data is derived from MapBiomas and supports analysis of land use changes related to climate vulnerability and disaster risk.",
