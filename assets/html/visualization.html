@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <style>
         .smaller-banner {
             height: 60vh;
@@ -55,6 +57,11 @@
         .smaller-banner-subtitle {
             font-size: 1em;
             /* Smaller subtitle */
+        }
+                .equal-height {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
     </style>
 </head>
@@ -104,7 +111,7 @@
     </section>
     <!-- end section #home -->
 
-     <!-- MAP -->
+
 
     <section id="speakers" class="wow fadeIn border-bottom no-padding-bottom">
         <div class="container">
@@ -123,7 +130,8 @@
             </div>
     </section>
 
-    <div class="row">
+    <!-- MAP -->
+    <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
         <div class="text-center mt-3">
             <h3>Rio Grande do Sul floods</h3>
         </div>
@@ -283,6 +291,6 @@
   <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="../VisualizationFiles/main.js"></script>
+  <script defer src="../VisualizationFiles/main.js"></script>
 </body>
 </html>
