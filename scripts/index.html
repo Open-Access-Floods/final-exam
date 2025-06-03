@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>OpenDataFlood</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="/virus-covid-solid.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="style.css">
+  <!--BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!--BOOTSTRAP 4
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  -->
+
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color:rgb(30, 217, 130);"><b>OpenDataFlood</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="metadata.html">Metadata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="analysis.html">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visualization.html">Visualization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data_preprocessing.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">License</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="">
+
+</div>
+
+<div class="p-5 text-center text-white header-img d-flex justify-content-center align-items-center">
+  <div>
+  <h1><b>OpenDataFlood</b></h1>
+  <h2>How Rio Grande do Sul was submerse: April-May 2024.</h2>
+  </div>
+</div>
+
+<div class="container mt-5 p-5 text-justify">
+
+  <!-- Introduction -->
+  <p>
+    <strong>OpenDataFlood</strong> is a data-driven project aimed at exploring the structural, environmental, and policy-related conditions that contributed to the catastrophic flood in <strong>Rio Grande do Sul, Brazil</strong>, in 2024.
+  </p>
+  <p>
+    By leveraging <em>government open data</em>, the project investigates:
+  </p>
+  <ul>
+    <li><strong>Climatic conditions</strong>, using monthly precipitation records from meteorological stations across Brazil.</li>
+    <li><strong>Environmental transformation</strong>, through long-term data on urban expansion and deforestation at the municipal level.</li>
+    <li><strong>Preparedness and response</strong>, by analyzing historical federal investments in civil defense actions (2014–2025).</li>
+    <li><strong>Disaster records</strong>, based on the national system for disaster notifications (S2ID), showing patterns of climate-related emergencies across municipalities.</li>
+  </ul>
+  <p>
+    In addition to focusing on Rio Grande do Sul, <em>OpenDataFlood</em> contextualizes the state within the broader <strong>national landscape</strong>, comparing rainfall intensity and public spending with other Brazilian states.
+  </p>
+  <p>
+    This project aims to support <strong>transparency, risk awareness, and policy accountability</strong>, using open data as a tool for understanding how public systems responded—and failed to respond—to environmental warning signs.
+  </p>
+  <p>
+    Visualizations and maps allow users to interact with the data and identify both local vulnerabilities and structural patterns across the country.
+  </p>
+
+  <!-- Scenario -->
+  <h3 class="mt-5 mb-4">Scenario</h3>
+  <p>
+    The 2024 flood in Rio Grande do Sul was not an isolated event but the result of complex and interconnected factors. While the affected municipalities did not show sharp increases in urban sprawl or extensive deforestation at the local level, Brazil’s broader environmental and climatic systems reveal deeper structural vulnerabilities.
+  </p>
+  <p>
+    Rio Grande do Sul is Brazil’s southernmost state, home to approximately 11 million people—around 5% of the country's total population. It is one of Brazil's most economically developed regions, with a strong agricultural, industrial, and service-based economy. As such, a natural disaster in this region carries broad national consequences, affecting supply chains, food production, and infrastructure.
+  </p>
+  <p>
+    In May 2024, the state experienced one of the worst floods in its history. According to official data, over <strong>2.3 million people were directly affected</strong>, with more than <strong>400 municipalities</strong> impacted by heavy rains, river overflows, landslides, and infrastructure collapse. Cities like Porto Alegre, the capital, faced record-breaking water levels and mass displacements.
+  </p>
+  <p>
+    Scientific research shows that deforestation in key biomes like the Amazon and the Cerrado has far-reaching effects on rainfall distribution across the South American continent. These changes in the atmospheric water cycle can intensify extreme weather events even in regions geographically distant from the deforested areas.
+  </p>
+  <p>
+    This project uses official open data from Brazilian institutions—such as INMET, IBGE, MapBiomas, and the Transparency Portal—to trace these connections. It integrates precipitation patterns, land use data, and public investment in disaster prevention to shed light on the systemic nature of climate risk in Brazil. Rio Grande do Sul is analyzed in detail, but always in the context of national patterns of environmental change and institutional preparedness.
+  </p>
+  <p>
+    By revealing spatial and temporal patterns through data visualization, <strong>OpenDataFlood</strong> aims to inform climate governance, support evidence-based policy, and promote public engagement with environmental accountability.
+  </p>
+
+  <!-- Research Questions -->
+  <h3 class="mt-5 mb-3">Research Questions</h3>
+  <ul>
+    <li>How did long-term environmental changes across Brazil contribute to the conditions that made the 2024 flood in Rio Grande do Sul so severe?</li>
+    <li>What does the data reveal about local land use trends in the affected municipalities, and how do they compare to broader national patterns of deforestation and urban growth?</li>
+    <li>How do public investments in civil defense vary by region, and are they aligned with the intensity and frequency of climate-related events?</li>
+    <li>Can open government data help anticipate future climate risks and guide more equitable and effective policies for disaster prevention and adaptation?</li>
+    <li>What are the limits of local interventions when facing environmental changes driven by large-scale biome degradation?</li>
+  </ul>
+
+</div>
+
+<div class="container mt-5 p-5" style="background-color: rgba(18,29,64,0.3); color: #121d40;">
+  <h2 class="text-center mb-4" style="border-bottom: 2px solid rgba(18,29,64,0.9); display: inline-block; padding-bottom: 5px;">
+    RESULTS
+  </h2>
+
+  <div class="row text-center">
+
+  <!-- Chart Icon -->
+  <div class="col-md-3 d-flex align-items-center justify-content-center flex-column">
+    <img src="https://cdn-icons-png.flaticon.com/512/900/900772.png" alt="Chart Icon" style="width: 48px; height: 48px;">
+  </div>
+
+  <!-- Datasets -->
+  <div class="col-md-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/13460/13460167.png" alt="Dataset Icon" style="width: 48px; height: 48px;">
+    <h3><strong>12</strong></h3>
+    <p><strong>Datasets</strong>, including meteorological, land-use, demographic and disaster records supporting the analysis.</p>
+  </div>
+
+  <!-- Total affected people -->
+  <div class="col-md-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="People Icon" style="width: 48px; height: 48px;">
+    <h3><strong>2.3M+</strong></h3>
+    <p><strong>Total affected</strong> people during the 2024 flood in Rio Grande do Sul, based on official S2ID data.</p>
+  </div>
+
+  <!-- Municipalities -->
+  <div class="col-md-3">
+    <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Map Icon" style="width: 48px; height: 48px;">
+    <h3><strong>431</strong></h3>
+    <p><strong>Municipalities</strong> officially impacted by the event, nearly 90% of the entire state.</p>
+  </div>
+</div>
+
+<div class="row text-center mt-4">
+
+  <!-- Precipitation Records -->
+  <div class="col-md-4">
+    <img src="https://cdn-icons-png.flaticon.com/512/10040/10040090.png" alt="Rain Icon" style="width: 48px; height: 48px;">
+    <h3><strong>400mm+</strong></h3>
+    <p><strong>Extreme rainfall</strong> measured in several areas during May 2024, the highest in decades.</p>
+  </div>
+
+  <!-- Urban Growth -->
+  <div class="col-md-4">
+    <img src="https://cdn-icons-png.flaticon.com/512/545/545678.png" alt="Urban Icon" style="width: 48px; height: 48px;">
+    <h3><strong>+12%</strong></h3>
+    <p><strong>Average urbanization</strong> growth across RS municipalities between 2013 and 2023.</p>
+  </div>
+
+  <!-- Civil Defense Budget -->
+  <div class="col-md-4">
+    <img src="https://cdn-icons-png.flaticon.com/512/10217/10217199.png" alt="Budget Icon" style="width: 48px; height: 48px;">
+    <h3><strong>R$ 2.1B</strong></h3>
+    <p><strong>Investments</strong> allocated to Civil Defense nationwide (2014–2024), based on Transparency Portal data.</p>
+  </div>
+
+</div>
+
+
+<!--<div class="container mt-5">
+    <div class="map" id="map"></div>
+</div>-->
+
+<footer class="footer mt-5 p-4 text-center py3 bg-light ">
+ <div class="container">
+   <span class="text-muted text-white">Authored by Carla Menegat, Catalina Salguero and Rubens Fernandes Jr.</span><br>
+   <span class="text-muted text-white">This website is licensed under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license.</a></span>
+ </div>
+</footer>
+
+<script type="text/javascript" src="script/map-data-regions.js"></script>
+<script type="text/javascript" src="script/labels.js"></script>
+<script type="text/javascript" src="script/map.js"></script>
+
+</body>
+</html>
