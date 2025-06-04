@@ -15,7 +15,7 @@ function updateMap(dataset) {
     map.removeLayer(currentLayer);
   }
 
-  fetch('merged.geojson')
+  fetch('js/merged.geojson')
     .then(response => response.json())
     .then(data => {
       if (dataset === 'general') {
