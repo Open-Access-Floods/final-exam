@@ -124,7 +124,7 @@ function stylePercentage(feature) {
   return {
     fillColor: getColorByPercentage(pct),
     weight: 1,
-    color: 'gray',
+    color: '#2283d4',
     fillOpacity: 0.9
   };
 }
