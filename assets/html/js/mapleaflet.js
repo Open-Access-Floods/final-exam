@@ -111,8 +111,8 @@ function showTooltipGeneral(e, feature) {
   const content = `
     <strong>${props.municipality}</strong><br/>
     Area: ${props.area} km²<br/>
-    Pop. 2022: ${props.population2022}<br/>
-    Pop. 2024: ${props.population2024}
+    Pop. Census 2022: ${props.population2022}<br/>
+    Estimated Pop. 2024: ${props.population2024}
   `;
   tooltip.setContent(content);
   tooltip.setLatLng(e.latlng);
