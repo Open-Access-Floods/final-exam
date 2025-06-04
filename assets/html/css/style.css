@@ -1725,7 +1725,7 @@ footer img {max-width: 156px;}
 
 
 .container-map {height: 100vw;}
-.map {height: 600px; width: 100%; z-index: 1;}
+.map {height: 600px; width: 100%;}
 #map-tooltip {position: fixed; background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 6px; pointer-events: none; box-shadow: 0 2px 6px rgba(0,0,0,0.3); font-size: 14px; display: none;}
 .custom-tooltip {background-color: white; border: 1px solid #ccc; padding: 6px; border-radius: 4px; box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); font-size: 14px; color: #333;}
 .info {padding: 6px 8px;  background: white;  background: rgba(255, 255, 255, 0.8);  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  border-radius: 5px;}
