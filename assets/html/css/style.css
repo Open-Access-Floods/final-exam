@@ -1723,8 +1723,6 @@ footer img {max-width: 156px;}
     .no-transition-ipad *{ transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
 }
 
-
-.container-map {height: 100vw;}
 .map {height: 600px; width: 100%;}
 #map-tooltip {position: fixed; background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 6px; pointer-events: none; box-shadow: 0 2px 6px rgba(0,0,0,0.3); font-size: 14px; display: none;}
 .custom-tooltip {background-color: white; border: 1px solid #ccc; padding: 6px; border-radius: 4px; box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); font-size: 14px; color: #333;}
