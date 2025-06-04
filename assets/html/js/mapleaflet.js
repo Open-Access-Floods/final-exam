@@ -78,9 +78,9 @@ function updateMap(dataset) {
 
 function styleGeneral(feature) {
   return {
-    fillColor: '#2594D9',
+    fillColor: '#50b026',
     weight: 1,
-    color: 'white',
+    color: 'green',
     fillOpacity: 0.9
   };
 }
@@ -124,7 +124,7 @@ function stylePercentage(feature) {
   return {
     fillColor: getColorByPercentage(pct),
     weight: 1,
-    color: 'white',
+    color: 'gray',
     fillOpacity: 0.9
   };
 }
@@ -133,11 +133,11 @@ function getColorByPercentage(pct) {
   if (pct === null || pct === undefined || isNaN(pct)) {
     return '#cccccc';
   }
-  return pct > 80 ? '#164D00' :
-         pct > 60 ? '#217620' :
-         pct > 40 ? '#2EA746' :
-         pct > 20 ? '#3DDE71' :
-                    '#78FFA9';
+  return pct > 80 ? '#0B1533' :
+         pct > 60 ? '#313C5F' :
+         pct > 40 ? '#696E7D' :
+         pct > 20 ? '#969696' :
+                    '#C7C7C7';
 }
 
 function onEachFeaturePercentage(feature, layer) {
@@ -191,7 +191,7 @@ function styleDeaths(feature) {
     fillColor: getColorByDeaths(deaths),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
@@ -201,7 +201,7 @@ function getColorByDeaths(d) {
          d > 6 ? '#333333' :
          d > 4 ? '#666666' :
          d > 1 ? '#999999' :
-         d > 0 ? '#cccccc' :
+         d > 0 ? '#ffffff' :
                  '#ffffff'; // No data or 0 deaths
 }
 
@@ -250,7 +250,7 @@ function styleInjured(feature) {
     fillColor: getColorByInjured(injured),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
@@ -309,7 +309,7 @@ function styleSick(feature) {
     fillColor: getColorBySick(sick),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
@@ -368,7 +368,7 @@ function styleMissing(feature) {
     fillColor: getColorByMissing(missing),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
@@ -427,7 +427,7 @@ function styleEvacuated(feature) {
     fillColor: getColorByEvacuated(evacuated),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
@@ -486,7 +486,7 @@ function styleDisplaced(feature) {
     fillColor: getColorByDisplaced(displaced),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
@@ -544,7 +544,7 @@ function styleOtherAffected(feature) {
     fillColor: getColorByOtherAffected(otherAffected),
     weight: 1,
     opacity: 1,
-    color: '#cccccc',
+    color: '#9C9C9C',
     fillOpacity: 0.9
   };
 }
