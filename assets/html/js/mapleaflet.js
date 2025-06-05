@@ -598,3 +598,82 @@ function showTooltipOtherAffected(e, feature) {
 
 // Load default layer
 updateMap('general');
+
+// Comparizon maps
+
+document.addEventListener('DOMContentLoaded', () => {
+    const comparisonContainer = document.getElementById('comparison-container');
+    const overlay = document.getElementById('overlay'); 
+    const slider = document.getElementById('slider'); 
+
+    let isDragging = false;
+    let xOffsetFromSliderEdge = 0;
+
+    const updateSlider = (mouseClientX) => {
+        const containerRect = comparisonContainer.getBoundingClientRect();
+        let newSliderLeft = mouseClientX - xOffsetFromSliderEdge;
+        let newXRelativeToContainer = newSliderLeft - containerRect.left;
+
+        if (newXRelativeToContainer < 0) {
+            newXRelativeToContainer = 0;
+        } else if (newXRelativeToContainer > containerRect.width) {
+            newXRelativeToContainer = containerRect.width;
+        }
+
+        slider.style.left = `${newXRelativeToContainer}px`;
+
+        const percentage = (newXRelativeToContainer / containerRect.width) * 100;
+        overlay.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+    };
+
+    slider.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        xOffsetFromSliderEdge = e.clientX - slider.getBoundingClientRect().left;
+        slider.classList.add('dragging');
+        e.preventDefault();
+    });
+
+    slider.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        xOffsetFromSliderEdge = e.touches[0].clientX - slider.getBoundingClientRect().left;
+        slider.classList.add('dragging');
+        e.preventDefault();
+    }, { passive: false });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        requestAnimationFrame(() => updateSlider(e.clientX));
+    });
+
+    document.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        requestAnimationFrame(() => updateSlider(e.touches[0].clientX));
+    }, { passive: false });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+        slider.classList.remove('dragging');
+    });
+
+    document.addEventListener('touchend', () => {
+        isDragging = false;
+        slider.classList.remove('dragging');
+    });
+
+    window.addEventListener('resize', () => {
+        const currentLogicalLeft = parseFloat(slider.style.left);
+        const containerWidth = comparisonContainer.getBoundingClientRect().width;
+
+        if (isNaN(currentLogicalLeft)) {
+             updateSlider(containerWidth / 2 + comparisonContainer.getBoundingClientRect().left);
+        } else {
+            const percentage = (currentLogicalLeft / containerWidth) * 100;
+            updateSlider((percentage / 100) * containerWidth + comparisonContainer.getBoundingClientRect().left);
+        }
+    });
+
+    window.addEventListener('load', () => {
+        const containerWidth = comparisonContainer.getBoundingClientRect().width;
+        updateSlider(containerWidth / 2 + comparisonContainer.getBoundingClientRect().left);
+    });
+});
