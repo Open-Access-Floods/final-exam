@@ -63,7 +63,7 @@ Table of contents
     Reset
 ====================================== */
 
-body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em }
+body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em; overflow-x: hidden;}
 a, a:active{ color: #626262; text-decoration: none; }
 a:hover, a:focus{ color: #272727;  text-decoration: none}
 a:focus {outline: none !important; }
