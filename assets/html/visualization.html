@@ -140,10 +140,11 @@
     <div class="row">
         <div class="container mt-5 p-5 text-justify">
             <h2 class="mt-5 mb-4">Rio Grande do Sul floods</h2><br>
-                <p>
-                The maps below provide an overview of the situation in the municipalities of the state of Rio Grande do Sul after the floods. The data presents information from the MD1 - Affected Population dataset, normalized and georeferenced. The relative data (%) is based on 2024 population estimates by IBGE and therefore include a margin of error.
-                </p>
+                <p>The maps below provide an overview of the situation in the municipalities of the state of Rio Grande do Sul following the floods.</p>
+                <p>The data is derived from the MD1 - Affected Population dataset, normalized and georeferenced using the IBGE municipal boundaries shapefile and processed with QGIS. The resultant geojson file was then transferred to HTML using the Leaflet library.</p>
+                <p>The relative datasets (%) are based on 2024 population estimates from IBGE and therefore include its margin of error.</p>  
         </div>
+        <br>
         <div class="container mt-5 p-5 text-justify">
           <div class="ml-5">
             <div class="bootstrap-select-wrapper">
@@ -174,10 +175,9 @@
 
     <div class="row ">
         <div class="container mt-5 p-5 text-justify">
-            <h2 class="mt-5 mb-4">Altimetry x Impact(%)</h2><br>
-            <p>
-                The maps below provide an overview of the situation in the municipalities of the state of Rio Grande do Sul after the floods. The data presents information from the MD1 - Affected Population dataset, normalized and georeferenced. The relative data (%) is based on 2024 population estimates by IBGE and therefore include a margin of error.
-            </p>
+            <h2 class="mt-5 mb-4">Elevation x Impact</h2><br>
+            <p>These comparison maps illustrate the relationship between orography (terrain elevation) and the impact of rainfall. Many urban areas are located in lower-lying terrain, where drainage systems concentrated large volumes of water during the floods.</p>
+            <p>The Event Impact (%) map is based on the MD-1 Affected Population dataset and IBGE municipal boundaries shapefile, processed using QGIS. The elevation map uses elevation data from U.S. Geological Survey (USGS) database, compiled and processed in QGIS and exported as PNG images.</p>
         </div>
         <br>
         <div class="container mt-5 p-5 text-justify">
@@ -236,7 +236,7 @@
       </div>
     </div>
     </div>
-    <br>
+    <br><br><br>
     <div class="container mt-5 p-4">
     <h2 class="mb-4">Urbanization vs Forest Cover</h2><br>
     <p class="mb-4">

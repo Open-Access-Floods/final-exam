@@ -131,7 +131,7 @@ function stylePercentage(feature) {
 
 function getColorByPercentage(pct) {
   if (pct === null || pct === undefined || isNaN(pct)) {
-    return '#cccccc';
+    return '#FFFFFF';
   }
   return pct > 80 ? '#0B1533' :
          pct > 60 ? '#313C5F' :
@@ -191,7 +191,7 @@ function styleDeaths(feature) {
     fillColor: getColorByDeaths(deaths),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
@@ -250,7 +250,7 @@ function styleInjured(feature) {
     fillColor: getColorByInjured(injured),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
@@ -309,7 +309,7 @@ function styleSick(feature) {
     fillColor: getColorBySick(sick),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
@@ -368,7 +368,7 @@ function styleMissing(feature) {
     fillColor: getColorByMissing(missing),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
@@ -427,7 +427,7 @@ function styleEvacuated(feature) {
     fillColor: getColorByEvacuated(evacuated),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
@@ -486,7 +486,7 @@ function styleDisplaced(feature) {
     fillColor: getColorByDisplaced(displaced),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
@@ -544,7 +544,7 @@ function styleOtherAffected(feature) {
     fillColor: getColorByOtherAffected(otherAffected),
     weight: 1,
     opacity: 1,
-    color: '#9C9C9C',
+    color: '#006400',
     fillOpacity: 0.9
   };
 }
