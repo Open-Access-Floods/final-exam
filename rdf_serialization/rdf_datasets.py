@@ -356,7 +356,7 @@ datasets_list = [
     },
     { # MD6_Urbanization_Growth_RS
         "id": "MD6_Urbanization_Growth_RS",
-        "uri": BRASIL["MD7_Urbanization_Growth_RS"], # Construct URI using BRASIL namespace
+        "uri": BRASIL["MD6_Urbanization_Growth_RS"], # Construct URI using BRASIL namespace
         "title": "Urbanization Growth by Municipality – Rio Grande do Sul (2013–2023)",
         "description": "This dataset presents the percentage growth in urbanized land area for each municipality in Rio Grande do Sul, Brazil, between 2013 and 2023. The data is derived from MapBiomas and supports analysis of land use changes related to climate vulnerability and disaster risk.",
         "language": "en", 
@@ -377,6 +377,107 @@ datasets_list = [
         "license_uri": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": [
             "Urbanization", "Land use change", "Rio Grande do Sul", "MapBiomas","Urban growth"],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", 
+        "publisher_name": "Open Access Floods Project Team",
+    }
+
+    { # GD1_Municipalities
+
+        "id": "GD1_Municipalities",
+        "uri": BRASIL["GD1_Municipalities"], # Construct URI using BRASIL namespace
+        "title": "Municipal Boundaries"
+        "description": "This dataset contains the geographic boundaries of Brazilian municipalities, providing essential spatial context for various analyses.",
+        "language": "pt", # Assuming Portuguese for this dataset
+        "issued_date": "2025-05-27", # Today's date
+        "modified_date": "2025-05-28",
+        "temporal_coverage": {
+            "start_date": "2013-01-01", 
+            "end_date": "2023-12-31"
+        },
+        "spatial_coverage_uri": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/", # Example access URL
+            "media_type": "text/csv",
+            "format": "SHP",
+            "byte_size": 5800,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Municipalities", "Geographic boundaries", "Brazil", "Spatial data", "Administrative divisions"
+        ],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", 
+        "publisher_name": "Open Access Floods Project Team",
+    }
+
+    { # GD2_Rio_Grande_do_Sul
+        
+        "id": "GD2_Rio_Grande_do_Sul",
+        "uri": BRASIL["GD2_Rio_Grande_do_Sul"], # Construct URI using BRASIL namespace
+        "title": "Rio Grande do Sul Boundary"
+        "description": "This dataset contains the geographic boundary of the state of Rio Grande do Sul, Brazil, providing essential spatial context for various analyses.",
+        "language": "pt", # Assuming Portuguese for this dataset
+        "issued_date": "2025-05-27", # Today's date
+        "modified_date": "2025-05-28",
+        "temporal_coverage": {
+            "start_date": "2013-01-01", 
+            "end_date": "2023-12-31"
+        },
+        "spatial_coverage_uri": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/", # Example access URL
+            "media_type": "text/csv",
+            "format": "SHP",
+            "byte_size": 5800,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Urbanization", "Land use change", "Rio Grande do Sul", "MapBiomas","Urban growth"],
+        "theme": {
+            "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment"
+        },
+        # For mashups, publisher/creator could be the project members
+        "publisher_uri": "https://github.com/Open-Access-Floods/", 
+        "publisher_name": "Open Access Floods Project Team",
+    }
+
+    { # GD3 - Terrain Elevation
+
+        "id": "GD3_Elevation",
+        "uri": BRASIL["GD3_Elevationl"], # Construct URI using BRASIL namespace
+        "title": "Terrain Elevation"
+        "description": "This dataset contains terrain elevation data for Brazil, providing essential spatial context for various analyses.",
+        "language": "en", # Assuming Portuguese for this dataset
+        "issued_date": "2025-05-27", # Today's date
+        "modified_date": "2025-05-28",
+        "temporal_coverage": {
+            "start_date": "2025-01-01", 
+            "end_date": "2025-12-31"
+        },
+        "spatial_coverage_uri": "earthexplorer.usgs.gov",
+        "distribution": {
+            "access_url": "https://github.com/Open-Access-Floods/final-exam/blob/main/", # Example access URL
+            "media_type": "photography/tif",
+            "format": "TIF",
+            "byte_size": 5800,
+            "access_rights_uri": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": [
+            "Terrain", "Elevation", "Brazil", "Geospatial data", "Topography"
+        ],
         "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
             "label": "Environment"

@@ -94,6 +94,9 @@ dataset_ids = [
     "MD4_Rain_Precipitation_States",
     "MD5_Monthly_Rainfall_Stations_RS",
     "MD6_Urbanization_Growth_RS"
+    "GD1 - Municipal Boundaries"
+    "GD2 - Rio Grande do Sul Boundary"
+    "GD3 - Terrain Elevation"
 ]
 
 # Add each dataset ID using the custom 'dcat3:dataset' property
