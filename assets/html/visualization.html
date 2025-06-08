@@ -112,173 +112,298 @@
                 <div class="slider-text-middle-main">
                     <div class="slider-text-middle smaller-banner-text">
                         <h1 class="text-uppercase deep-green-text font-weight-600 smaller-banner-title"
-                            style="color:#7ed957;">Visualization</h1>
+                            style="color:#7ed957;">Floods through visualization</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end section #home -->
-    <section id="speakers" class="wow fadeIn border-bottom no-padding-bottom">
+    <section id="speakers" class="wow fadeIn no-padding-bottom">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <span class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span class="deep-green-text">—</span> Understand the extent of the floods through visualization</span>
-                </div>
-            </div>
-            <div class="row margin-fifteen no-margin-lr no-margin-bottom xs-text-center clearfix">
-                <div class="col-md-12 col-sm-12 text-center"><span class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
-                        <strong>The following maps and charts illustrate the impact of the floods that affected Rio Grande do Sul in April and May 2024.</strong></span>
+            <div class="row margin-seven no-margin-lr no-margin-bottom xs-text-center clearfix">
+                <div class="col-md-12 col-sm-12 text-center"><span class="text-extra-large">
+                        <strong>The following maps and charts illustrate the impact of the floods that affected Rio
+                            Grande do Sul in April and May 2024</strong></span>
                 </div>
             </div>
     </section>
-    <br>
-    <br>
-    <br>
+
 
     <!-- MAP -->
-    <div class="row">
-        <div class="container mt-5 p-5 text-justify">
-            <h2 class="mt-5 mb-4">Rio Grande do Sul floods</h2><br>
-                <p>The maps below provide an overview of the situation in the municipalities of the state of Rio Grande do Sul following the floods.</p>
-                <p>The data is derived from the MD1 - Affected Population dataset, normalized and georeferenced using the IBGE municipal boundaries shapefile and processed with QGIS. The resultant geojson file was then transferred to HTML using the Leaflet library.</p>
-                <p>The relative datasets (%) are based on 2024 population estimates from IBGE and therefore include its margin of error.</p>  
-        </div>
-        <br>
-        <div class="container mt-5 p-5 text-justify">
-          <div class="ml-5">
-            <div class="bootstrap-select-wrapper">
-              <label class="text-center"for="dataset" style="color:#21BF75;"><b>Select dataset:</b></label>
-              <select name="data" id="selectData" class="form-select text-center" onchange="updateMap(this.value)">
-                <option value="general">General Information</option>
-                <option value="percentageAffected">Event Impact (%)</option>
-                <option value="deaths">Deaths</option>
-                <option value="injured">Injured</option>
-                <option value="sick">Sick</option>
-                <option value="missing">Missing</option>
-                <option value="evacuated">Evacuated</option>
-                <option value="displaced">Displaced</option>
-                <option value="otherAffected">Other Affected</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="container mt-5 p-5 text-justify">
-            <div id="container-map" class="container-map mt-5">
-              <div id="map" style="height: 80vh; z-index: 0;"></div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-
-    <div class="row ">
-        <div class="container mt-5 p-5 text-justify">
-            <h2 class="mt-5 mb-4">Elevation x Impact</h2><br>
-            <p>These comparison maps illustrate the relationship between orography (terrain elevation) and the impact of rainfall. Many urban areas are located in lower-lying terrain, where drainage systems concentrated large volumes of water during the floods.</p>
-            <p>The Event Impact (%) map is based on the MD-1 Affected Population dataset and IBGE municipal boundaries shapefile, processed using QGIS. The elevation map uses elevation data from U.S. Geological Survey (USGS) database, compiled and processed in QGIS and exported as PNG images.</p>
-        </div>
-        <br>
-        <div class="container mt-5 p-5 text-justify">
-            <div class="comparison-container" id="comparison-container">
-                <img src="images/before.png" class="map-img" alt="Altimetry">
-                <div class="overlay" id="overlay">
-                    <img src="images/after.png" class="map-img" alt="Impact">
+    <section id="speakers" class="wow fadeIn margin-seven">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
+                            class="deep-green-text">—</span>Rio Grande do Sul floods</span>
                 </div>
-                <div class="slider" id="slider"></div>
             </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-12">
+                    <p class="text-large">
+                        The maps below provide an overview of the situation in the municipalities of the state of Rio
+                        Grande do Sul following the floods. The data is derived from the MD1 - Affected Population
+                        dataset, normalized and georeferenced
+                        using the IBGE municipal boundaries shapefile and processed with QGIS.
+                    <p class="text-large">The resultant geojson
+                        file was then transferred to HTML using the Leaflet library. The relative datasets (%) are based
+                        on 2024 population estimates from IBGE and therefore include
+                        its margin of error.
+                    </p>
+                </div>
+            </div>
+            <br>
 
-     <!--Rainfall by states-->
-    <div class="section2">
-    <div class="container mt-5 p-5 text-justify">
-    <h2>Rainfall Trends by State – Brazil, 2024</h2><br>
-    <p>
-      The line chart below shows the monthly rainfall across Brazilian states in 2024. It highlights a remarkable anomaly in the state of <strong>Rio Grande do Sul</strong>, where rainfall levels were dramatically higher than in other states.
-      Historically, the region experiences two main rainy seasons: <strong>April–May</strong> and <strong>August–September</strong>, typically with comparable levels of precipitation. In 2024, while September rainfall aligned with historical norms, the <strong>May rainfall more than doubled the expected volume</strong>, contributing significantly to the flood disasters.
-    </p>
+            <div class="row">
+                <div class="container mt-5 p-5 text-justify">
+                    <div class="ml-5">
+                        <div class="bootstrap-select-wrapper">
+                            <label class="text-center text-extra-large" for="dataset" style="color:#21BF75;"><b>Select
+                                    dataset:</b> <br></label>
+                            <br>
+                            <select name="data" id="selectData" class="form-select text-center"
+                                onchange="updateMap(this.value)">
+                                <option value="general">General Information</option>
+                                <option value="percentageAffected">Event Impact (%)</option>
+                                <option value="deaths">Deaths</option>
+                                <option value="injured">Injured</option>
+                                <option value="sick">Sick</option>
+                                <option value="missing">Missing</option>
+                                <option value="evacuated">Evacuated</option>
+                                <option value="displaced">Displaced</option>
+                                <option value="otherAffected">Other Affected</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5 p-5 text-justify">
+                    <div id="container-map" class="container-map mt-5">
+                        <div id="map" style="height: 80vh; z-index: 0;"></div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="flourish-embed flourish-chart" data-src="visualisation/23399059">
-      <script src="https://public.flourish.studio/resources/embed.js"></script>
-      <noscript>
-        <img src="https://public.flourish.studio/visualisation/23399059/thumbnail" width="80%" alt="chart visualization" />
-      </noscript>
-    </div>
-    </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!--Vegetation Cover and deforestation -->
-    <div class="section3">
-    <div class="container mt-5 p-5 text-justify">
-      <h2>Vegetation Cover and deforestation (2004–2023)</h2><br>
+            <br>
+            <br>
+            <br>
 
-      <p>
-        The line chart below shows vegetation cover and deforestation trends across Rio Grande do Sul from 2004 to 2023.
-      </p>
-      <p> 
-        The chart reveals an <strong>inverse relationship</strong> between the<strong> growth of anthropized areas </strong>(Human-Altered), largely due to agriculture, and the <strong>decline of native vegetation</strong> (Primary Vegetation).
-      </p>
-      <p>
-        Other forms of land use, such as areas under recovery, have remained relatively stable over time.
-      </p>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
+                            class="deep-green-text">—</span>Elevation x Impact</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-12">
+                    <p class="text-large">These comparison maps illustrate the relationship between orography (terrain
+                        elevation) and the impact of
+                        rainfall. Many urban areas are located in lower-lying terrain, where drainage systems
+                        concentrated large
+                        volumes of water during the floods.</p>
+                    <p class="text-large">The Event Impact (%) map is based on the MD-1 Affected Population dataset and
+                        IBGE municipal boundaries
+                        shapefile, processed using QGIS. The elevation map uses elevation data from U.S. Geological
+                        Survey
+                        (USGS) database, compiled and processed in QGIS and exported as PNG images.</p>
+                        <br>
+                </div>
+            </div>
 
-      <!-- Flourish Chart Embed -->
-      <div class="flourish-embed flourish-chart" data-src="visualisation/23515617">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-        <noscript><img src="https://public.flourish.studio/visualisation/23515617/thumbnail" width="100%" alt="chart visualization" /></noscript>
-      </div>
-    </div>
-    </div>
-    <br><br><br>
-    <div class="container mt-5 p-4">
-    <h2 class="mb-4">Urbanization vs Forest Cover</h2><br>
-    <p class="mb-4">
-      While the data does not reveal dramatic changes in forest cover or urban growth across municipalities in Rio Grande do Sul between 2013 and 2023, it highlights the importance of mitigation efforts. Expanding green areas within cities can improve water runoff, reduce the risk of landslides, and enhance soil stability. Additionally, considering South America's rainfall system is highly interconnected — a phenomenon known as the "flying rivers" — effective disaster prevention depends on coordinated national policies and regional cooperation. Such strategies are vital to prevent future tragedies like the devastating 2024 floods in southern Brazil.
-    </p>
+            <div class="row ">
+                <br>
+                <div class="container mt-5 p-5 text-justify">
+                    <div class="comparison-container" id="comparison-container">
+                        <img src="images/before.png" class="map-img" alt="Altimetry">
+                        <div class="overlay" id="overlay">
+                            <img src="images/after.png" class="map-img" alt="Impact">
+                        </div>
+                        <div class="slider" id="slider"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
 
-    <iframe src="../../plots/urban_vs_deforest.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ccc;"></iframe>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!--Civil Defense investiments-->
-    <div class="section3">
-    <div class="container mt-5 p-5 text-justify">
-      <h2>Investments in Civil Defense (2014–2024)</h2><br>
+            <!--Rainfall by states-->
 
-      <p>
-        The line chart below presents the historical trend of federal expenditures in Brazil's Civil Defense system, specifically under Action 22BO (“Protection and Civil Defense Actions”). The data shows a significant drop in investments between 2017 and 2021—not due to fewer disasters, but as a result of reduced government spending.
-      </p>
-      <p>
-        A moderate increase is observed in 2022, an election year, followed by a sharp rise starting in 2023. In 2024, investments spike dramatically in response to the catastrophic floods in Rio Grande do Sul. This pattern highlights how disaster response funding has been reactive rather than proactive, raising concerns about long-term resilience and preparedness.
-      </p>
+        <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
+                            class="deep-green-text">—</span>Rainfall Trends by State – Brazil, 2024</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-12">
+                    <p class="text-large">
+                        The line chart below shows the monthly rainfall across Brazilian states in 2024. It highlights a
+                        remarkable anomaly in the state of <strong>Rio Grande do Sul</strong>, where rainfall levels
+                        were
+                        dramatically higher than in other states.
+                        Historically, the region experiences two main rainy seasons: <strong>April–May</strong> and
+                        <strong>August–September</strong>, typically with comparable levels of precipitation. In 2024,
+                        while
+                        September rainfall aligned with historical norms, the <strong>May rainfall more than doubled the
+                            expected volume</strong>, contributing significantly to the flood disasters.
+                    </p>
+                        <br>
+                </div>
+            </div>
 
-      <!-- Flourish Chart Embed -->
-      <div class="flourish-embed flourish-chart" data-src="visualisation/23480294">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-        <noscript>
-          <img src="https://public.flourish.studio/visualisation/23480294/thumbnail" width="100%" alt="Investment chart" />
-        </noscript>
-      </div>
-    </div>
-    </div>
-    <br>
-    <br>
-    <br>
-        <!-- banner de info al repo -->
+
+            <div class="section2">
+                <div class="container mt-5 p-5 text-justify">
+
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/23399059">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        <noscript>
+                            <img src="https://public.flourish.studio/visualisation/23399059/thumbnail" width="80%"
+                                alt="chart visualization" />
+                        </noscript>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--Vegetation Cover and deforestation -->
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
+                            class="deep-green-text">—</span>Vegetation Cover and deforestation (2004–2023)</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-12">
+                    <p class="text-large">
+                        The line chart below shows vegetation cover and deforestation trends across Rio Grande do Sul
+                        from 2004
+                        to 2023.
+                    </p>
+                    <p class="text-large">
+                        The chart reveals an <strong>inverse relationship</strong> between the<strong> growth of
+                            anthropized
+                            areas </strong>(Human-Altered), largely due to agriculture, and the <strong>decline of
+                            native
+                            vegetation</strong> (Primary Vegetation).
+                    </p>
+                    <p class="text-large">
+                        Other forms of land use, such as areas under recovery, have remained relatively stable over
+                        time.
+                    </p>
+                        <br>
+                </div>
+            </div>
+
+            <div class="section3">
+                <div class="container mt-5 p-5 text-justify">
+
+                    <!-- Flourish Chart Embed -->
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/23515617">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        <noscript><img src="https://public.flourish.studio/visualisation/23515617/thumbnail"
+                                width="100%" alt="chart visualization" /></noscript>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
+                            class="deep-green-text">—</span>Urbanization vs Forest Cover</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-12">
+                    <p class="text-large">
+                    While the data does not reveal dramatic changes in forest cover or urban growth across
+                    municipalities in Rio
+                    Grande do Sul between 2013 and 2023, it highlights the importance of mitigation efforts. Expanding
+                    green
+                    areas within cities can improve water runoff, reduce the risk of landslides, and enhance soil
+                    stability.
+                    Additionally, considering South America's rainfall system is highly interconnected — a phenomenon
+                    known as
+                    the "flying rivers" — effective disaster prevention depends on coordinated national policies and
+                    regional
+                    cooperation. Such strategies are vital to prevent future tragedies like the devastating 2024 floods
+                    in
+                    southern Brazil.
+                </p>
+                        <br>
+                </div>
+            </div>
+
+            <div class="container mt-5 p-4">
+                <iframe src="../../plots/urban_vs_deforest.html" width="100%" height="600" frameborder="0"
+                    style="border: 1px solid #ccc;"></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--Civil Defense investiments-->
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span
+                        class="title-medium alt-font font-weight-600 text-uppercase deep-blue-text display-block sm-title-large"><span
+                            class="deep-green-text">—</span>Investments in Civil Defense (2014–2024)</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-12">
+                    <p class="text-large">
+                        The line chart below presents the historical trend of federal expenditures in Brazil's Civil
+                        Defense
+                        system, specifically under Action 22BO (“Protection and Civil Defense Actions”). The data shows
+                        a
+                        significant drop in investments between 2017 and 2021—not due to fewer disasters, but as a
+                        result of
+                        reduced government spending.
+                    </p>
+                    <p class="text-large">
+                        A moderate increase is observed in 2022, an election year, followed by a sharp rise starting in
+                        2023. In
+                        2024, investments spike dramatically in response to the catastrophic floods in Rio Grande do
+                        Sul. This
+                        pattern highlights how disaster response funding has been reactive rather than proactive,
+                        raising
+                        concerns about long-term resilience and preparedness.
+                    </p>
+                        <br>
+                </div>
+            </div>
+
+            <div class="section3">
+                <div class="container mt-5 p-5 text-justify">
+
+                    <!-- Flourish Chart Embed -->
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/23480294">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        <noscript>
+                            <img src="https://public.flourish.studio/visualisation/23480294/thumbnail" width="100%"
+                                alt="Investment chart" />
+                        </noscript>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- banner de info al repo -->
     <section class="wow fadeIn fix-background" style="background-image:url(images/flood-3.png);">
         <div class="opacity-full bg-deep-blue2"></div>
         <div class="container position-relative">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <span class="title-medium alt-font deep-green-text text-uppercase xs-title-small">All the information is available in the Open Data Floods GitHub repository</span>
+                    <span class="title-medium alt-font deep-green-text text-uppercase xs-title-small">All the
+                        information is available in the Open Data Floods GitHub repository</span>
                     <span
                         class="title-extra-large-3 alt-font deep-green-text text-uppercase font-weight-600 margin-one no-margin-bottom no-margin-lr display-block xs-title-extra-large">Consult
                         the documentation</span>
@@ -308,13 +433,13 @@
                                 <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/424645"
                                     style="text-decoration: underline; color: inherit;">
                                     Open Data and Digital Ethics Course, </a>
-                                    <br>
-                                    part of the
+                                <br>
+                                part of the
                                 <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge"
                                     style="text-decoration: underline; color: inherit;">
                                     Master's Degree in Digital Humanities and Digital Knowledge
                                 </a> at the University of Bologna.
-                                
+
 
                             </p>
                         </span>
@@ -369,7 +494,7 @@
         });
     </script>
 
-    
+
     <!-- end section -->
     <!-- scroll to top -->
     <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
