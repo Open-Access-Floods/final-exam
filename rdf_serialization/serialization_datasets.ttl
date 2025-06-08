@@ -11,6 +11,9 @@ brasil:catalog dcat:dataset brasil:D1_Disasters_and_Impact_Data,
         brasil:D4_Urban_Expansion,
         brasil:D5_Deforestation,
         brasil:D6_Civil_Defense,
+        brasil:GD1_Municipalities,
+        brasil:GD2_Rio_Grande_do_Sul,
+        brasil:GD3_Elevation,
         brasil:MD1_Affected_Population,
         brasil:MD2_Municipality_Rainfall,
         brasil:MD3_Deforestation_RS,
@@ -187,6 +190,81 @@ brasil:D6_Civil_Defense a dcat:Dataset ;
         "gastos públicos"@pt,
         "orçamento"@pt,
         "transparência pública"@pt .
+
+brasil:GD1_Municipalities a dcat:Dataset ;
+    dct:description "This dataset contains the geographic boundaries of Brazilian municipalities, providing essential spatial context for various analyses."@pt ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-28"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2023-12-31"^^xsd:date ;
+            dct:startDate "2013-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Municipal Boundaries"@pt ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "SHP" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/> ;
+            dcat:byteSize 5800 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Administrative divisions"@pt,
+        "Brazil"@pt,
+        "Geographic boundaries"@pt,
+        "Municipalities"@pt,
+        "Spatial data"@pt .
+
+brasil:GD2_Rio_Grande_do_Sul a dcat:Dataset ;
+    dct:description "This dataset contains the geographic boundary of the state of Rio Grande do Sul, Brazil, providing essential spatial context for various analyses."@pt ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/pt> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-28"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2023-12-31"^^xsd:date ;
+            dct:startDate "2013-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Rio Grande do Sul Boundary"@pt ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "SHP" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/> ;
+            dcat:byteSize 5800 ;
+            dcat:mediaType "text/csv" ] ;
+    dcat:keyword "Land use change"@pt,
+        "MapBiomas"@pt,
+        "Rio Grande do Sul"@pt,
+        "Urban growth"@pt,
+        "Urbanization"@pt .
+
+brasil:GD3_Elevation a dcat:Dataset ;
+    dct:description "This dataset contains terrain elevation data for Brazil, providing essential spatial context for various analyses."@en ;
+    dct:issued "2025-05-27"^^xsd:date ;
+    dct:language <http://lexvo.org/id/iso639-1/en> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-28"^^xsd:date ;
+    dct:publisher <https://github.com/Open-Access-Floods/> ;
+    dct:spatial <earthexplorer.usgs.gov> ;
+    dct:temporal [ a dct:PeriodOfTime ;
+            dct:endDate "2025-12-31"^^xsd:date ;
+            dct:startDate "2025-01-01"^^xsd:date ] ;
+    dct:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    dct:title "Terrain Elevation"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+            dct:format "TIF" ;
+            dcat:accessURL <https://github.com/Open-Access-Floods/final-exam/blob/main/> ;
+            dcat:byteSize 5800 ;
+            dcat:mediaType "photography/tif" ] ;
+    dcat:keyword "Brazil"@en,
+        "Elevation"@en,
+        "Geospatial data"@en,
+        "Terrain"@en,
+        "Topography"@en .
 
 brasil:MD1_Affected_Population a dcat:Dataset ;
     dct:description "This dataset provides information on the number of people affected by various types of disasters in Brazil, including floods, landslides, and storms. The data is aggregated by disaster type and year. (EXAMPLE)"@en ;

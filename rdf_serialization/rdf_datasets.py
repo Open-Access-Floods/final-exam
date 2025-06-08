@@ -384,13 +384,12 @@ datasets_list = [
         # For mashups, publisher/creator could be the project members
         "publisher_uri": "https://github.com/Open-Access-Floods/", 
         "publisher_name": "Open Access Floods Project Team",
-    }
+    },
 
     { # GD1_Municipalities
-
         "id": "GD1_Municipalities",
         "uri": BRASIL["GD1_Municipalities"], # Construct URI using BRASIL namespace
-        "title": "Municipal Boundaries"
+        "title": "Municipal Boundaries",
         "description": "This dataset contains the geographic boundaries of Brazilian municipalities, providing essential spatial context for various analyses.",
         "language": "pt", # Assuming Portuguese for this dataset
         "issued_date": "2025-05-27", # Today's date
@@ -418,13 +417,12 @@ datasets_list = [
         # For mashups, publisher/creator could be the project members
         "publisher_uri": "https://github.com/Open-Access-Floods/", 
         "publisher_name": "Open Access Floods Project Team",
-    }
+    },
 
     { # GD2_Rio_Grande_do_Sul
-        
         "id": "GD2_Rio_Grande_do_Sul",
         "uri": BRASIL["GD2_Rio_Grande_do_Sul"], # Construct URI using BRASIL namespace
-        "title": "Rio Grande do Sul Boundary"
+        "title": "Rio Grande do Sul Boundary",
         "description": "This dataset contains the geographic boundary of the state of Rio Grande do Sul, Brazil, providing essential spatial context for various analyses.",
         "language": "pt", # Assuming Portuguese for this dataset
         "issued_date": "2025-05-27", # Today's date
@@ -443,7 +441,8 @@ datasets_list = [
         },
         "license_uri": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": [
-            "Urbanization", "Land use change", "Rio Grande do Sul", "MapBiomas","Urban growth"],
+            "Urbanization", "Land use change", "Rio Grande do Sul", "MapBiomas","Urban growth"
+        ],
         "theme": {
             "uri": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
             "label": "Environment"
@@ -451,15 +450,14 @@ datasets_list = [
         # For mashups, publisher/creator could be the project members
         "publisher_uri": "https://github.com/Open-Access-Floods/", 
         "publisher_name": "Open Access Floods Project Team",
-    }
+    },
 
     { # GD3 - Terrain Elevation
-
         "id": "GD3_Elevation",
-        "uri": BRASIL["GD3_Elevationl"], # Construct URI using BRASIL namespace
-        "title": "Terrain Elevation"
+        "uri": BRASIL["GD3_Elevation"], # Fixed typo: "GD3_Elevationl" -> "GD3_Elevation"
+        "title": "Terrain Elevation",
         "description": "This dataset contains terrain elevation data for Brazil, providing essential spatial context for various analyses.",
-        "language": "en", # Assuming Portuguese for this dataset
+        "language": "en", # Assuming English for this dataset
         "issued_date": "2025-05-27", # Today's date
         "modified_date": "2025-05-28",
         "temporal_coverage": {
