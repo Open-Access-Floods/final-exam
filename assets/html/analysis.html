@@ -221,20 +221,20 @@
                             </h6>
                             <p class="text-large">
                             <ul class="text-large">
-                                <li><strong>S2ID (D1):</strong> Data is self-reported by municipalities, which
+                                <li><strong>Disaster Records (S2ID) (D1):</strong> Data is self-reported by municipalities, which
                                     introduces variability in accuracy due to local reporting capabilities and technical
                                     standards.</li>
-                                <li><strong>INMET (D2):</strong> Rainfall data is collected from calibrated
+                                <li><strong>Rainfall Data (INMET) (D2):</strong> Rainfall data is collected from calibrated
                                     meteorological stations, ensuring a high degree of measurement reliability.</li>
-                                <li><strong>IBGE (D3):</strong> Official demographic projections of population in 2024 based on statistics from the 2022 census;
+                                <li><strong>Population Estimates (IBGE) (D3):</strong> Official demographic projections of population in 2024 based on statistics from the 2022 census;
                                     syntactically and semantically consistent.</li>
-                                <li><strong>MapBiomas Urban Expansion (D4):</strong> Derived from satellite imagery with
+                                <li><strong>Urban Expansion (MapBiomas) (D4):</strong> Derived from satellite imagery with
                                     validated classification processes. Urban land cover classes were extracted
                                     consistently.</li>
-                                <li><strong>MapBiomas Deforestation (D5):</strong> Follows the same rigorous image
+                                <li><strong>Deforestation (MapBiomas) (D5):</strong> Follows the same rigorous image
                                     classification process as D4, with a strong accuracy track record across Brazilian
                                     biomes.</li>
-                                <li><strong>Civil Defense Investiments</strong>Is based on oficial data from the Portal da Transparência 
+                                <li><strong>Civil Defense (Transparency Portal) (D6)</strong>Is based on oficial data from the Portal da Transparência 
                                     (Transparecy Portal) that is the website that publish all the government costs in Brazil.</li>
                             </ul>
                             </p>
@@ -260,15 +260,17 @@
                                     Completeness</span></h6>
                             <p class="text-large">
                             <ul class="text-large">
-                                <li><strong>S2ID:</strong> Underreporting is a known issue in certain municipalities.
+                                <li><strong>S2ID (D1):</strong> Underreporting is a known issue in certain municipalities.
                                     The dataset required cleaning to handle encoding issues and numeric inconsistencies.
                                 </li>
-                                <li><strong>INMET:</strong> Complete for 2024, though metadata extraction for each
+                                <li><strong>INMET (D2):</strong> Complete for 2024, though metadata extraction for each
                                     weather station required manual merging.</li>
-                                <li><strong>IBGE:</strong> Fully complete for 2018. No updated census values are
+                                <li><strong>IBGE (D3):</strong> Fully complete for 2018. No updated census values are
                                     available at the municipal level for more recent years.</li>
                                 <li><strong>MapBiomas (D4 & D5):</strong> Complete and consistent at the national level,
                                     covering 1985–2022 with annual updates and no missing years.</li>
+                                <li><strong>Portal da Transparência (D6)</strong> Complete and consistent at the national level,
+                                    covering 2014-2024 without missing years.</li>
                             </ul>
                             </p><br>
                             <p class="text-large">
@@ -448,7 +450,8 @@
                                     Instituto Brasileiro de Geografia e Estatística</li>
                                 <li><strong><a href="https://mapbiomas.org/" target="_blank">MapBiomas</a></strong> –
                                     Scientific and civic coalition with open data policies</li>
-                                <li><strong><a href="https://portaldatransparencia.gov.br/" target="_blank">Portal da Transparência</a></strong></li>
+                                <li><strong><a href="https://portaldatransparencia.gov.br/" target="_blank">Portal da Transparência</a></strong>
+                                    Oficial source of data about costs, payments and investiments of Brazilian Governments.</li>
                             </ul>
                             <br>
                             <p class="text-large">These sources do not impose restrictions on reuse, as long as proper
