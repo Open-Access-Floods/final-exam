@@ -226,7 +226,7 @@
                                     standards.</li>
                                 <li><strong>INMET (D2):</strong> Rainfall data is collected from calibrated
                                     meteorological stations, ensuring a high degree of measurement reliability.</li>
-                                <li><strong>IBGE (D3):</strong> Official demographic statistics from the 2018 census;
+                                <li><strong>IBGE (D3):</strong> Official demographic projections of population in 2024 based on statistics from the 2022 census;
                                     syntactically and semantically consistent.</li>
                                 <li><strong>MapBiomas Urban Expansion (D4):</strong> Derived from satellite imagery with
                                     validated classification processes. Urban land cover classes were extracted
@@ -234,6 +234,8 @@
                                 <li><strong>MapBiomas Deforestation (D5):</strong> Follows the same rigorous image
                                     classification process as D4, with a strong accuracy track record across Brazilian
                                     biomes.</li>
+                                <li><strong>Civil Defense Investiments</strong>Is based on oficial data from the Portal da Transparência 
+                                    (Transparecy Portal) that is the website that publish all the government costs in Brazil.</li>
                             </ul>
                             </p>
                             <br>
@@ -301,6 +303,7 @@
                                     affecting population-based indicators.</li>
                                 <li><strong>MapBiomas:</strong> Last available version is 2022 (Collection 9), with
                                     annual updates generally released mid-year.</li>
+                                <li><strong>Portal da Transparência</strong> Include the general data from 2014 to 2025.</li>
                             </ul>
                             </p><br>
                             <h6><span
@@ -359,6 +362,14 @@
                                             <td>High</td>
                                             <td>Medium</td>
                                         </tr>
+                                        <tr class="text-medium">
+                                            <td>D6</td>
+                                            <td>Civil Defense - Transparency Portal</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                            <td>High</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                                 <br>
@@ -411,7 +422,8 @@
                                 (<a href="https://s2id.mi.gov.br/" target="_blank">S2ID</a>,
                                 <a href="https://portal.inmet.gov.br/" target="_blank">INMET</a>,
                                 <a href="https://www.ibge.gov.br/" target="_blank">IBGE</a>,
-                                <a href="https://mapbiomas.org/" target="_blank">MapBiomas</a>)
+                                <a href="https://mapbiomas.org/" target="_blank">MapBiomas</a>
+                                <a href="https://portaldatransparencia.gov.br/" target= "_blank">Portal da Transparência</a>)
                                 contain names, document numbers, biometric data, or any attribute that could identify
                                 individuals.
                                 S2ID includes aggregated figures on population affected by disasters, but these are
@@ -436,6 +448,7 @@
                                     Instituto Brasileiro de Geografia e Estatística</li>
                                 <li><strong><a href="https://mapbiomas.org/" target="_blank">MapBiomas</a></strong> –
                                     Scientific and civic coalition with open data policies</li>
+                                <li><strong><a href="https://portaldatransparencia.gov.br/" target="_blank">Portal da Transparência</a></strong></li>
                             </ul>
                             <br>
                             <p class="text-large">These sources do not impose restrictions on reuse, as long as proper
@@ -450,6 +463,7 @@
                                 <li><strong>IBGE</strong>: CC BY 4.0</li>
                                 <li><strong>MapBiomas</strong>: CC BY-SA 4.0</li>
                                 <li><strong>S2ID and INMET</strong>: Public domain or institutional open terms</li>
+                                <li><strong>Portal da Tranaparência</strong>: CC BY 4.0</li>
                             </ul>
                             <p class="text-large">The final mashup datasets produced in this project are published under
                                 the <strong>CC BY 4.0</strong> license to ensure compatibility and openness.</p><br>
@@ -489,6 +503,7 @@
                                 <li><strong>S2ID</strong>: Updated by local governments, may have delays</li>
                                 <li><strong>IBGE</strong>: Latest complete data from 2018 census</li>
                                 <li><strong>MapBiomas</strong>: Updated annually, most recent version is from 2022</li>
+                                <li><strong>Portal da Transparência – Civil Defense Action 22BO</strong>: Updated monthly, with the latest data covering through May 2025</li>
                             </ul>
                             <br>
                             <p class="text-large">
@@ -697,74 +712,9 @@
                                     </blockquote>
                                 </div>
                             </div>
-
                             <h6>
                                 <span
-                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">1.
-                                    Metadata Assessment</span>
-                            </h6>
-                            <p class="text-large">
-                                We classified metadata quality using the AGID-inspired model based on syntactic and
-                                semantic correctness, completeness, and consistency of documentation.
-                            </p>
-
-                            <div class="table-responsive">
-                                <table class="table table-hover table-bordered align-middle">
-                                    <thead class="table-light">
-                                        <tr class="text-large">
-                                            <th>ID</th>
-                                            <th>Source</th>
-                                            <th>Format</th>
-                                            <th>Metadata</th>
-                                            <th>License</th>
-                                            <th>URI</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="text-medium">
-                                            <td>D1</td>
-                                            <td>S2ID (MDR)</td>
-                                            <td>.csv</td>
-                                            <td>Level 2: Basic metadata and COBRADE classifications included; no
-                                                persistent URI. Data structure requires cleaning.</td>
-                                            <td>Open access, no explicit license</td>
-                                            <td><a href="https://s2id.mi.gov.br" target="_blank">s2id.mi.gov.br</a></td>
-                                        </tr>
-                                        <tr class="text-medium">
-                                            <td>D2</td>
-                                            <td>IBGE</td>
-                                            <td>.csv, .shp</td>
-                                            <td>Level 4: Fully documented, standardized geocodes, shapefiles and API
-                                                endpoints provided.</td>
-                                            <td>CC BY 4.0</td>
-                                            <td><a href="https://www.ibge.gov.br/" target="_blank">ibge.gov.br</a></td>
-                                        </tr>
-                                        <tr class="text-medium">
-                                            <td>D3</td>
-                                            <td>MapBiomas</td>
-                                            <td>.csv, .xlsx</td>
-                                            <td>Level 4: Rich metadata, class hierarchies and long-term collections
-                                                (Collection 9). Clear documentation and schema.</td>
-                                            <td>CC BY-SA 4.0</td>
-                                            <td><a href="https://mapbiomas.org" target="_blank">mapbiomas.org</a></td>
-                                        </tr>
-                                        <tr class="text-medium">
-                                            <td>D4</td>
-                                            <td>INMET</td>
-                                            <td>.csv</td>
-                                            <td>Level 1: Minimal metadata; station names in filenames; no unique
-                                                identifiers or descriptors.</td>
-                                            <td>Unclear</td>
-                                            <td><a href="https://bdmep.inmet.gov.br"
-                                                    target="_blank">bdmep.inmet.gov.br</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div><br>
-
-                            <h6>
-                                <span
-                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">2.
+                                    class="title-underline_two dark-gray-text margin-five no-margin-lr no-margin-top display-block">
                                     FAIR Principles Evaluation</span>
                             </h6>
                             <p class="text-large">
@@ -786,7 +736,7 @@
                                             <td><strong>Findable</strong></td>
                                             <td>Data should have globally unique, persistent identifiers and searchable
                                                 metadata.</td>
-                                            <td>IBGE and MapBiomas datasets are fully findable via <a
+                                            <td>Portal da Transparência, IBGE and MapBiomas datasets are fully findable via <a
                                                     href="https://dados.gov.br" target="_blank">dados.gov.br</a>. INMET
                                                 and S2ID lack persistent identifiers.</td>
                                         </tr>
@@ -800,7 +750,7 @@
                                         <tr class="text-medium">
                                             <td><strong>Interoperable</strong></td>
                                             <td>Data should use formal standards and shared vocabularies.</td>
-                                            <td>MapBiomas uses standard land classification codes. IBGE relies on
+                                            <td>Portal da Transparência, MapBiomas uses standard land classification codes. IBGE relies on
                                                 official geographic codes. S2ID uses COBRADE, while INMET lacks standard
                                                 structure.</td>
                                         </tr>
@@ -808,7 +758,7 @@
                                             <td><strong>Reusable</strong></td>
                                             <td>Data should include clear licenses, provenance, and rich documentation.
                                             </td>
-                                            <td>IBGE and MapBiomas provide complete licensing and documentation. S2ID is
+                                            <td>Portal da Tranaparência, IBGE and MapBiomas provide complete licensing and documentation. S2ID is
                                                 open but lacks formal reuse policy. INMET does not specify license
                                                 terms.</td>
                                         </tr>
